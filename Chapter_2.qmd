@@ -35,7 +35,7 @@ Questions arise in many forms and examples of common generic question types are 
 | Opinion or perception | Is there public support for badger culling in the UK? Datasets for this type of question may come from opinion polls or surveys, rather than experimental studies. |
 | Ecological or geographical distribution | How has the distribution and abundance of rabies in fox populations changed in the last 10 years? Here one could ask if there is any evidence of change and whether it is homogeneous across spatial and temporal scales and species. |
 
-**: Common types of policy problems and concerns in Environmental Management** {#tbl-commontype} 
+: **Common types of policy problems and concerns in Environmental Management** {#tbl-commontype} 
 
 **Box 2.1. Examples of initial concerns or problems that might generate potential questions for evidence synthesis but are not yet sufficiently well defined.**
 
