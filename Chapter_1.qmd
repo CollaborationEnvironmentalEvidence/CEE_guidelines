@@ -14,7 +14,7 @@ execute:
 
 This section provides a summary of the steps in the conduct of a CEE Evidence Synthesis (Systematic Review, Systematic Map or Rapid Review), an overview of how authors register their Evidence Synthesis with CEE, and the process of submission and peer review that ensures CEE Evidence Syntheses are conducted to high standards.
 
-### **The CEE registration, submission and deposition process**
+## **The CEE registration, submission and deposition process**
 
 CEE operates an open-access policy and all contributed articles (e.g. evidence syntheses) are published (subject to peer review) in its open-access journal *Environmental Evidence* ([www.environmentalevidencejournal.org](http://www.environmentalevidencejournal.org/)). This provides authors with a high level of visibility for their publications.
 
@@ -36,14 +36,14 @@ Article Processing Charges for publication in Environmental Evidence of both the
 
 CEE operates a supportive policy for review teams undertaking Evidence Syntheses and seeks to provide help and guidance, particularly during the protocol finalisation stage (including through web-based support materials and training events) to increase the chances of Evidence Syntheses being successfully completed.
 
-### **Supplementary materials**
+## **Supplementary materials**
 
 The transparency of Evidence Syntheses is enhanced by the provision of a range of mandatory supplementary materials. Some can be provided as appendices whilst others may be posted as additional files on the review webpage. For a full checklist see Section 9.
 
-### **Further dissemination of findings**
+## **Further dissemination of findings**
 
 Although CEE Evidence Syntheses are designed to be reliable sources of evidence, they do not necessarily make the evidence very accessible to a non-scientific readership. After all the work of searching, screening, appraising, extracting and synthesising evidence and writing the report, it is worth considering whether the full evidence synthesis format is sufficient or appropriate for disseminating the key outcomes to your target audience. The publication of the full CEE Evidence Synthesis constitutes an important resource and a transparent audit trail of methodology but may not be suitable as a dissemination tool to reach decision makers. Other formats such as policy briefs, executive summaries and guidance notes can be developed and posted on the Evidence Synthesis webpage (as well as being disseminated elsewhere). Such documents often require some special skills in to make the conclusions and recommendations, as well as their justification, accessible to a non-scientific audience. They can be written by the review team but can also be designed by a specialist or during meetings with policy makers and/or practitioners and managers.
 
-### **Updating an Evidence Synthesis**
+## **Updating an Evidence Synthesis**
 
 Evidence syntheses can only be accurate assessments of the evidence base when they are up to date. As soon as the search is completed the reliability of an evidence synthesis as a synthesis of ‘all available evidence’ begins to decline. The rate of decline is dependent on the rate of publication of new studies and so varies from subject to subject. An outdated Systematic Review or Systematic Map may be misleading, so they should periodically be updated. Fortunately, the process of updating a CEE Evidence Synthesis should not be as burdensome as the original process, provided that accurate reporting was achieved, and good records were kept of the original process. We encourage the publication and archiving of as full a record as possible of all procedures and outcomes as supplementary materials. At the time of writing, updating a CEE Evidence Synthesis is yet to be completed; we suggest considering updating a Systematic Review or Systematic Map 3-5 years after publication depending on the rate of publication of new primary studies (See Section 4.5).  The process for registering an update is the same as for an original Evidence Synthesis and should begin with an updated Protocol. Updates can be proposed by original authors, other review teams or a combination and should be justified in terms of new studies potentially strengthening the evidence base or the potential to improve the synthesis in some way.
