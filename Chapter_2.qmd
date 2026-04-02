@@ -6,6 +6,12 @@ format:
     toc-depth: 3
     number-sections: true
 bibliography: refs.bib
+crossref:
+  chapters: true
+  custom:
+    - kind: float
+      key: box
+      reference-prefix: Box
 params:
   last_updated: ""
 execute:
@@ -20,7 +26,7 @@ The need for evidence relating to a question of concern (e.g. to policy or pract
 
 The question addressed by a CEE evidence synthesis often arises from a concern, a challenge, a conflict or a decision that needs to be taken, for which the decision-makers would like to be informed by the best available evidence. Often, decision-makers would like to know how to intervene to solve a problem or what evidence is available to help them make the best decision. They may like to know whether evidence has accumulated, studies or trials have been conducted, or effects have been measured.
 
-Questions arise in many forms and examples of common generic question types are listed in @tbl-commontype. Examples of scenarios that might generate a need for evidence are shown in Box 2.1.
+Questions arise in many forms and examples of common generic question types are listed in @tbl-commontype. Examples of scenarios that might generate a need for evidence are shown in @box-initial-concerns.
 
 |  |  |
 |------------------------------------|------------------------------------|
@@ -35,11 +41,13 @@ Questions arise in many forms and examples of common generic question types are 
 | Opinion or perception | Is there public support for badger culling in the UK? Datasets for this type of question may come from opinion polls or surveys, rather than experimental studies. |
 | Ecological or geographical distribution | How has the distribution and abundance of rabies in fox populations changed in the last 10 years? Here one could ask if there is any evidence of change and whether it is homogeneous across spatial and temporal scales and species. |
 
-: **Common types of policy problems and concerns in Environmental Management** {#tbl-commontype} 
+: **Common types of policy problems and concerns in Environmental Management** {#tbl-commontype}
 
-**Box 2.1. Examples of initial concerns or problems that might generate potential questions for evidence synthesis but are not yet sufficiently well defined.**
+::: {#box-initial-concerns}
+Examples of initial concerns or problems that might generate potential questions for evidence synthesis but are not yet sufficiently well defined.
 
 ![](images/Box-2.1-new.png)
+:::
 
 Initial questions arising from discussions of evidence needs are typically broad, sometimes complex, and possibly not well defined (termed ‘open-framed’ questions), whereas questions appropriate for Systematic Review are typically specific, well defined, and relatively simple (termed ‘closed-framed’ questions). Systematic Maps can often be better suited to broader questions. A discussion on how to progress from evidence need to evidence synthesis is provided in Section 2.3, with further explanation and examples of the difference between open-framed and closed-framed questions given in section 2.3.1.
 
