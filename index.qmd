@@ -52,3 +52,21 @@ Use the navigation bar to browse chapters, or start here:
 - [Chapter 9](Chapter_9.qmd)  
 - [Chapter 10](Chapter_10.qmd)  
 - [References](references.qmd)
+
+## Versioning
+
+This project follows a **living versioning model**:
+
+* **Major versions (e.g. 5.0 → 6.0)**
+  Substantial revisions to structure or core methodological guidance
+
+* **Minor versions (e.g. 5.0 → 5.1)**
+  Additions, clarifications, or moderate updates
+
+* **Patch updates (e.g. 5.1.1)**
+  Small corrections, wording changes, or fixes
+
+Updates are made incrementally through GitHub and tracked via commits, issues, and pull requests.
+
+Where appropriate, **stable releases** will be tagged and archived to support citation and reproducibility.
+

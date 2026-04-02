@@ -40,6 +40,16 @@
     ]
   },
   {
+    "objectID": "index.html#versioning",
+    "href": "index.html#versioning",
+    "title": "CEE Guidelines",
+    "section": "Versioning",
+    "text": "Versioning\nThis project follows a living versioning model:\n\nMajor versions (e.g. 5.0 → 6.0) Substantial revisions to structure or core methodological guidance\nMinor versions (e.g. 5.0 → 5.1) Additions, clarifications, or moderate updates\nPatch updates (e.g. 5.1.1) Small corrections, wording changes, or fixes\n\nUpdates are made incrementally through GitHub and tracked via commits, issues, and pull requests.\nWhere appropriate, stable releases will be tagged and archived to support citation and reproducibility.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
     "objectID": "AimsScope.html",
     "href": "AimsScope.html",
     "title": "Aims & Scope",
