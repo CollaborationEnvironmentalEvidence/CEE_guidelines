@@ -65,6 +65,8 @@ Evidence syntheses can greatly benefit from engaging with stakeholders to ensure
 
 The ways in which stakeholders can engage with a review are outlined in Figure 2.1. Stakeholder engagement can have a substantial impact on the reviewers, the review and the stakeholders, and reviewers should ensure they plan these activities carefully to ensure the do no harm and carefully consider the ethics of who and how they engage.
 
+![](images/Fig-2.2-new.png)
+
 **Figure 2.1. Model of potential benefits of stakeholder engagement (Haddaway *et al*. 2017). Models shows direction of benefit with respect to stakeholders (green arrows benefit the review, orange arrows benefit the stakeholders) .**
 
 Stakeholder engagement should be seen as a continual process that begins at the planning stages and continues through to communication of review/map findings. Careful and continued stakeholder engagement can help to increase the relevance and salience of environmental research and reviewers should carefully consider how to do so before submitting their protocols to CEE.
@@ -104,11 +106,13 @@ In the above example we started with a broad question with almost no structure a
 
 Breaking down open-framed to identify closed-framed questions can be a valuable exercise in a policy context. The process can identify basic units of evidence that can be accumulated through Systematic Review and subsequently combined to inform higher-level decisions. Pullin et al. (2009) have outlined a process adapted from the health sciences. Essentially two stages are involved as outlined in Figure 2.2. The first requires that potential strategies for addressing open-framed questions are identified and the second that potential interventions are considered that would help deliver each strategy. The effectiveness of these interventions can then be the focus of a Systematic Review. Systematic Mapping can be used to inform the first stage and address an open-framed question, whereas Systematic Reviews might subsequently consider the effectiveness of individual interventions.
 
+![](images/Figure-2.1.png)
+
 **Figure 2.2. Relationship between a high-level open-framed policy question, potential generic solutions and individual interventions. After Pullin et al. (2009).**
 
 ### **Key elements of questions amenable to evidence** s**ynthesis**
 
-Although Systematic Review methodology was initially developed to test the effectiveness of interventions, its use has broadened considerably and the methodology is now also used to address a range of different types of questions that may have different key elements. Those key-elements are essential for the planification and conduct of any evidence synthesis, as they are going to guide and structure all the steps of the process, from literature search to critical appraisal.
+Although Systematic Review methodology was initially developed to test the effectiveness of interventions, its use has broadened considerably and the methodology is now also used to address a range of different types of questions that may have different key elements. Those key-elements are essential for the planning and conduct of any evidence synthesis, as they are going to guide and structure all the steps of the process, from literature search to critical appraisal.
 
 The terminology widely used in evidence synthesis to define key-elements is referred as PICO or PECO, which describe Population, Intervention (or Exposure), Comparator and Outcomes. Other related question structures have been proposed and might be more applicable to some kinds of questions. SPICE (Setting, Perspective, Intervention, Comparator, Evaluation method) is an example that might be applicable to some questions suitable for CEE Systematic Reviews (see Booth 2004).
 
@@ -167,6 +171,8 @@ Decision makers may often seek more than just an aggregate answer (e.g. a mean i
 
 *Lesson Learnt –* With hindsight this question should be have been approached through systematic mapping, largely because of the many different ways that exist for measuring impact of human wellbeing.
 
+![](images/box-2.2.1.png)
+
 **Example 2:**
 
 *Concern/Problem –* Lowland peatland ecosystems constitute vast amounts of carbon storage relative to their geographical extent. Extraction and drainage of peat for fuel and agriculture can release greenhouse gases (GHG; CO~­2~, CH~4~ and N~2~O) and other carbon stores, contributing to global warming. Rewetting and wetland restoration aim to ameliorate these destructive practices, but their effectiveness is uncertain. Whilst upland peat systems are relatively well-understood, no synthesis concerning lowland peats has been undertaken to date.
@@ -175,6 +181,8 @@ Decision makers may often seek more than just an aggregate answer (e.g. a mean i
 
 *Final Systematic Review Question –* How are carbon stores and greenhouse gas fluxes affected by different land management on temperate and boreal lowland peatland ecosystems?
 
+![](images/Section-2-example-2.png)
+
 **Example 3:**
 
 *Concern/Problem –* What intensity of grazing should be recommended to conserve biodiversity whilst ensuring economic sustainability of reindeer herding? An early view that reindeer were responsible for overgrazing in northern parts of Scandinavia has changed, with current opinion being that the observed overgrazing was localized and short-lived. In contrast, some are now concerned that grazing levels are insufficient to control mountain vegetation. Stakeholders identified a need to clarify a vague political dogma and goal; that the Swedish mountains should be characterised by grazing.
@@ -182,6 +190,8 @@ Decision makers may often seek more than just an aggregate answer (e.g. a mean i
 *Question Development –* Development of the review question (initially suggested by the Swedish Environmental Protection Agency, SEPA) was undertaken by a team of scientists in consultation with stakeholders. Any impact resulting from herbivory by reindeer or caribou (both *Rangifer tarandus*) from anywhere in their natural or introduced range was chosen to be included in the scope of the review. Herbivory in coniferous forests was excluded, however, since the review was to be focused on mountain and arctic regions.
 
 *Final Systematic Review Question –* What is the impact of reindeer/caribou (*Rangifer tarandus*) on mountain and arctic vegetation?
+
+![](images/Section-2-example-3.png)
 
 ## **Systematic Review or Systematic Map?**
 
@@ -270,7 +280,7 @@ Evidence Syntheses are driven by the question(s) they are trying to answer. Diff
 
 -   The general public
 
-Stakeholders can have a very important role in framing the review question. They can also help to establish the list of sources of evidence and search terms (e.g. by providing some of them, or checking the list for completeness). Involving many people at an early stage may be particularly critical if the findings are likely to be contested (Fazey et al. 2004). Some Review Teams have found it useful to hold stakeholder workshops, usually at the question formulation stage, and sometimes also during the Protocol drafting stage of the synthesis, and the additional costs of such meetings should be considered during the planning stage.
+Stakeholders can have a very important role in framing the review question. They can also help to establish the list of sources of evidence and search terms (e.g. by providing some of them, or checking the list for completeness). Involving many people at an early stage may be particularly critical if the findings are likely to be contested [@FAZEY2004_canmethodsappliedinmedicin]. Some Review Teams have found it useful to hold stakeholder workshops, usually at the question formulation stage, and sometimes also during the Protocol drafting stage of the synthesis, and the additional costs of such meetings should be considered during the planning stage.
 
 ## **Advisory Groups or Panels**
 

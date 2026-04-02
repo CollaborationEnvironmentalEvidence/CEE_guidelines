@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -305,6 +325,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The User and the Stakeholder Groups will have a very important role in the formulation of the review question, and in its phrasing but should not be directly involved in conducting the Evidence Synthesis. They may also help to establish the list of sources of evidence and search terms (by providing some of them, or checking the list for completeness). Involving many people at an early stage may be particularly critical if the findings are likely to be contested (Fazey et al.&nbsp;2004). However, particularly for a Systematic Review, stakeholder input needs to be carefully managed to avoid the question becoming too broad, complex or just impossible to answer (Stewart &amp; Liabo 2012). There are further opportunities throughout the review process for input from stakeholders, but as we shall see below, identifying and obtaining initial consensus on the question is crucial to the value of an evidence synthesis.</p>
 <p>Evidence syntheses can greatly benefit from engaging with stakeholders to ensure that inputs and outputs are of the greatest relevance and reliability to all interested parties. Stakeholder engagement should reflect the broader methodology of evidence synthesis in the sense that it be conducted in a reliable, transparent way that aims to be as verifiable and objective as possible. Objectivity and repeatability can seem difficult goals when working with people who may have strong and diverse views. But by aiming for transparency and clarity, stakeholder engagement can be a reliable and verifiable process: these are key tenets of the parallel process of evidence synthesis.</p>
 <p>The ways in which stakeholders can engage with a review are outlined in Figure 2.1. Stakeholder engagement can have a substantial impact on the reviewers, the review and the stakeholders, and reviewers should ensure they plan these activities carefully to ensure the do no harm and carefully consider the ethics of who and how they engage.</p>
+<p><img src="images/Fig-2.2-new.png" class="img-fluid"></p>
 <p><strong>Figure 2.1. Model of potential benefits of stakeholder engagement (Haddaway <em>et al</em>. 2017). Models shows direction of benefit with respect to stakeholders (green arrows benefit the review, orange arrows benefit the stakeholders) .</strong></p>
 <p>Stakeholder engagement should be seen as a continual process that begins at the planning stages and continues through to communication of review/map findings. Careful and continued stakeholder engagement can help to increase the relevance and salience of environmental research and reviewers should carefully consider how to do so before submitting their protocols to CEE.</p>
 </section>
@@ -355,11 +376,12 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>In the above example we started with a broad question with almost no structure and refined the question to a point where it contained structural elements, but not quite enough structure that would permit a meaningful Evidence Synthesis. This type of question (i.e.&nbsp;lacking some or all of the required structural key elements) is known as an&nbsp;<strong>open-framed question</strong>. Such questions are normally not answerable in a single experimental study and therefore not answerable through an aggregative synthesis of similar studies. Further refinement of the open-framed question provides a well-structured question amenable for Systematic Review and, since all necessary key elements are now clearly specified, this is known as a&nbsp;<strong>closed-framed question.</strong></p>
 <p>Breaking down open-framed to identify closed-framed questions can be a valuable exercise in a policy context. The process can identify basic units of evidence that can be accumulated through Systematic Review and subsequently combined to inform higher-level decisions. Pullin et al.&nbsp;(2009) have outlined a process adapted from the health sciences. Essentially two stages are involved as outlined in Figure 2.2. The first requires that potential strategies for addressing open-framed questions are identified and the second that potential interventions are considered that would help deliver each strategy. The effectiveness of these interventions can then be the focus of a Systematic Review. Systematic Mapping can be used to inform the first stage and address an open-framed question, whereas Systematic Reviews might subsequently consider the effectiveness of individual interventions.</p>
+<p><img src="images/Figure-2.1.png" class="img-fluid"></p>
 <p><strong>Figure 2.2. Relationship between a high-level open-framed policy question, potential generic solutions and individual interventions. After Pullin et al.&nbsp;(2009).</strong></p>
 </section>
 <section id="key-elements-of-questions-amenable-to-evidence-synthesis" class="level3" data-number="2.3.2">
 <h3 data-number="2.3.2" class="anchored" data-anchor-id="key-elements-of-questions-amenable-to-evidence-synthesis"><span class="header-section-number">2.3.2</span> <strong>Key elements of questions amenable to evidence</strong> s<strong>ynthesis</strong></h3>
-<p>Although Systematic Review methodology was initially developed to test the effectiveness of interventions, its use has broadened considerably and the methodology is now also used to address a range of different types of questions that may have different key elements. Those key-elements are essential for the planification and conduct of any evidence synthesis, as they are going to guide and structure all the steps of the process, from literature search to critical appraisal.</p>
+<p>Although Systematic Review methodology was initially developed to test the effectiveness of interventions, its use has broadened considerably and the methodology is now also used to address a range of different types of questions that may have different key elements. Those key-elements are essential for the planning and conduct of any evidence synthesis, as they are going to guide and structure all the steps of the process, from literature search to critical appraisal.</p>
 <p>The terminology widely used in evidence synthesis to define key-elements is referred as PICO or PECO, which describe Population, Intervention (or Exposure), Comparator and Outcomes. Other related question structures have been proposed and might be more applicable to some kinds of questions. SPICE (Setting, Perspective, Intervention, Comparator, Evaluation method) is an example that might be applicable to some questions suitable for CEE Systematic Reviews (see Booth 2004).</p>
 <p>The question illustrated in Table 2.2 is a comparative question. As such, it has four key elements which would need to be specified for it to be answerable (whether by a primary study or an Evidence Synthesis). These are: the population (P) of interest (endemic European birds); the exposure (E) of interest (motorways within habitat); the comparator (C) of interest (habitats without motorways); and the outcome (O) of interest (breeding success). This “PECO” type of question structure is very common. In cases where the exposure element is intentional, i.e.&nbsp;called an “intervention” (I), then the “PICO” acronym may be used instead, although PECO and PICO essentially indicate an identical question structure (Table 2.3).</p>
 <p>Another example, illustrating a PICO-type question is ’<strong>are marine protected areas effective at conserving commercial fish stocks?’</strong>&nbsp;In this case the key elements could be:</p>
@@ -498,14 +520,17 @@ ul.task-list li input[type="checkbox"] {
 <p><em>Question Development</em> – Terrestrial protected areas were considered distinct from marine in the context of human impacts. The Systematic Review would include established and new PAs and intrinsically linked development projects. All outcomes relating to measures of human wellbeing were deemed relevant. The commissioners decided that the target populations would include all local human populations living both within and around the PA, with ‘local’ being defined as broadly as up to and including a national level. A cutoff of 1992 was chosen for published studies, since all PAs had to conform to IUCN category guidelines established at the Convention on Biological Diversity in Rio de Janeiro, 1992.</p>
 <p><em>Final Systematic Review Question –</em> What are the human wellbeing impacts of terrestrial protected areas?</p>
 <p><em>Lesson Learnt –</em> With hindsight this question should be have been approached through systematic mapping, largely because of the many different ways that exist for measuring impact of human wellbeing.</p>
+<p><img src="images/box-2.2.1.png" class="img-fluid"></p>
 <p><strong>Example 2:</strong></p>
 <p><em>Concern/Problem&nbsp;–</em> Lowland peatland ecosystems constitute vast amounts of carbon storage relative to their geographical extent. Extraction and drainage of peat for fuel and agriculture can release greenhouse gases (GHG; CO<sub>­2</sub>, CH<sub>4</sub>&nbsp;and N<sub>2</sub>O) and other carbon stores, contributing to global warming. Rewetting and wetland restoration aim to ameliorate these destructive practices, but their effectiveness is uncertain. Whilst upland peat systems are relatively well-understood, no synthesis concerning lowland peats has been undertaken to date.</p>
 <p><em>Question Development –</em> The commissioners decided to focus the subject of a previous Systematic Review topic from all peatlands onto temperate and boreal regions and widen the scope from water level changes to all changes in land management. Carbon fluxes and greenhouse gases were kept as relevant outcomes.</p>
 <p><em>Final Systematic Review Question –</em> How are carbon stores and greenhouse gas fluxes affected by different land management on temperate and boreal lowland peatland ecosystems?</p>
+<p><img src="images/Section-2-example-2.png" class="img-fluid"></p>
 <p><strong>Example 3:</strong></p>
 <p><em>Concern/Problem –</em> What intensity of grazing should be recommended to conserve biodiversity whilst ensuring economic sustainability of reindeer herding? An early view that reindeer were responsible for overgrazing in northern parts of Scandinavia has changed, with current opinion being that the observed overgrazing was localized and short-lived. In contrast, some are now concerned that grazing levels are insufficient to control mountain vegetation. Stakeholders identified a need to clarify a vague political dogma and goal; that the Swedish mountains should be characterised by grazing.</p>
 <p><em>Question Development –</em> Development of the review question (initially suggested by the Swedish Environmental Protection Agency, SEPA) was undertaken by a team of scientists in consultation with stakeholders. Any impact resulting from herbivory by reindeer or caribou (both&nbsp;<em>Rangifer tarandus</em>) from anywhere in their natural or introduced range was chosen to be included in the scope of the review. Herbivory in coniferous forests was excluded, however, since the review was to be focused on mountain and arctic regions.</p>
 <p><em>Final Systematic Review Question –</em> What is the impact of reindeer/caribou (<em>Rangifer tarandus</em>) on mountain and arctic vegetation?</p>
+<p><img src="images/Section-2-example-3.png" class="img-fluid"></p>
 </section>
 </section>
 <section id="systematic-review-or-systematic-map" class="level2" data-number="2.4">
@@ -608,13 +633,18 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Non-governmental or civil society organisations</p></li>
 <li><p>The general public</p></li>
 </ul>
-<p>Stakeholders can have a very important role in framing the review question. They can also help to establish the list of sources of evidence and search terms (e.g.&nbsp;by providing some of them, or checking the list for completeness). Involving many people at an early stage may be particularly critical if the findings are likely to be contested (Fazey et al.&nbsp;2004). Some Review Teams have found it useful to hold stakeholder workshops, usually at the question formulation stage, and sometimes also during the Protocol drafting stage of the synthesis, and the additional costs of such meetings should be considered during the planning stage.</p>
+<p>Stakeholders can have a very important role in framing the review question. They can also help to establish the list of sources of evidence and search terms (e.g.&nbsp;by providing some of them, or checking the list for completeness). Involving many people at an early stage may be particularly critical if the findings are likely to be contested <span class="citation" data-cites="FAZEY2004_canmethodsappliedinmedicin">(<a href="references.html#ref-FAZEY2004_canmethodsappliedinmedicin" role="doc-biblioref">Fazey et al. 2004</a>)</span>. Some Review Teams have found it useful to hold stakeholder workshops, usually at the question formulation stage, and sometimes also during the Protocol drafting stage of the synthesis, and the additional costs of such meetings should be considered during the planning stage.</p>
 </section>
 <section id="advisory-groups-or-panels" class="level2" data-number="2.7">
 <h2 data-number="2.7" class="anchored" data-anchor-id="advisory-groups-or-panels"><span class="header-section-number">2.7</span> <strong>Advisory Groups or Panels</strong></h2>
 <p>Review Teams and Commissioners may wish to use an Advisory Group or Panel to help make decisions about the conduct of the review. Advisory groups can include methodological and subject area expertise, and include potential review users. They are Stakeholders who are willing to commit time to help the review group make necessary but difficult decisions in relation to the review topic at key times in its development to help ensure that&nbsp;the evidence synthesis&nbsp;is relevant and as free from bias as possible. They can be help particularly in framing the review question or refining the extent of a review once the size of the relevant literature becomes known. Such decisions can benefit from input from a variety of perspectives. However, Advisory Group members should be asked to declare conflicts of interest in the same way as Review team members. The role of any Advisory Group should be clearly specified in the Protocol, including at which points in the evidence synthesis they will be involved and how.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-FAZEY2004_canmethodsappliedinmedicin" class="csl-entry" role="listitem">
+Fazey, I., J. G. Sailsbury, D. B. Lindenmayer, J. Macdonald, and R. Douglas. 2004. <span>“Can Methods Applied in Medicine Be Used to Summarize and Disseminate Conservation Research?”</span> <em>Environmental Conservation</em> 31: 190–98.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
