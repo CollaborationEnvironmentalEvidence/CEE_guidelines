@@ -20,9 +20,7 @@ The need for evidence relating to a question of concern (e.g. to policy or pract
 
 The question addressed by a CEE evidence synthesis often arises from a concern, a challenge, a conflict or a decision that needs to be taken, for which the decision-makers would like to be informed by the best available evidence. Often, decision-makers would like to know how to intervene to solve a problem or what evidence is available to help them make the best decision. They may like to know whether evidence has accumulated, studies or trials have been conducted, or effects have been measured.
 
-Questions arise in many forms and examples of common generic question types are listed in Table 2.1. Examples of scenarios that might generate a need for evidence are shown in Box 2.1.
-
-**Table 2.1. Common types of policy problems and concerns in Environmental Management**
+Questions arise in many forms and examples of common generic question types are listed in @tbl-commontype. Examples of scenarios that might generate a need for evidence are shown in Box 2.1.
 
 |  |  |
 |------------------------------------|------------------------------------|
@@ -36,6 +34,8 @@ Questions arise in many forms and examples of common generic question types are 
 | Optimal ecological or biological state | What is the desirable state of forest in terms of the distribution of deadwood and other biodiversity-relevant structures? This addresses values and philosophical approaches; the need for evidence would relate to the relationship between the state and its outcomes (e.g. ecosystem services) |
 | Opinion or perception | Is there public support for badger culling in the UK? Datasets for this type of question may come from opinion polls or surveys, rather than experimental studies. |
 | Ecological or geographical distribution | How has the distribution and abundance of rabies in fox populations changed in the last 10 years? Here one could ask if there is any evidence of change and whether it is homogeneous across spatial and temporal scales and species. |
+
+**: Common types of policy problems and concerns in Environmental Management** {#tbl-commontype} 
 
 **Box 2.1. Examples of initial concerns or problems that might generate potential questions for evidence synthesis but are not yet sufficiently well defined.**
 
