@@ -1,0 +1,84 @@
+---
+title: "Guidance on the conduct and standards for ‘Rapid Review’ of evidence"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+bibliography: refs.bib
+params:
+  last_updated: ""
+execute:
+  echo: false
+---
+
+### 10.1 Background
+
+CEE recognises that, although ideally the methodological standard for evidence synthesis is the Systematic Review, this approach can be resource intensive and take in excess of one year, and there are circumstances in which a more rapid method is required that uses the highest standards possible in the time and resources available.
+
+Here we define ‘Rapid Reviews’ as evidence syntheses that would ideally be conducted as a Systematic Reviews, but where methodology needs to be accelerated and potentially compromised to meet the demand for evidence on timescales that preclude Systematic Review conducted to full CEE or equivalent standards.
+
+Rapid Review is a methodology, utilizing components and standards of systematic review where possible, that has been developed for time sensitive evidence syntheses. Methods of systematic review are typically adapted to take less than 6 months and are more relevant to short timescales demanded by some ‘policy windows’ and emergency decision-making.
+
+In order to support such methodology the CEE, in parallel with other evidence synthesis organisations, has developed appropriate guidance for Rapid Reviews of evidence when required to improve evidence-informed decision making.
+
+This guidance follows the same process-based structure as the CEE Guidance and Standards for Systematic Reviews. The latter provides details for how to plan and conduct a systematic review in environmental management. The following text provides guidance on the standards that might be modified to ‘speed up’ the process, and the consequent increased risk of bias in conducting a ‘rapid review’.
+
+The following are intended to provide guidance on where standards of conduct may reasonably be expected to differ (or be maintained) for Rapid Reviews compared with Systematic Reviews and should be used as a supplement to the main CEE guidance. Some of these differences carry the increased risk of bias and this risk should be fully discussed with stakeholders in the planning stage.\
+Careful consideration of the difference in standards of Rapid Review from Systematic Review should enable relatively easy ‘upgrading’ and updating to a Systematic Review should there be a demand in the future. Resources should not be wasted on Rapid Reviews that cannot subsequently be used as a basis for conducting a Systematic Review.
+
+### 10.2 Identifying the Need for Evidence, Determining the Evidence Synthesis Type, and Establishing a Review Team
+
+By definition ‘Rapid Reviews’ are needed to respond to time-limited evidence needs and therefore the relevant stakeholders should be evident from the outset and should be involved in the planning, and particularly the question setting, eligibility criteria and outcomes of interest. The need for a rapid approach should be fully justified in the context of time-limited evidence need.
+
+The review question should be sufficiently focussed to allow for specific eligibility criteria that will allow a relatively specific search strategy. Limit the number of interventions/exposures and outcomes. Try and use a narrow definition of your population (avoid lumping that creates too diverse a population).
+
+The Review Team should have the necessary skills and experience to conduct a review in short time. Specialists such as information scientists and statisticians should be involved from the outset.
+
+### 10.3 Planning a Rapid Review
+
+The review team should consider the evidence needs and how sensitive these, and the policy/research problem being addressed, are to bias. The approach to rapid review may differ depending on how important it is to provide a precise and unbiased answer. Questions that do not require a precise and unbiased answer may be addressed using a more abbreviated review process than those where the need to optimise precision and minimise bias is paramount.
+
+In crisis or emergency situations there may be no flexibility in the resources available. However, if a review is being conducted to fit a specific timescale where there may be some flexibility, one option may be to extend the review timescale to ensure that the review answer is appropriate in terms of its degree of precision and bias. For example, if an opportunity exits, the speed /rigor trade-off could be discussed with the review commissioner.
+
+### 10.4 Writing and Registering a Protocol
+
+A protocol should be written and posted on [PROCEED](https://www.proceedevidence.info/) or site with similar editorial standards (e.g. PROSPERO) in advance of conducting the review.
+
+Post hoc changes to the protocol may be needed to streamline the process (e.g. narrowing eligibility criteria) but should be fully documented in the review report.
+
+### 10.5 Conducting a Search
+
+Search strategy – Some ways of limiting the literature include date limitations, language limitations, geographical limitations (all should be justified).
+
+Speed of searching can be improved by limiting sources to key databases. However, a restriction in the range of sources searched may be a false economy if key literature is missed that subsequently has to be identified, obtained and included later in the decision-making process. Careful consideration of which sources to search is therefore essential. Stakeholders should be consulted on the need for searching specialist sources or grey literature. Using reference lists of existing reviews should be considered to supplement database searches.
+
+Use available software to record and manipulate results of search, deduplicate etc.
+
+### 10.6 Eligibility Screening
+
+Use available software packages that enable you to organise and record your screening process (e.g CADIMA). If your search lacks specificity and captures large numbers of irrelevant articles, consider using machine learning software to prioritize articles for screening (e.g. Colandr or Rayyan).
+
+Dual screening of all articles should be conducted where resources permit. Where dual screening is not feasible then as many references as possible should be dual-screened and the consistency of screening decisions should be tested. Reviewer consistency should be assessed by independently applying the eligibility criteria by more than one reviewer to as large a sample as possible of the references screened on title and abstract and the studies screened on full text.
+
+If appropriate, eligibility criteria can place emphasis on higher validity study designs (or use a hierarchical approach in later stages). Replicability of eligibility decisions should be measured and reported and all disagreements between reviewers discussed in the context of review question and evidence needs so that the resolutions informed subsequent assessments.
+
+### 10.7 Data Coding and Data Extraction
+
+Use a predetermined data extraction form, checked with stakeholders, so as to maximise consistency of extraction. Plan to check consistency of extraction between two independent reviewers and resolution of differences using a sample of justified size, so that the remainder can be extracted by a single reviewer. Only extract data that are necessary for the synthesis. All coded and extracted data should be made available in a spreadsheet just as in systematic reviews.
+
+###  **10.8 Critical Appraisal of Study Validity**
+
+Use a risk of bias tool for study validity assessment. Limit risk of bias ratings to those relevant to the outcomes of interest to your stakeholders. Plan to check consistency of bias rating between two independent reviewers and resolution of differences, using a sample of justified size, so that the remainder can be rated by a single reviewer. All study validity decisions should be fully reported
+
+### 10.9 Data Synthesis
+
+Data synthesis methods (e.g. meta-analysis) should be predefined in the protocol. Same standards for synthesis as an SR. Study validity assessments should inform the data synthesis, as they would in a full SR. Appropriate sensitivity analyses and tests for publication bias should be performed and reported.\
+Consider investigating impact of review rigor on the meta-analysis (or narrative synthesis), e.g. conduct sensitivity analysis on those studies that were screened/extracted/validity assessed by one versus two reviewers? If one reviewer had introduced substantive error this might be detected.
+
+### 10.10 Interpreting Findings and Reporting Conduct
+
+Same standards are expected as for an SR but limitations of the review due to rapid conduct methods should be fully considered in terms of risk of bias (both predicted direction and estimated magnitude of any bias) resulting from the modifications to Systematic Review methodology (if possible, the predicted direction and the estimated magnitude of any bias).\
+ROSES template for reporting conduct of Systematic Reviews should be used.
+
+[Return to the Table of Contents](https://environmentalevidence.org/information-for-authors/table-of-contents-page/)

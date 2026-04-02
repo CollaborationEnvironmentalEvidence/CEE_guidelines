@@ -1,0 +1,31 @@
+project:
+  type: book
+
+book:
+  title: "CEE Guidelines"
+  author: ""
+  date: ""
+  chapters:
+    - index.qmd
+    - AimsScope.qmd
+    - Chapter_1.qmd
+    - Chapter_2.qmd
+    - Chapter_3.qmd
+    - Chapter_4.qmd
+    - Chapter_5.qmd
+    - Chapter_6.qmd
+    - Chapter_7.qmd
+    - Chapter_8.qmd
+    - Chapter_9.qmd
+    - Chapter_10.qmd
+    - references.qmd
+
+bibliography: refs.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+  epub:
+    cover-image: cover.png

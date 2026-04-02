@@ -1,0 +1,16 @@
+---
+title: "References"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+bibliography: refs.bib
+params:
+  last_updated: ""
+execute:
+  echo: false
+---
+
+::: {#refs}
+:::
