@@ -12,7 +12,7 @@ execute:
   echo: false
 ---
 
-### **Options for engaging with CEE**
+## **Options for engaging with CEE**
 
 CEE resources for planning, registering and conducting an evidence synthesis are free for authors, funders and other stakeholders to use. There are 3 basic levels of engagement with CEE.
 
@@ -22,7 +22,7 @@ CEE resources for planning, registering and conducting an evidence synthesis are
 
 3.  Fully engage with CEE to register and publish your evidence synthesis to CEE standards. This will involve registering your Protocol in PROCEED and publishing (subject to peer review) your evidence synthesis in *Environmental Evidence.* The latter involves an Article Processing Charge (see the journal website for latest details on price and potential waivers). Authors committing to the CEE process also have the option to submit their protocol for publication in *Environmental Evidence* (subject to peer review and in addition to registration in PROCEED). This option will involve a separate Article Processing Charge.
 
-### **Planning an evidence synthesis to CEE Standards**
+## **Planning an evidence synthesis to CEE Standards**
 
 To meet CEE standards for the conduct of evidence syntheses the Review Team will need to establish an a priori protocol detailing how they will conduct each stage of the evidence synthesis. The protocol sets out how the question was formulated and how each stage of the synthesis will be conducted and is submitted for registration in PROCEED in advance of conducting the synthesis. The initial steps that aid in planning the conduct are described in subsequent sections. Here we describe some initial planning steps followed by guidance on the structure of the protocol itself.
 
@@ -30,7 +30,7 @@ To meet CEE standards for the conduct of evidence syntheses the Review Team will
 
 CEE, along with partner organisations, now provides guidance and standards for reporting the use of Artificial Intelligence (AI) in conducting evidence syntheses. If you are planning to use AI in any stage of your evidence synthesis please read our latest guidance [here.](https://environmentalevidence.org/artificial-intelligence-reporting-guidance/)
 
-### **Scoping the evidence**
+## **Scoping the evidence**
 
 Before the commencement of an evidence synthesis, it is essential that some ‘scoping’ is undertaken to guide the construction of a comprehensive and appropriate protocol, and to provide an indication of the likely form of the synthesis and thus facilitate resource planning. In certain circumstances, it may not be efficient to commit to a synthesis without some prior estimation of its value in terms of the likely extent and reliability of its findings. In addition, when scoping a Systematic Review, an estimate of the type of data (quantitative, qualitative) will be needed to inform the type of data synthesis that might be appropriate.
 
@@ -48,13 +48,13 @@ Scoping may be undertaken by the commissioning organisation, by the Review Team,
 
 The expected output from a scoping exercise is an estimate of the quantity of evidence, and a characterisation of the likely evidence base, pertaining to the question. Scoping may lead to reconsideration of the review question and scope to meet the available resources. The extent of investment in scoping required to meet CEE standards will differ with each evidence synthesis. Planning of specific stages of a synthesis is covered in later sections.
 
-### **Estimating resource requirements**
+## **Estimating resource requirements**
 
 Whilst the process of scoping may seem like a time-consuming one, the benefits can be considerable and this early investment will allow the development of a comprehensive protocol as well as improve the focus and efficiency of the review. Scoping should provide an estimate of the timeline of the review and team effort required so that a realistic budget can be prepared or the likely costs compared with the available resources. Claims that rigorous evidence syntheses inevitably take a long time (years rather than months) is largely a myth. It is true that many evidence syntheses do take years to complete, but this is almost always due to lack of sufficient planning, synthesis skills, or limitations of resources, and not due to the methodology itself. With good planning (including adequate resources) and a skilled Review Team, alongside a committed stakeholder group, evidence syntheses can be completed in months and this time is decreasing as more tools are becoming available to help speed up key stages, such as screening.
 
-### **Writing and registering a CEE-standard protocol**
+## **Writing and registering a CEE-standard protocol**
 
-#### **Purpose of the protocol**
+### **Purpose of the protocol**
 
 CEE evidence syntheses require the registration of their protocol (project plan) as an independent document, before the synthesis is conducted (See Section 3.1). There are several reasons for doing so:
 
@@ -68,7 +68,7 @@ CEE evidence syntheses require the registration of their protocol (project plan)
 
 -   The protocol enables explicit and compulsory recording of any change that may occur during the conduct of the synthesis that would not have been foreseen. This is particularly important to ensure the confidence of the consumers, commissioners and stakeholders about the reasons for changes.
 
-#### **Developing and writing a protocol**
+### **Developing and writing a protocol**
 
 To develop and write a protocol that encompasses all aspects of the subsequent (planned) evidence synthesis, specific sections are required in order to guide the authors and make sure all components of the project have been carefully considered.
 
@@ -82,7 +82,7 @@ Protocols are plans of conduct and can rarely be fully comprehensive. They are j
 
 As a general rule, a protocol should set out the plan for a single report (a Systematic review or a Systematic map). Exceptionally, where there is a strong logical case made, a single Protocol may set out a plan for multiple reports. This should be anticipated and fully explained in the protocol and should not be a post-hoc decision. Whether the multiple report route is permissible will be decided by the CEE Editorial Boards and is a trade-off between the efficiency provided by the publication of one protocol and the legitimacy and feasibility of combining several evidence syntheses together.
 
-#### **Format for CEE Protocols**
+### **Format for CEE Protocols**
 
 Templates for registration of protocols are available in PROCEED. The format for submitting protocols to Environmental Evidence are similar and can be found on the journal website by following the links below.
 

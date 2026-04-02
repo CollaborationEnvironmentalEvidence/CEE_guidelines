@@ -14,7 +14,7 @@ execute:
 
 For CEE Standards for conduct and reporting of data coding and extraction [click here](https://environmentalevidence.org/standards-table/)
 
-### **6.1 Background**
+## **Background**
 
 Systematic Reviews and Systematic Maps are based on data that are extracted systematically and transparently from each eligible study using procedures that are sufficiently well documented to allow other reviewers to obtain the same data from the same studies. The term ‘data’ is used here to mean any information about (or deriving from) a study, including qualitative and quantitative data describing details of methods, location or setting, context, interventions, outcomes, and results (Higgins and Green 2011).
 
@@ -22,17 +22,17 @@ Data coding and data extraction refer to the process of systematically extractin
 
 Coded and extracted data should be recorded on carefully designed forms and undertaken with the appropriate synthesis in mind (see Section 8). Great care should be taken to standardise and document the processes of data coding and data extraction, the details of which should be reported to increase the transparency of the process. Because each review is different, data collection forms will vary across reviews. However, there are many similarities in the types of information that are important, and forms can be adapted from one review to the next. PICO/PECO key elements can help addressing the structure and components of the data coding and extraction forms. To some extent data coding and data extraction should be guided by a priori rules described in the protocol, but the complexity of the operation means a degree of flexibility may be maintained. Sensitivity analyses can be used to investigate the impact of coding and extracting data in different ways when there is doubt about the optimum method.
 
-### **6.2 Planning for data coding (Systematic Reviews and Maps) and data extraction (Systematic Reviews)**
+## **Planning for data coding (Systematic Reviews and Maps) and data extraction (Systematic Reviews)**
 
 A standard data coding or extraction form or table (e.g. spreadsheet) is usually developed and pilot-tested on full-text copies of the relevant subset of identified articles or ‘test-list’ constructed at the scoping stage. The table contains prompts to the reviewers to record all relevant information necessary to address the synthesis question, plus any additional information required for critical appraisal (see below) and any contextual information that will be required when writing the final evidence synthesis report. As with the eligibility screening step, the pilot test should involve at least two reviewers per article, so that any inconsistencies can be identified and corrected. Any issues with data presentation should be noted at this point, so that they may inform synthesis planning. For example, Review Teams may find that data are not consistently presented in a suitable format and that they may need to contact original authors for missing or raw data. The finally agreed draft data coding or extraction table should then be provided when the evidence synthesis protocol is submitted (see Section 4). Data coding and extraction tables for Systematic Reviews are likely to be more detailed than Data coding tables for Systematic Maps, reflecting the different principles of these evidence synthesis methods (as explained in Section 2). Data coding in Systematic Reviews should take into account capture of information on potential reasons (effect modifiers) for heterogeneity in outcomes.
 
-### 6.3 Assessing agreement between data coders/extractors
+## Assessing agreement between data coders/extractors
 
 An assessment of agreement between members of the review team tasked with data extraction during pilot-testing can help to ensure that the process is reproducible and reliable as it is for screening (Frampton et al 2017). Ideally, data extraction should be piloted on a sample of relevant studies at the planning stage (see Section 3). However, data extraction outlined in the protocol may need to be modified following assessment and re-tested to improve the agreement between team members.
 
 It is difficult to perform formal statistics on the repeatability of data extraction, but some attempt to verify repeatability should be made. Ideally a second reviewer should check all data extraction. If not possible then a second reviewer should at least check a random subset of the included studies to ensure that the a priori rules have been applied or the rationale of deviations explained. Randomly checking team members’ interpretation of data extraction in the protocol acts as a check on data hygiene and human error (e.g. misinterpretation of a standard error as a standard deviation). Where data extraction has limited repeatability it is desirable to maintain a record of exactly how the extraction was undertaken on a study by study basis. This maintains transparency and allows authors and other interested parties to examine the decisions made during the extraction process. Particular attention should be paid to the data used to generate effect sizes. For transparency, data extraction forms should be included in an appendix or supplementary material.
 
-### **6.4 Data coding**
+## **Data coding**
 
 Provided sufficient planning has been undertaken at the protocol stage, data coding should be a relatively straightforward task involving careful reading of the full text of each study. Variables or characteristics to be coded for each study should be included in a suitable spreadsheet prior to coding. Although the list of coded variables should have been discussed with stakeholders at the planning stage, there will usually be a need to refine definitions and discuss details of how each variable should be coded once the studies are read at full text. Decisions taken at this stage should be fully reported.
 
@@ -42,7 +42,7 @@ For Systematic Maps, some of the variables may be used to sort studies into subg
 
 ##### **Table 6.1 Example of a coding sheet for a Systematic Map on human health impacts resulting from exposure to alien species in Europe (Bayliss et al 2017)**
 
-### 6.5 Data extraction
+## Data extraction
 
 When adapting or designing a data extraction form, review authors should first consider how much information should be collected. Extracting too much information can lead to forms that are longer than original study reports and can be very wasteful of time. Extraction of too little information, or omission of key data, can lead to the need to return to study reports later in the review process.
 
@@ -71,7 +71,3 @@ At this stage, it may be necessary to exclude studies that are seemingly relevan
 In some cases, where the information required is not presented and cannot be obtained from authors, data can be converted into an appropriate form without problems. For example, it is relatively straightforward to substitute standard deviation for standard errors, confidence intervals, t-values, or a one-way F-ratio based on two groups (Lipsey & Wilson 2001, Deeks et al. 2005). Where missing data cannot be substituted, it can be imputed by various methods. Imputation is a generic term for filling in missing data with plausible values. These are commonly derived from average or standardised values (Deeks et al. 2005), but also from bootstrapped confidence limits (Gurevitch & Hedges 2001) or predicted values from regression models (Schafer 1997). Alternatively, data points can be deleted from some analyses, particularly where covariates of interest are missing. Such pragmatic imputation or case deletion should be accompanied by sensitivity analyses to assess its impact.
 
 The impacts of imputation or case deletion can be serious when they comprise a high proportion of studies in an analysis. Case deletion can result in the discarding of large quantities of information and can introduce bias where incomplete data differ systematically from complete (Schafer 1997). Likewise, imputing average values or predicted values from regressions distorts covariance structure resulting in misleading p-values, standard errors and other measures of uncertainty (Schafer 1997). Where more than 10% of a data set is missing serious consideration should be given to these problems. More complex imputation techniques are available (see Schafer 1997) and should be employed in consultation with statisticians. If this is not possible, the results should be interpreted with great caution and only presented alongside the sensitivity analysis. Section 9 discusses data analysis in greater detail.
-
-[Continue to Section 7 – Critical appraisal of study validity](https://environmentalevidence.org/information-for-authors/7-critical-appraisal-of-study-validity/)
-
-[Return to the Table of Contents](https://environmentalevidence.org/information-for-authors/table-of-contents-page/)

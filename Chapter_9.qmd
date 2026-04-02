@@ -12,11 +12,7 @@ execute:
   echo: false
 ---
 
-## 
-
-*Last updated: September 25th 2022*
-
-### **9.1 The interpretation of evidence syntheses**
+## **The interpretation of evidence syntheses**
 
 CEE evidence synthesis methodologies seek to collate and synthesise data in order to present reliable evidence in relation to the review question. The strength of the evidence base and implications of the results for decision-making require careful consideration and interpretation. The discussion and conclusions may consider the implications of the evidence in relation to practical decisions, but the decision-making context may vary, leading to different decisions based on the same evidence. Authors should, where appropriate, explicitly acknowledge the variation in possible interpretation and simply present the evidence so as to inform rather than offer advice. Recommendations that depend on assumptions about resources and values should be avoided (Khan et al. 2003, Deeks et al. 2005).
 
@@ -24,7 +20,7 @@ Deeks et al (2005) offer the following advice that is of relevance here. Authors
 
 Review authors, and to a lesser extent end-users, may be tempted to reach conclusions that go beyond the evidence that is reviewed or to present only some of the results. Authors must be careful to be balanced when reporting on and interpreting results. For example, if a ‘positive’ but statistically non-significant trend is described as ‘promising’, then a ‘negative’ effect of the same magnitude should be described as a ‘warning sign’. Other examples of unbalanced reporting include one-sided reporting of sensitivity analyses or explaining non-significant positive results but not negative ones. If the confidence interval for the estimate of difference in the effects of interventions overlaps the null value, the analysis is compatible with both a true beneficial effect and a true harmful effect. If one of the possibilities is mentioned in the conclusion, the other possibility should be mentioned as well and both should be given equal consideration in discussion of results. One-sided attempts to explain results with reference to indirect evidence external to the review should be avoided. Considering results in a blinded manner can avoid these pitfalls (Deeks et al. 2005). Authors should consider how the results would be presented and framed in the conclusions and discussion if the direction of the results was reversed.
 
-#### **9.1.1 Limitations of an evidence synthesis**
+### **Limitations of an evidence synthesis**
 
 Biases can occur in the evidence synthesis process, which do not impair the raw data themselves but may affect the findings of the synthesis (through a biased sample of articles) and should be fully considered and reported (see review in Borenstein et al. 2009). For example:
 
@@ -44,13 +40,13 @@ Biases can occur in the evidence synthesis process, which do not impair the raw 
 
 All these biases can be considered when reporting ‘limitations of the evidence synthesis’ and several methods exist to quantify their impacts on the results (Borenstein et al. 2009).
 
-#### **9.2 Reporting conduct of evidence syntheses**
+## **Reporting conduct of evidence syntheses**
 
 CEE standards require a high level of reporting of the conduct of evidence syntheses so as to ensure high transparency and repeatability allowing others to test replicability of findings.
 
 Each of the conduct Section (5-9) has guidance on reporting. In addition CEE now recommends using the RepOrting standards for Systematic Evidence Syntheses (ROSES) checklist (Haddaway et al. in press) as this will be used by editors and peer reviewers when appraising reports.
 
-#### **9.3 Reporting findings of evidence syntheses**
+## **Reporting findings of evidence syntheses**
 
 Evidence Syntheses are most often conducted to assess available evidence of effectiveness or of impact. In so doing, Systematic Reviews (not SMs) assess the strength of a causal inference (Hill 1971). Aspects that may be reported in the conclusion section include:
 
@@ -66,7 +62,7 @@ In a review concerning the impacts of liming streams and rivers on fish and inve
 
 There is a range of approaches to grading the strength of evidence presented in health-related reviews, but there is no universal approach (Deeks et al. 2005). We suggest that authors of reviews in environmental management explicitly state weaknesses associated with each of the aspects above, but the overall impact they make on conclusions can only be considered subjectively.
 
-### **9.3.1 Implications for policy and practice**
+### **Implications for policy and practice**
 
 A key objective of Systematic Review is to inform decision-makers of the implications of the best available evidence relating to a question of concern, and enable them to place this evidence in context, in order to make a decision on the best course of action. Providing evidence that increases capacity to predict the outcomes of alternative actions should lead to better decision making.\
 End-users will need to decide, either implicitly or explicitly, how applicable the evidence presented in a Systematic Review is to their particular circumstances (Deeks et al. 2005). This is particularly critical in environmental management where many factors may vary between sites and it seems likely that many interventions/actions will vary in their effectiveness/impact depending on a wide range of potential environmental variables. Authors should therefore highlight where the evidence is likely to be applicable and equally importantly where it may not be applicable with reference to variation between studies and study characteristics (see 8.3 External validity).
@@ -75,11 +71,11 @@ Clearly, variation in the ecological context and geographical location of studie
 
 Where review authors identify predictable variation in the relative effect of the intervention or exposure in relation to the specified reasons for heterogeneity, these should be highlighted. However, these relationships require cautious interpretation (because they are only correlations), particularly where sample sizes are small, data points are not fully independent and multiple confounding occurs. **When reporting implications of the review findings for policy and practice, the emphasis should be on objective information and not on subjective advocacy.**
 
-### 9.3.2 Implications for research
+### Implications for research
 
 Rather like primary scientific studies, most Systematic Reviews will generate more questions than they answer. Knowledge gaps will be frequent, as will areas where the quality of science conducted to date is inadequate. In conducting an Systematic Review, critically appraising the quality of existing studies and attempting to assess the available evidence in terms of its fitness for purpose, reviewers should be able to draw conclusions concerning the need for further research. This need may simply be reported in the form of knowledge gaps but may often consist of recommendations for the design of future studies that will generate data of sufficient quality to improve the evidence base and decrease the uncertainty surrounding the question.
 
-### 9.4 Format for CEE Reports
+## Format for CEE Reports
 
 The format for submitting full reports can be found on the Environmental Evidence website by following the links below:
 
@@ -87,7 +83,7 @@ For [Systematic Maps](https://environmentalevidencejournal.biomedcentral.com/sub
 
 For [Systematic Reviews](https://environmentalevidencejournal.biomedcentral.com/submission-guidelines/preparing-your-manuscript/systematic-review)
 
-### 9.4.1 Additional files
+### Additional files
 
 To maximise transparency Systematic Reviews should normally be supported by a number of supplementary materials made available in additional files linked from the main text. Authors should refer to ROSES for guidance on what should be reported. The following is a minimal list of expected information (note other additional files may be provided depending on the size and complexity of the synthesis):
 
@@ -96,6 +92,4 @@ To maximise transparency Systematic Reviews should normally be supported by a nu
 3. A list of articles that could not be obtained at full text: such articles are therefore potentially relevant but not fully screened.\
 4. Data extraction and validity assessment tables for Systematic Reviews or data coding tables for Systematic Maps; for example, Excel files with data extracted from each included study (this may be included in the main text if a small number of studies is included or may be provided in several files for larger Systematic Reviews).
 
-[Continue to Section 10 –Guidance on the conduct and standards for ‘Rapid Review’ of evidence](https://environmentalevidence.org/information-for-authors/10-guidance-on-the-conduct-and-standards-for-rapid-review-of-evidence/)
 
-[Return to the Table of Contents](https://environmentalevidence.org/information-for-authors/table-of-contents-page/)
