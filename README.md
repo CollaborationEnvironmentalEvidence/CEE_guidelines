@@ -1,7 +1,7 @@
 # CEE Living Guidelines for Evidence Synthesis in Environmental Management
 
 [![Quarto Publish](https://img.shields.io/badge/docs-online-brightgreen)](https://collaborationenvironmentalevidence.github.io/CEE_guidelines/)
-[![License](https://img.shields.io/badge/license-TBD-lightgrey)](#license)
+[![License](https://img.shields.io/badge/license-CC--BY%204.0-lightgrey)](LICENSE.md)
 [![DOI](https://img.shields.io/badge/DOI-pending-blue)](#how-to-cite)
 
 This repository hosts the **living version** of the *Guidelines and Standards for Evidence Synthesis in Environmental Management (Version 5.1)* developed by the Collaboration for Environmental Evidence (CEE).
@@ -85,9 +85,14 @@ Use the online version to navigate the full document.
 
 ## Outputs
 
-The guidelines are available in multiple formats:
+The guidelines will be available in multiple formats:
+
+Currently:
 
 * 🌐 Web version (recommended): interactive and easy to navigate
+
+Coming soon:
+
 * 📄 PDF: for citation and offline use
 * 📱 EPUB: for reading on tablets and e-readers
 
