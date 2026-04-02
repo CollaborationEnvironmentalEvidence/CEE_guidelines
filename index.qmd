@@ -1,7 +1,7 @@
 ---
 format: html
 ---
-# CEE Guidelines {.unnumbered}
+# Introduction {.unnumbered}
 
 These guidelines present best practice for the planning, conduct, and reporting of evidence syntheses in environmental management. They are developed to support researchers, practitioners, and decision-makers in producing evidence that is transparent, robust, and fit for purpose.
 

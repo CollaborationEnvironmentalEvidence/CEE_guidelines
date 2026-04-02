@@ -38,7 +38,7 @@ CEE operates a supportive policy for review teams undertaking Evidence Syntheses
 
 ## **Supplementary materials**
 
-The transparency of Evidence Syntheses is enhanced by the provision of a range of mandatory supplementary materials. Some can be provided as appendices whilst others may be posted as additional files on the review webpage. For a full checklist see Section 9.
+The transparency of Evidence Syntheses is enhanced by the provision of a range of mandatory supplementary materials. Some can be provided as appendices whilst others may be posted as additional files on the review webpage. For a full checklist see @sec-chapt9.
 
 ## **Further dissemination of findings**
 

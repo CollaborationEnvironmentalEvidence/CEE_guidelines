@@ -4,9 +4,9 @@
     "href": "index.html",
     "title": "CEE Guidelines",
     "section": "",
-    "text": "CEE Guidelines\nThese guidelines present best practice for the planning, conduct, and reporting of evidence syntheses in environmental management. They are developed to support researchers, practitioners, and decision-makers in producing evidence that is transparent, robust, and fit for purpose.",
+    "text": "Introduction\nThese guidelines present best practice for the planning, conduct, and reporting of evidence syntheses in environmental management. They are developed to support researchers, practitioners, and decision-makers in producing evidence that is transparent, robust, and fit for purpose.",
     "crumbs": [
-      "CEE Guidelines"
+      "Introduction"
     ]
   },
   {
@@ -16,7 +16,7 @@
     "section": "A living set of guidelines",
     "text": "A living set of guidelines\nEnvironmental evidence synthesis is a rapidly evolving field. New methods emerge, existing approaches are refined, and the expectations for transparency, reproducibility, and rigor continue to develop. Static guideline documents struggle to keep pace with this change.\nThese guidelines are therefore presented as living guidelines.\nA living guideline is not a fixed document, but an evolving resource that can be updated, improved, and refined over time. This approach allows:\n\nincorporation of methodological advances as they emerge\n\ncorrection and clarification of existing guidance\n\nresponsiveness to challenges identified by users and practitioners\n\ncontinuous improvement through community input\n\nRather than periodic, large revisions, updates can be made incrementally, ensuring that the guidance remains current and relevant.",
     "crumbs": [
-      "CEE Guidelines"
+      "Introduction"
     ]
   },
   {
@@ -26,7 +26,7 @@
     "section": "Open and collaborative development",
     "text": "Open and collaborative development\nThis version of the guidelines is hosted in an open repository to support transparent and collaborative development. Contributions are welcome from the evidence synthesis community.\nYou can contribute by:\n\nsuggesting improvements or clarifications\n\nidentifying gaps or inconsistencies\n\nproposing updates based on new methodological developments\n\nThere are issue templates to help contributors make a contribution, and a detailed contribution guide.",
     "crumbs": [
-      "CEE Guidelines"
+      "Introduction"
     ]
   },
   {
@@ -36,7 +36,7 @@
     "section": "Using these guidelines",
     "text": "Using these guidelines\nThe guidelines are structured as a series of chapters covering the key stages of evidence synthesis, from question formulation through to synthesis and reporting.\nUse the navigation bar to browse chapters, or start here:\n\nAims & Scope\n\nChapter 1\n\nChapter 2\n\nChapter 3\n\nChapter 4\n\nChapter 5\n\nChapter 6\n\nChapter 7\n\nChapter 8\n\nChapter 9\n\nChapter 10\n\nReferences",
     "crumbs": [
-      "CEE Guidelines"
+      "Introduction"
     ]
   },
   {
@@ -74,7 +74,7 @@
     "href": "Chapter_1.html#supplementary-materials",
     "title": "1  Process Summary: Registration, Publication and Dissemination of a CEE Evidence Synthesis",
     "section": "1.2 Supplementary materials",
-    "text": "1.2 Supplementary materials\nThe transparency of Evidence Syntheses is enhanced by the provision of a range of mandatory supplementary materials. Some can be provided as appendices whilst others may be posted as additional files on the review webpage. For a full checklist see Section 9.",
+    "text": "1.2 Supplementary materials\nThe transparency of Evidence Syntheses is enhanced by the provision of a range of mandatory supplementary materials. Some can be provided as appendices whilst others may be posted as additional files on the review webpage. For a full checklist see ?sec-chapt9.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Process Summary: Registration, Publication and Dissemination of a CEE Evidence Synthesis</span>"
     ]

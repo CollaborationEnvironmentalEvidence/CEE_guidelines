@@ -1,5 +1,4 @@
 ---
-title: "Interpreting findings and reporting conduct"
 format:
   html:
     toc: true
@@ -11,8 +10,9 @@ params:
 execute:
   echo: false
 ---
+# Interpreting findings and reporting conduct {sec-chapt9}
 
-## **The interpretation of evidence syntheses**
+## **The interpretation of evidence syntheses** 
 
 CEE evidence synthesis methodologies seek to collate and synthesise data in order to present reliable evidence in relation to the review question. The strength of the evidence base and implications of the results for decision-making require careful consideration and interpretation. The discussion and conclusions may consider the implications of the evidence in relation to practical decisions, but the decision-making context may vary, leading to different decisions based on the same evidence. Authors should, where appropriate, explicitly acknowledge the variation in possible interpretation and simply present the evidence so as to inform rather than offer advice. Recommendations that depend on assumptions about resources and values should be avoided (Khan et al. 2003, Deeks et al. 2005).
 
