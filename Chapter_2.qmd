@@ -17,9 +17,9 @@ execute:
   echo: false
 ---
 
-# Identifying the need for evidence, determining the evidence synthesis type, and establishing a Review Team {#sec-chapt2}
+# Identifying the need for evidence, determining the evidence synthesis type, and establishing a Review Team
 
-## **Determining the need for evidence**
+## **Determining the need for evidence** {#sec-chapt2}
 
 In trying to find solutions to problems, the cause of a change, or to decide among alternative interventions to achieve desired outcomes, individuals or groups may identify a need for evidence. This chapter provides generic guidance on how to identify evidence needs to inform decision making. In doing so we provide some guidance on the initial steps that may, or may not, result in the planning and commissioning of a CEE Evidence Synthesis. It is not our intention here to describe the policy process or how management decisions are made.
 
@@ -30,7 +30,7 @@ The question addressed by a CEE evidence synthesis often arises from a concern, 
 Questions arise in many forms and examples of common generic question types are listed in @tbl-commontype. Examples of scenarios that might generate a need for evidence are shown in @box-initial-concerns.
 
 |  |  |
-|----|----|
+|------------------------------------|------------------------------------|
 | **Answer being sought** | **Example question** |
 | Greater understanding or predictive power | What is the role of biodiversity in maintaining specific ecosystem functions (e.g. biogeochemical cycles)? Here, a specific problem may be assessed to know whether it is really a problem and, if so, how big it is, and what are the significant drivers of changes. |
 | Impacts of exposure to anthropogenic stressors | What is the impact of wind farm installations on bird populations? This type of request often addresses the effect of an exposure to a device, management practice or other stressor (e.g. pollutant) on biodiversity. |
@@ -101,7 +101,7 @@ As can be seen from the examples in Box 1, initial questions arising from discus
 In the process of **question formulation** an initial, broad, policy question is broken down into more specific questions that are sufficiently well-structured to be amenable to evidence synthesis. In the case of the example of the impacts of roads on wildlife above, a refined version might be “what is the impact of motorways on populations of endemic bird species in Europe?” This question clearly has some structure to it now, as some key elements are specified, meaning that we can see which types of evidence relating to roads and birds we should be looking for. However, more thought needs to be given to this question for it to make full sense. If we are aiming to assess an impact of a motorway, we would need to have a comparator condition as a reference. This key element is rarely explicitly specified in the question. But we could further refine the question, for example by stating that we would require primary studies that had compared bird-habitats containing motorways against similar bird-habitats without motorways. We would also need to specify the “outcome” key element (e.g. population abundance, or breeding success). The resulting question may then be: What is the impact of habitats containing motorways on the breeding success of endemic European birds, as compared to habitats without motorways? In principle, this question would be amenable to an evidence synthesis @tbl-roads.
 
 |  |  |  |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | **Question** | **Key elements** | **Question type** |
 | Starting question: What is the impact of roads on wildlife? | None specified other than roads (vague), wildlife (vague) and impact (vague) | Open-framed (possible for Systematic Mapping but unsuitable for Systematic Review) |
 | Refined question: What is the impact of motorways on populations of endemic bird species in Europe? | Motorways (=exposure), European endemic bird species (=population); but comparator and outcome not specified | Open-framed (suitable for Systematic Mapping but unsuitable for Systematic Review) |
@@ -134,7 +134,7 @@ C = Area with no protection or limited protection
 O = Relative change in fish populations
 
 |  |  |
-|----|----|
+|------------------------------------|------------------------------------|
 | **Question element** | **Definition** |
 | Population (of subjects) | Unit of study (e.g. ecosystem, species) that should be defined in terms of the statistical populations of subject(s) to which the intervention will be applied. |
 | Intervention/exposure | Proposed management regime, policy, action or the environmental variable to which the subject populations are exposed. |
@@ -144,7 +144,7 @@ O = Relative change in fish populations
 : **Elements of a reviewable PICO/PECO question: normally a permutation of ‘does intervention/exposure I/E applied to populations of subjects P produce a different amount of a measurable outcome O when compared with comparator C?** {#tbl-peco}
 
 |  |  |  |  |
-|----|----|----|----|
+|------------------|------------------|------------------|------------------|
 | **Question Type** | **Question** | **Question Elements** | **Example Elements** |
 | Effect of intervention or exposure – “PECO” or “PICO” Structure | “What are the human wellbeing impacts of terrestrial protected areas?” (Pullin et al. 2013) | Population | Local human populations |
 | Intervention | Terrestrial protected areas/associated integrated development projects |  |  |
@@ -203,7 +203,7 @@ Decision makers may often seek more than just an aggregate answer (e.g. a mean i
 The approaches to planning and conducting Systematic Reviews and Systematic Maps are similar in many ways but as forms of evidence synthesis they differ in their outputs. Systematic Reviews usually aim answer a question by collating and synthesising findings of individual studies in order to produce an aggregate measure of effect or impact. Systematic Maps do not aim to answer a specific question, but instead collate, describe and map findings in terms of distribution and abundance of evidence, often configured in relation to different elements of a question [@GOUGH2012_anintroductiontosystematic; @james2016]. As shown in @tbl-key-aspects, both methods share the same initial steps and differ primarily in their analytical approaches and outputs.
 
 |  |  |  |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 |  | **Systematic Review** | **Systematic Map** |
 | **Protocol** | Mandatory | Mandatory |
 | **Systematic searching** | Mandatory | Mandatory |
