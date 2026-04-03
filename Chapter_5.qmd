@@ -1,5 +1,4 @@
 ---
-title: "Eligibility screening"
 format:
   html:
     toc: true
@@ -11,6 +10,8 @@ params:
 execute:
   echo: false
 ---
+
+# Eligibility screening {#sec-chapt5}
 
 For CEE Standards for conduct and reporting of article screening [click here.](https://environmentalevidence.org/standards-table/)
 

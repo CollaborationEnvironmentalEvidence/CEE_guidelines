@@ -1,5 +1,4 @@
 ---
-title: "Planning the conduct of an Evidence Synthesis"
 format:
   html:
     toc: true
@@ -12,7 +11,9 @@ execute:
   echo: false
 ---
 
-## **Options for engaging with CEE**
+# Planning the conduct of an Evidence Synthesis {#sec-chapt3}
+
+## **Options for engaging with CEE** {#sec-engage}
 
 CEE resources for planning, registering and conducting an evidence synthesis are free for authors, funders and other stakeholders to use. There are 3 basic levels of engagement with CEE.
 
@@ -56,7 +57,7 @@ Whilst the process of scoping may seem like a time-consuming one, the benefits c
 
 ### **Purpose of the protocol**
 
-CEE evidence syntheses require the registration of their protocol (project plan) as an independent document, before the synthesis is conducted (See Section 3.1). There are several reasons for doing so:
+CEE evidence syntheses require the registration of their protocol (project plan) as an independent document, before the synthesis is conducted (See @sec-engage). There are several reasons for doing so:
 
 -   Data are not evidence unless accompanied by a protocol and analysis.
 
@@ -86,6 +87,6 @@ As a general rule, a protocol should set out the plan for a single report (a Sys
 
 Templates for registration of protocols are available in PROCEED. The format for submitting protocols to Environmental Evidence are similar and can be found on the journal website by following the links below.
 
-For [Systematic Map Protocols](https://environmentalevidencejournal.biomedcentral.com/submission-guidelines/preparing-your-manuscript/systematic-map-protocol)
+For [Systematic Map Protocols](https://environmentalevidencejournal.biomedcentral.com/submission-guidelines/preparing-your-manuscript/systematic-map-protocol)
 
-For [Systematic Review Protocols](https://environmentalevidencejournal.biomedcentral.com/submission-guidelines/preparing-your-manuscript/systematic-review-protocol)
+For [Systematic Review Protocols](https://environmentalevidencejournal.biomedcentral.com/submission-guidelines/preparing-your-manuscript/systematic-review-protocol)
