@@ -1,5 +1,4 @@
 ---
-title: "Critical appraisal of study validity"
 format:
   html:
     toc: true
@@ -11,6 +10,8 @@ params:
 execute:
   echo: false
 ---
+
+# Critical appraisal of study validity  {#sec-chapt7}
 
 For CEE Standards for conduct and reporting critical appraisal of study validity [click here.](https://environmentalevidence.org/standards-table/)
 
@@ -34,7 +35,9 @@ Internal validity refers to the extent of systematic error in the results of an 
 
 Systematic error is also referred to as bias. Evidence for the existence of systematic error (i.e. bias) comes from large-scale health research that has assessed large numbers of studies to determine whether outcomes differ systematically between studies that have a particular design feature and those that do not (e.g. Wortman 1994; Schulz et al. 1995; Chan et al. 2004; Wood et al. 2008; Liberati et al. 2009; Kirkham et al. 2010; Higgins & Green, 2011; Holman et al. 2015). However, it is usually impossible to directly measure bias within individual primary research studies. Instead, an indirect approach is to infer the “risk of bias” by examining the study design and methods to determine whether adequate steps were taken to protect against systematic error. Studies that fail to meet specified criteria for mitigating known types of bias may be referred to as being at “high risk of bias” whilst studies with adequate methodology to protect against bias are considered to be at “low risk of bias” (Higgins et al. 2022). It is generally acknowledged that bias is an important threat to the validity of research findings across scientific disciplines, and it has been argued that bias is one of several factors that collectively contribute to most research findings being incorrect (Ioannidis, 2005). Traditional non-Systematic Reviews of evidence which do not formally assess the rigour of primary research studies would not be able to detect bias.
 
-##### **Figure 7.1. Schematic illustration of the potential influence of random error and systematic error (bias) on a study outcome**
+![]()
+
+**Figure 7.1. Schematic illustration of the potential influence of random error and systematic error (bias) on a study outcome**
 
 #### External validity
 
@@ -102,6 +105,8 @@ When developing the evidence synthesis protocol, the review team should carefull
 
 -   Finalise the critical appraisal methods and state these in the review protocol.\
     The process for planning the assessments of internal validity and external validity are described in more detail in section 7.3 below.
+
+![](images/Figure7.2png.png)
 
 ##### **Figure 7.2. Good practice framework for critical appraisal of studies included in an evidence review**
 
@@ -386,4 +391,3 @@ Recommendations for reporting the critical appraisal step of a CEE evidence revi
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 5\. Report any limitations of the risk of bias and external validity assessments.                                                                                                                                                                                                           | Any limitations of the critical appraisal process should be concisely stated to ensure that the results are interpreted appropriately.                                                                                                                                                                                                |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-

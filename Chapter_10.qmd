@@ -1,5 +1,4 @@
 ---
-title: "Guidance on the conduct and standards for ‘Rapid Review’ of evidence"
 format:
   html:
     toc: true
@@ -11,6 +10,7 @@ params:
 execute:
   echo: false
 ---
+# Guidance on the conduct and standards for ‘Rapid Review’ of evidence {#sec-chapt10}
 
 ## Background
 
