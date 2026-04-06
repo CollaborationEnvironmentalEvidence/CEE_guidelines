@@ -36,7 +36,7 @@ It is difficult to perform formal statistics on the repeatability of data extrac
 
 Provided sufficient planning has been undertaken at the protocol stage, data coding should be a relatively straightforward task involving careful reading of the full text of each study. Variables or characteristics to be coded for each study should be included in a suitable spreadsheet prior to coding. Although the list of coded variables should have been discussed with stakeholders at the planning stage, there will usually be a need to refine definitions and discuss details of how each variable should be coded once the studies are read at full text. Decisions taken at this stage should be fully reported.
 
-For Systematic Reviews, some of the variables coded will be potential effect modifiers that may cause heterogeneity in effect and therefore need special consideration in terms of how they are recorded so as to facilitate their inclusion in further analysis such as subgroup analysis and meta-regression (see \@sec-chapt8). Some variables may be categorical whilst others will be continuous. In some cases, quantitative variables may need to be recorded as means and variances in the same way as effect sizes.
+For Systematic Reviews, some of the variables coded will be potential effect modifiers that may cause heterogeneity in effect and therefore need special consideration in terms of how they are recorded so as to facilitate their inclusion in further analysis such as subgroup analysis and meta-regression (see @sec-chapt8). Some variables may be categorical whilst others will be continuous. In some cases, quantitative variables may need to be recorded as means and variances in the same way as effect sizes.
 
 For Systematic Maps, some of the variables may be used to sort studies into subgroups for data visualisation. Potential methods of data visualisation should be fully considered in advance of data coding so that the necessary information is recorded. @tab-code shows an example of a coding sheet from a Systematic Map on human health impacts resulting from exposure to alien species in Europe [@BAYLISS2017_environmentalevidence621].
 
@@ -88,10 +88,11 @@ Good practice for data extraction could involve the following steps, which impro
 
 @tab-bernes shows and example of a data extraction table from a Systematic Review on the influence of a reduction of planktivorous and benthivorous fish on water quality in temperate eutrophic lakes [@BERNES2015_whatistheinfluenceofared].
 
-:::{#tab-bernes}
-
+::: {#tab-bernes}
 ```{r}
 #| results: asis
+#| message: false
+#| warning: false
 
 library(tibble)
 library(dplyr)
@@ -156,7 +157,6 @@ tab82 %>%
     general_title = ""
   )
 ```
-
 :::
 
 At this stage, it may be necessary to exclude studies that are seemingly relevant but do not present data in extractable format (e.g. if they do not report standard deviations for control and treatment group(s) or the information required to calculate the statistic). If possible, authors of such studies should be contacted and asked whether they can provide data in a suitable format. Contacting authors for data is not normal practice in environmental science and can be met with surprise and indignation, but it is important to develop the culture and expectation of data accessibility, particularly when the research was publicly funded.
