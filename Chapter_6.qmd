@@ -146,17 +146,9 @@ tab82 %>%
     full_width = TRUE,
     position = "center"
   ) %>%
-  row_spec(section_rows, bold = TRUE, background = "#F2F2F2") %>%
-  footnote(
-    general = paste(
-      "Data are based on the selected dataset, with stocking-only interventions excluded.",
-      "Lake areas, mean depths, retention times, pre-manipulation TP concentrations",
-      "and fish removals were log-transformed before calculation of means and",
-      "confidence intervals, and then back-transformed."
-    ),
-    general_title = ""
-  )
+  row_spec(section_rows, bold = TRUE, background = "#F2F2F2") 
 ```
+**Note: Data are based on the selected dataset, with stocking-only interventions excluded. Lake areas, mean depths, retention times, pre-manipulation TP concentrations and fish removals were log-transformed before calculation of means and confidence intervals, and then back-transformed.**
 :::
 
 At this stage, it may be necessary to exclude studies that are seemingly relevant but do not present data in extractable format (e.g. if they do not report standard deviations for control and treatment group(s) or the information required to calculate the statistic). If possible, authors of such studies should be contacted and asked whether they can provide data in a suitable format. Contacting authors for data is not normal practice in environmental science and can be met with surprise and indignation, but it is important to develop the culture and expectation of data accessibility, particularly when the research was publicly funded.
