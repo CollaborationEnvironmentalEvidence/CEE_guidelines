@@ -21,7 +21,7 @@ invisible(NULL)
 
 Last updated: `r params$last_updated`
 
-# Data synthesis {#sec8 .unlisted}
+# Data synthesis {#sec-chapt8}
 
 ## Developing data synthesis methods
 
