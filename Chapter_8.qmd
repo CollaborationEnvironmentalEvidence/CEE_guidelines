@@ -12,7 +12,9 @@ execute:
 ---
 
 ```{r}
-# This chunk forces Quarto to use knitr (so inline `r ...` works)
+#| echo: false
+#| message: false
+#| warning: false
 invisible(NULL)
 
 ```
