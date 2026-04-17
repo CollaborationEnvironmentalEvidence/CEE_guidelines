@@ -1,11 +1,9 @@
 ---
-title: "Data Synthesis — Environmental Evidence"
 format:
   html:
     toc: true
     toc-depth: 3
     number-sections: true
-    number-offset: 7   # first level-1 heading becomes 8
 bibliography: refs.bib
 params:
   last_updated: "January 23rd 2026"
@@ -64,7 +62,7 @@ Meta-analysis and meta-regression are now the most commonly used methods of quan
 Commonly-used terms are explained in Table 8.1.
 
 | Term | Explanation |
-|----|----|
+|------------------------------------|------------------------------------|
 | **Effect modifier** | A variable that changes the association of an exposure with the outcome of interest. Where effect modification is present the effect size for the outcome of interest would differ according to the value of the effect modifier (e.g. age or sex of the population). Effect modification can be investigated by subgroup analysis or by meta-regression. |
 | **Effect size** | A statistical estimate of the size of an effect (of an exposure or intervention) on a given outcome of interest. Commonly expressed as a standardised mean difference or risk difference (or ratio) between an exposure/intervention group and a comparator group. Effect size can also refer to within-group change or the strength of association between variables, and is the response variable in a meta-analytic model. |
 | **Fixed-effect analysis** | An analysis model which assumes that the true effect of an exposure/intervention is the same in every study, and that observed differences among study results are due solely to chance rather than heterogeneity. |
