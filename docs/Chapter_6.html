@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>6&nbsp; Data Coding and Data Extraction – CEE Guidelines</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -24,7 +27,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -54,15 +56,14 @@ div.csl-indent {
 <link href="./Chapter_5.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-70a47bd5681a7291082a5b9f83d58762.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9e3e5b9121e68b3f077afb32f2c64d95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -120,9 +121,7 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      </a>
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">CEE Guidelines</a> 
     </div>
@@ -191,7 +190,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Chapter_8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Synthesis — Environmental Evidence</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data synthesis</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -222,10 +221,10 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background"><span class="header-section-number">6.1</span> <strong>Background</strong></a></li>
-  <li><a href="#planning-for-data-coding-systematic-reviews-and-maps-and-data-extraction-systematic-reviews" id="toc-planning-for-data-coding-systematic-reviews-and-maps-and-data-extraction-systematic-reviews" class="nav-link" data-scroll-target="#planning-for-data-coding-systematic-reviews-and-maps-and-data-extraction-systematic-reviews"><span class="header-section-number">6.2</span> <strong>Planning for data coding (Systematic Reviews and Maps) and data extraction (Systematic Reviews)</strong></a></li>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background"><span class="header-section-number">6.1</span> Background</a></li>
+  <li><a href="#planning-for-data-coding-systematic-reviews-and-maps-and-data-extraction-systematic-reviews" id="toc-planning-for-data-coding-systematic-reviews-and-maps-and-data-extraction-systematic-reviews" class="nav-link" data-scroll-target="#planning-for-data-coding-systematic-reviews-and-maps-and-data-extraction-systematic-reviews"><span class="header-section-number">6.2</span> Planning for data coding (Systematic Reviews and Maps) and data extraction (Systematic Reviews)</a></li>
   <li><a href="#assessing-agreement-between-data-codersextractors" id="toc-assessing-agreement-between-data-codersextractors" class="nav-link" data-scroll-target="#assessing-agreement-between-data-codersextractors"><span class="header-section-number">6.3</span> Assessing agreement between data coders/extractors</a></li>
-  <li><a href="#data-coding" id="toc-data-coding" class="nav-link" data-scroll-target="#data-coding"><span class="header-section-number">6.4</span> <strong>Data coding</strong></a></li>
+  <li><a href="#data-coding" id="toc-data-coding" class="nav-link" data-scroll-target="#data-coding"><span class="header-section-number">6.4</span> Data coding</a></li>
   <li><a href="#data-extraction" id="toc-data-extraction" class="nav-link" data-scroll-target="#data-extraction"><span class="header-section-number">6.5</span> Data extraction</a></li>
   </ul>
 </nav>
@@ -254,25 +253,31 @@ div.csl-indent {
 
 <p>For CEE Standards for conduct and reporting of data coding and extraction <a href="https://environmentalevidence.org/standards-table/">click here</a></p>
 <section id="background" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="background"><span class="header-section-number">6.1</span> <strong>Background</strong></h2>
+<h2 data-number="6.1" class="anchored" data-anchor-id="background"><span class="header-section-number">6.1</span> Background</h2>
 <p>Systematic Reviews and Systematic Maps are based on data that are extracted systematically and transparently from each eligible study using procedures that are sufficiently well documented to allow other reviewers to obtain the same data from the same studies. The term ‘data’ is used here to mean any information about (or deriving from) a study, including qualitative and quantitative data describing details of methods, location or setting, context, interventions, outcomes, and results (Higgins and Green 2011).</p>
 <p>Data coding and data extraction refer to the process of systematically extracting relevant information from the articles included in the evidence synthesis. Data coding is the recording of relevant characteristics (meta-data) of the study such as when and where the study was conducted and by whom, as well as aspects of the study design and conduct. Data coding is undertaken in both Systematic Reviews and Systematic Maps. Data extraction refers to the recording of the results of the study (e.g.&nbsp;in terms of effect size means and variances or other important findings). Data extraction is undertaken in Systematic Reviews only (see 6.2 below). The precise order in which data coding, critical appraisal and data extraction are undertaken varies from one evidence synthesis to another. In our experience, there is frequently an iterative relationship between them and they are often conducted together. Therefore our advice is to read through both this Section and Section 7 before proceeding.</p>
 <p>Coded and extracted data should be recorded on carefully designed forms and undertaken with the appropriate synthesis in mind (see Section 8). Great care should be taken to standardise and document the processes of data coding and data extraction, the details of which should be reported to increase the transparency of the process. Because each review is different, data collection forms will vary across reviews. However, there are many similarities in the types of information that are important, and forms can be adapted from one review to the next. PICO/PECO key elements can help addressing the structure and components of the data coding and extraction forms. To some extent data coding and data extraction should be guided by a priori rules described in the protocol, but the complexity of the operation means a degree of flexibility may be maintained. Sensitivity analyses can be used to investigate the impact of coding and extracting data in different ways when there is doubt about the optimum method.</p>
 </section>
 <section id="planning-for-data-coding-systematic-reviews-and-maps-and-data-extraction-systematic-reviews" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="planning-for-data-coding-systematic-reviews-and-maps-and-data-extraction-systematic-reviews"><span class="header-section-number">6.2</span> <strong>Planning for data coding (Systematic Reviews and Maps) and data extraction (Systematic Reviews)</strong></h2>
+<h2 data-number="6.2" class="anchored" data-anchor-id="planning-for-data-coding-systematic-reviews-and-maps-and-data-extraction-systematic-reviews"><span class="header-section-number">6.2</span> Planning for data coding (Systematic Reviews and Maps) and data extraction (Systematic Reviews)</h2>
 <p>A standard data coding or extraction form or table (e.g.&nbsp;spreadsheet) is usually developed and pilot-tested on full-text copies of the relevant subset of identified articles or ‘test-list’ constructed at the scoping stage. The table contains prompts to the reviewers to record all relevant information necessary to address the synthesis question, plus any additional information required for critical appraisal (see below) and any contextual information that will be required when writing the final evidence synthesis report. As with the eligibility screening step, the pilot test should involve at least two reviewers per article, so that any inconsistencies can be identified and corrected. Any issues with data presentation should be noted at this point, so that they may inform synthesis planning. For example, Review Teams may find that data are not consistently presented in a suitable format and that they may need to contact original authors for missing or raw data. The finally agreed draft data coding or extraction table should then be provided when the evidence synthesis protocol is submitted (see Section 4). Data coding and extraction tables for Systematic Reviews are likely to be more detailed than Data coding tables for Systematic Maps, reflecting the different principles of these evidence synthesis methods (as explained in Section 2). Data coding in Systematic Reviews should take into account capture of information on potential reasons (effect modifiers) for heterogeneity in outcomes.</p>
 </section>
 <section id="assessing-agreement-between-data-codersextractors" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="assessing-agreement-between-data-codersextractors"><span class="header-section-number">6.3</span> Assessing agreement between data coders/extractors</h2>
-<p>An assessment of agreement between members of the review team tasked with data extraction during pilot-testing can help to ensure that the process is reproducible and reliable as it is for screening <span class="citation" data-cites="frampton2017">(<a href="references.html#ref-frampton2017" role="doc-biblioref">Frampton, Livoreil, and Petrokofsky 2017</a>)</span>. Ideally, data extraction should be piloted on a sample of relevant studies at the planning stage (see @sec-chapt3). However, data extraction outlined in the protocol may need to be modified following assessment and re-tested to improve the agreement between team members.</p>
+<p>An assessment of agreement between members of the review team tasked with data extraction during pilot-testing can help to ensure that the process is reproducible and reliable as it is for screening <span class="citation" data-cites="frampton2017">(<a href="references.html#ref-frampton2017" role="doc-biblioref">Frampton et al. 2017</a>)</span>. Ideally, data extraction should be piloted on a sample of relevant studies at the planning stage (see <a href="Chapter_3.html" class="quarto-xref"><span>Chapter 3</span></a>). However, data extraction outlined in the protocol may need to be modified following assessment and re-tested to improve the agreement between team members.</p>
 <p>It is difficult to perform formal statistics on the repeatability of data extraction, but some attempt to verify repeatability should be made. Ideally a second reviewer should check all data extraction. If not possible then a second reviewer should at least check a random subset of the included studies to ensure that the a priori rules have been applied or the rationale of deviations explained. Randomly checking team members’ interpretation of data extraction in the protocol acts as a check on data hygiene and human error (e.g.&nbsp;misinterpretation of a standard error as a standard deviation). Where data extraction has limited repeatability it is desirable to maintain a record of exactly how the extraction was undertaken on a study by study basis. This maintains transparency and allows authors and other interested parties to examine the decisions made during the extraction process. Particular attention should be paid to the data used to generate effect sizes. For transparency, data extraction forms should be included in an appendix or supplementary material.</p>
 </section>
 <section id="data-coding" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="data-coding"><span class="header-section-number">6.4</span> <strong>Data coding</strong></h2>
+<h2 data-number="6.4" class="anchored" data-anchor-id="data-coding"><span class="header-section-number">6.4</span> Data coding</h2>
 <p>Provided sufficient planning has been undertaken at the protocol stage, data coding should be a relatively straightforward task involving careful reading of the full text of each study. Variables or characteristics to be coded for each study should be included in a suitable spreadsheet prior to coding. Although the list of coded variables should have been discussed with stakeholders at the planning stage, there will usually be a need to refine definitions and discuss details of how each variable should be coded once the studies are read at full text. Decisions taken at this stage should be fully reported.</p>
-<p>For Systematic Reviews, some of the variables coded will be potential effect modifiers that may cause heterogeneity in effect and therefore need special consideration in terms of how they are recorded so as to facilitate their inclusion in further analysis such as subgroup analysis and meta-regression (see <a href="Chapter_8.html" class="quarto-xref"><span>Chapter 9</span></a>). Some variables may be categorical whilst others will be continuous. In some cases, quantitative variables may need to be recorded as means and variances in the same way as effect sizes.</p>
-<p>For Systematic Maps, some of the variables may be used to sort studies into subgroups for data visualisation. Potential methods of data visualisation should be fully considered in advance of data coding so that the necessary information is recorded. <span class="citation" data-cites="tab-code">(<a href="references.html#ref-tab-code" role="doc-biblioref"><strong>tab-code?</strong></a>)</span> shows an example of a coding sheet from a Systematic Map on human health impacts resulting from exposure to alien species in Europe <span class="citation" data-cites="BAYLISS2017_environmentalevidence621">(<a href="references.html#ref-BAYLISS2017_environmentalevidence621" role="doc-biblioref">Bayliss et al. 2017</a>)</span>.</p>
+<p>For Systematic Reviews, some of the variables coded will be potential effect modifiers that may cause heterogeneity in effect and therefore need special consideration in terms of how they are recorded so as to facilitate their inclusion in further analysis such as subgroup analysis and meta-regression (see <a href="Chapter_8.html" class="quarto-xref"><span>Chapter 8</span></a>). Some variables may be categorical whilst others will be continuous. In some cases, quantitative variables may need to be recorded as means and variances in the same way as effect sizes.</p>
+<p>For Systematic Maps, some of the variables may be used to sort studies into subgroups for data visualisation. Potential methods of data visualisation should be fully considered in advance of data coding so that the necessary information is recorded. <a href="#tbl-code" class="quarto-xref">Table&nbsp;<span>6.1</span></a> shows an example of a coding sheet from a Systematic Map on human health impacts resulting from exposure to alien species in Europe <span class="citation" data-cites="BAYLISS2017_environmentalevidence621">(<a href="references.html#ref-BAYLISS2017_environmentalevidence621" role="doc-biblioref">Bayliss et al. 2017</a>)</span>.</p>
+<div id="tbl-code" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-code-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.1: Example of a coding sheet for a Systematic Map on human health impacts resulting from exposure to alien species in Europe <span class="citation" data-cites="BAYLISS2017_environmentalevidence621">(<a href="references.html#ref-BAYLISS2017_environmentalevidence621" role="doc-biblioref">Bayliss et al. 2017</a>)</span>
+</figcaption>
+<div aria-describedby="tbl-code-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 41%">
@@ -371,12 +376,14 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p>:: Example of a coding sheet for a Systematic Map on human health impacts resulting from exposure to alien species in Europe (<span class="citation" data-cites="BAYLISS2017_environmentalevidence621">Bayliss et al. (<a href="references.html#ref-BAYLISS2017_environmentalevidence621" role="doc-biblioref">2017</a>)</span>) {#tab-code}</p>
+</div>
+</figure>
+</div>
 </section>
 <section id="data-extraction" class="level2" data-number="6.5">
 <h2 data-number="6.5" class="anchored" data-anchor-id="data-extraction"><span class="header-section-number">6.5</span> Data extraction</h2>
 <p>When adapting or designing a data extraction form, review authors should first consider how much information should be collected. Extracting too much information can lead to forms that are longer than original study reports and can be very wasteful of time. Extraction of too little information, or omission of key data, can lead to the need to return to study reports later in the review process.</p>
-<p>Sensitivity analyses can be used to investigate the impact of extracting data in different ways when there is doubt about the optimum extraction method. When extracting data from quantitative studies, it is standard practice to extract the raw or summary data from included studies wherever possible, so a common statistic can be calculated for each study. The results of studies included in a review may take different numerical or statistical forms, which may involve transforming results into a common numerical or statistical measure if possible. In a review of effectiveness which incorporates meta-analysis these results would be pooled to provide a single estimate of effect size (see <a href="Chapter_8.html" class="quarto-xref"><span>Chapter 9</span></a>). It is important to extract data that reflect points of difference and any heterogeneous characteristics between studies that might affect data synthesis and interpretation of the findings. Whether statistical data synthesis can be performed will depend largely on the heterogeneity of the variables of interest across included studies.</p>
+<p>Sensitivity analyses can be used to investigate the impact of extracting data in different ways when there is doubt about the optimum extraction method. When extracting data from quantitative studies, it is standard practice to extract the raw or summary data from included studies wherever possible, so a common statistic can be calculated for each study. The results of studies included in a review may take different numerical or statistical forms, which may involve transforming results into a common numerical or statistical measure if possible. In a review of effectiveness which incorporates meta-analysis these results would be pooled to provide a single estimate of effect size (see <a href="Chapter_8.html" class="quarto-xref"><span>Chapter 8</span></a>). It is important to extract data that reflect points of difference and any heterogeneous characteristics between studies that might affect data synthesis and interpretation of the findings. Whether statistical data synthesis can be performed will depend largely on the heterogeneity of the variables of interest across included studies.</p>
 <p>Good practice for data extraction could involve the following steps, which improve transparency, repeatability and objectivity:</p>
 <ul>
 <li><p>Report the location of study data within each article and means of extraction if data are located within figures.</p></li>
@@ -386,8 +393,13 @@ div.csl-indent {
 <li><p>Detail contact made with authors requesting study data where they are missing from relevant articles.</p></li>
 <li><p>Describe any pre-analysis calculations or data transformations (e.g.&nbsp;standard deviation calculation from standard error and sample size (e.g. <span class="citation" data-cites="FELTON2010_ametaanalysisoffaunaandf">Felton et al. (<a href="references.html#ref-FELTON2010_ametaanalysisoffaunaandf" role="doc-biblioref">2010</a>)</span> and <span class="citation" data-cites="SMITH2010_ispredatorcontrolandeffect">Smith et al. (<a href="references.html#ref-SMITH2010_ispredatorcontrolandeffect" role="doc-biblioref">2010</a>)</span> ), and calculation of effect sizes.</p></li>
 </ul>
-<p><span class="citation" data-cites="tab-bernes">(<a href="references.html#ref-tab-bernes" role="doc-biblioref"><strong>tab-bernes?</strong></a>)</span> shows and example of a data extraction table from a Systematic Review on the influence of a reduction of planktivorous and benthivorous fish on water quality in temperate eutrophic lakes <span class="citation" data-cites="BERNES2015_whatistheinfluenceofared">(<a href="references.html#ref-BERNES2015_whatistheinfluenceofared" role="doc-biblioref">Bernes et al. 2015</a>)</span>.</p>
-<div id="tab-bernes">
+<p><a href="#tbl-bernes" class="quarto-xref">Table&nbsp;<span>6.2</span></a> shows and example of a data extraction table from a Systematic Review on the influence of a reduction of planktivorous and benthivorous fish on water quality in temperate eutrophic lakes <span class="citation" data-cites="BERNES2015_whatistheinfluenceofared">(<a href="references.html#ref-BERNES2015_whatistheinfluenceofared" role="doc-biblioref">Bernes et al. 2015</a>)</span>.</p>
+<div id="tbl-bernes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-bernes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.2: <strong>Note: Data are based on the selected dataset, with stocking-only interventions excluded. Lake areas, mean depths, retention times, pre-manipulation TP concentrations and fish removals were log-transformed before calculation of means and confidence intervals, and then back-transformed.</strong>
+</figcaption>
+<div aria-describedby="tbl-bernes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table caption-top">
 <caption>Data extraction table from Bernes et al. 2005</caption>
 <colgroup>
@@ -602,40 +614,41 @@ Unresponsive lakes (no significant improvement)
 </tr>
 </tbody>
 </table>
-<p><strong>Note: Data are based on the selected dataset, with stocking-only interventions excluded. Lake areas, mean depths, retention times, pre-manipulation TP concentrations and fish removals were log-transformed before calculation of means and confidence intervals, and then back-transformed.</strong></p>
+</div>
+</figure>
 </div>
 <p>At this stage, it may be necessary to exclude studies that are seemingly relevant but do not present data in extractable format (e.g.&nbsp;if they do not report standard deviations for control and treatment group(s) or the information required to calculate the statistic). If possible, authors of such studies should be contacted and asked whether they can provide data in a suitable format. Contacting authors for data is not normal practice in environmental science and can be met with surprise and indignation, but it is important to develop the culture and expectation of data accessibility, particularly when the research was publicly funded.</p>
-<p>In some cases, where the information required is not presented and cannot be obtained from authors, data can be converted into an appropriate form without problems. For example, it is relatively straightforward to substitute standard deviation for standard errors, confidence intervals, t-values, or a one-way F-ratio based on two groups <span class="citation" data-cites="LIPSEYMWWILSONDB2001_practicalmetaanalysis DEEKS2005_section8">(<a href="references.html#ref-LIPSEYMWWILSONDB2001_practicalmetaanalysis" role="doc-biblioref">Lipsey and Wilson 2001</a>; <a href="references.html#ref-DEEKS2005_section8" role="doc-biblioref">Deeks, Higgins, and Altman 2005</a>)</span>. Where missing data cannot be substituted, it can be imputed by various methods. Imputation is a generic term for filling in missing data with plausible values. These are commonly derived from average or standardised values (<span class="citation" data-cites="DEEKS2005_section8">Deeks, Higgins, and Altman (<a href="references.html#ref-DEEKS2005_section8" role="doc-biblioref">2005</a>)</span>), but also from bootstrapped confidence limits <span class="citation" data-cites="GUREVITCHJHEDGESLV2001_metaanalysiscombiningthere">(<a href="references.html#ref-GUREVITCHJHEDGESLV2001_metaanalysiscombiningthere" role="doc-biblioref">Gurevitch and Hedges 2001</a>)</span> or predicted values from regression models (<span class="citation" data-cites="SCHAFER1997_analysisofincompletemultiva">Schafer (<a href="references.html#ref-SCHAFER1997_analysisofincompletemultiva" role="doc-biblioref">1997</a>)</span>). Alternatively, data points can be deleted from some analyses, particularly where covariates of interest are missing. Such pragmatic imputation or case deletion should be accompanied by sensitivity analyses to assess its impact.</p>
+<p>In some cases, where the information required is not presented and cannot be obtained from authors, data can be converted into an appropriate form without problems. For example, it is relatively straightforward to substitute standard deviation for standard errors, confidence intervals, t-values, or a one-way F-ratio based on two groups <span class="citation" data-cites="LIPSEYMWWILSONDB2001_practicalmetaanalysis DEEKS2005_section8">(<a href="references.html#ref-LIPSEYMWWILSONDB2001_practicalmetaanalysis" role="doc-biblioref">Lipsey and Wilson 2001</a>; <a href="references.html#ref-DEEKS2005_section8" role="doc-biblioref">Deeks et al. 2005</a>)</span>. Where missing data cannot be substituted, it can be imputed by various methods. Imputation is a generic term for filling in missing data with plausible values. These are commonly derived from average or standardised values (<span class="citation" data-cites="DEEKS2005_section8">Deeks et al. (<a href="references.html#ref-DEEKS2005_section8" role="doc-biblioref">2005</a>)</span>), but also from bootstrapped confidence limits <span class="citation" data-cites="GUREVITCHJHEDGESLV2001_metaanalysiscombiningthere">(<a href="references.html#ref-GUREVITCHJHEDGESLV2001_metaanalysiscombiningthere" role="doc-biblioref">Gurevitch and Hedges 2001</a>)</span> or predicted values from regression models (<span class="citation" data-cites="SCHAFER1997_analysisofincompletemultiva">Schafer (<a href="references.html#ref-SCHAFER1997_analysisofincompletemultiva" role="doc-biblioref">1997</a>)</span>). Alternatively, data points can be deleted from some analyses, particularly where covariates of interest are missing. Such pragmatic imputation or case deletion should be accompanied by sensitivity analyses to assess its impact.</p>
 <p>The impacts of imputation or case deletion can be serious when they comprise a high proportion of studies in an analysis. Case deletion can result in the discarding of large quantities of information and can introduce bias where incomplete data differ systematically from complete (<span class="citation" data-cites="SCHAFER1997_analysisofincompletemultiva">Schafer (<a href="references.html#ref-SCHAFER1997_analysisofincompletemultiva" role="doc-biblioref">1997</a>)</span>). Likewise, imputing average values or predicted values from regressions distorts covariance structure resulting in misleading p-values, standard errors and other measures of uncertainty <span class="citation" data-cites="SCHAFER1997_analysisofincompletemultiva">(<a href="references.html#ref-SCHAFER1997_analysisofincompletemultiva" role="doc-biblioref">Schafer 1997</a>)</span>. Where more than 10% of a data set is missing serious consideration should be given to these problems. More complex imputation techniques are available (see <span class="citation" data-cites="SCHAFER1997_analysisofincompletemultiva">Schafer (<a href="references.html#ref-SCHAFER1997_analysisofincompletemultiva" role="doc-biblioref">1997</a>)</span>) and should be employed in consultation with statisticians. If this is not possible, the results should be interpreted with great caution and only presented alongside the sensitivity analysis. Section 9 discusses data analysis in greater detail.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
 <div id="ref-BAYLISS2017_environmentalevidence621" class="csl-entry" role="listitem">
-Bayliss, H. R., S. Schindler, M. Adam, F. Essl, and W. Rabitsch. 2017. <span>“Environmental Evidence, 6:21.”</span>
+Bayliss, H. R., S. Schindler, M. Adam, F. Essl, and W. Rabitsch. 2017. <em>Environmental Evidence, 6:21</em>.
 </div>
 <div id="ref-BERNES2015_whatistheinfluenceofared" class="csl-entry" role="listitem">
-Bernes, C., S. R. Carpenter, A. Gårdmark, P. Larsson, L. Persson, C. Skov, J. D. M. Speed, and E. van Donk. 2015. <span>“What Is the Influence of a Reduction of Planktivorous and Benthivorous Fish on Water Quality in Temperate Eutrophic Lakes? A Systematic Review.”</span>
+Bernes, C., S. R. Carpenter, A. Gårdmark, et al. 2015. <em>What Is the Influence of a Reduction of Planktivorous and Benthivorous Fish on Water Quality in Temperate Eutrophic Lakes? A Systematic Review</em>.
 </div>
 <div id="ref-DEEKS2005_section8" class="csl-entry" role="listitem">
-Deeks, J. J., J. P. T. Higgins, and D. G. Altman. 2005. <span>“Section 8.”</span>
+Deeks, J. J., J. P. T. Higgins, and D. G. Altman. 2005. <em>Section 8</em>.
 </div>
 <div id="ref-FELTON2010_ametaanalysisoffaunaandf" class="csl-entry" role="listitem">
-Felton, A., E. Knight, J. Wood, C. Zammit, and D. B. Lindenmayer. 2010. <span>“A Meta-Analysis of Fauna and Flora Species Richness and Abundance in Plantations and Pasture Lands.”</span>
+Felton, A., E. Knight, J. Wood, C. Zammit, and D. B. Lindenmayer. 2010. <em>A Meta-Analysis of Fauna and Flora Species Richness and Abundance in Plantations and Pasture Lands</em>.
 </div>
 <div id="ref-frampton2017" class="csl-entry" role="listitem">
 Frampton, G., B. Livoreil, and G. Petrokofsky. 2017. <span>“Eligibility Screening in Evidence Synthesis of Environmental Management Topics.”</span> <em>Environmental Evidence</em> 6: 1–13. <a href="https://doi.org/10.1186/s13750-017-0102-2">https://doi.org/10.1186/s13750-017-0102-2</a>.
 </div>
 <div id="ref-GUREVITCHJHEDGESLV2001_metaanalysiscombiningthere" class="csl-entry" role="listitem">
-Gurevitch, J., and L. V. Hedges. 2001. <span>“Meta-Analysis: Combining the Results of Independent Experiments.”</span> In <em>Design and Analysis of Ecological Experiments</em>, edited by S. M. Scheiner and J. Gurevitch, 347–69. New York: Oxford University Press.
+Gurevitch, J., and L. V. Hedges. 2001. <span>“Meta-Analysis: Combining the Results of Independent Experiments.”</span> In <em>Design and Analysis of Ecological Experiments</em>, edited by S. M. Scheiner and J. Gurevitch. Oxford University Press.
 </div>
 <div id="ref-LIPSEYMWWILSONDB2001_practicalmetaanalysis" class="csl-entry" role="listitem">
-Lipsey, M. W., and D. B. Wilson. 2001. <em>Practical Meta-Analysis</em>. Thousand Oaks, California: Sage Publications.
+Lipsey, M. W., and D. B. Wilson. 2001. <em>Practical Meta-Analysis</em>. Sage Publications.
 </div>
 <div id="ref-SCHAFER1997_analysisofincompletemultiva" class="csl-entry" role="listitem">
 Schafer, J. L. 1997. <em>Analysis of Incomplete Multivariate Data</em>.
 </div>
 <div id="ref-SMITH2010_ispredatorcontrolandeffect" class="csl-entry" role="listitem">
-Smith, R. K., A. S. Pullin, G. B. Stewart, and W. J. Sutherland. 2010. <span>“Is Predator Control an Effective Strategy for Enhancing Bird Populations? CEE Review 08-001 (SR38).”</span>
+Smith, R. K., A. S. Pullin, G. B. Stewart, and W. J. Sutherland. 2010. <em>Is Predator Control an Effective Strategy for Enhancing Bird Populations? CEE Review 08-001 (SR38)</em>.
 </div>
 </div>
 </section>

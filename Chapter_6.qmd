@@ -64,7 +64,7 @@ For Systematic Maps, some of the variables may be used to sort studies into subg
 | **4. Additional information relating to the species of concern** | a\. Geographic origin (native range) |
 |  | b\. Pathway(s) of introduction (following the classification of Hulme et al. \[45\]) |
 
-:: Example of a coding sheet for a Systematic Map on human health impacts resulting from exposure to alien species in Europe (@BAYLISS2017_environmentalevidence621) {#tbl-code}
+: Example of a coding sheet for a Systematic Map on human health impacts resulting from exposure to alien species in Europe [@BAYLISS2017_environmentalevidence621] {#tbl-code}
 
 ## Data extraction
 
@@ -86,9 +86,9 @@ Good practice for data extraction could involve the following steps, which impro
 
 -   Describe any pre-analysis calculations or data transformations (e.g. standard deviation calculation from standard error and sample size (e.g. @FELTON2010_ametaanalysisoffaunaandf and @SMITH2010_ispredatorcontrolandeffect ), and calculation of effect sizes.
 
-@tab-bernes shows and example of a data extraction table from a Systematic Review on the influence of a reduction of planktivorous and benthivorous fish on water quality in temperate eutrophic lakes [@BERNES2015_whatistheinfluenceofared].
+@tbl-bernes shows and example of a data extraction table from a Systematic Review on the influence of a reduction of planktivorous and benthivorous fish on water quality in temperate eutrophic lakes [@BERNES2015_whatistheinfluenceofared].
 
-::: {#tab-bernes}
+::: {#tbl-bernes}
 ```{r}
 #| results: asis
 #| message: false

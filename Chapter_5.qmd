@@ -10,7 +10,7 @@ crossref:
   custom:
     - kind: float
       key: box
-      reference-prefix: Box
+      reference-prefix: beox
 params:
   last_updated: ""
 execute:
@@ -97,7 +97,7 @@ The process of eligibility screening aims to ensure that the eligibility criteri
 
 Depending on the nature of the evidence synthesis question and the number of articles requiring screening, titles and abstracts may be screened separately or together. If only an insignificant number of articles can be excluded on title alone [e.g. as found in a Systematic Review of the environmental impacts of property rights regimes by @OJANEN2017_whataretheenvironmentalimp], then combining the title and abstract screening in a single step may be more efficient. In cases where insufficient information is available in the title or abstract to enable an eligibility decision to be made, or if the abstract is missing, then the full-text version should be obtained and examined. CEE recommends that at least two filters are applied: (i) a first reading of titles and abstracts to efficiently remove articles which are clearly irrelevant; and (ii) assessment of the full-text version of the article. An overview of the eligibility screening process is shown in @fig-eligibility.
 
-![**The eligibility screening process for Systematic Reviews or Systematic Maps**](https://environmentalevidence.org/wp-content/uploads/2017/12/Figure-6.1.png){#fig-eligibility}
+![**The eligibility screening process for Systematic Reviews or Systematic Maps**](images/Figure-6.1.png){#fig-eligibility}
 
 As shown in @fig-eligibility, the screening process starts with individual articles but final eligibility decisions are made at the level of studies, taking into account any linked articles that refer to the same study (see ‘Identifying linked articles’ below). The evidence selection decision process is conservative at each step so that only articles which do not meet the inclusion criteria are excluded; in any cases of doubt, articles proceed to the next step for further scrutiny. If after full-text screening the eligibility of a study remains unclear, further information should be sought, if feasible (e.g. by contacting the authors), to enable the study to be included or excluded. Any studies whose eligibility still remains unclear after this process should be listed in an appendix to the Systematic Review or Systematic Map report. In Systematic Reviews, an option could be to include studies of unclear relevance in a sensitivity analysis to see if their results affect the overall findings of the review. The approach for handling unclear studies should be considered during Protocol development and specified in the Systematic Review or Systematic Map Protocol.
 

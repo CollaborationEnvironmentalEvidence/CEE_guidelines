@@ -67,6 +67,7 @@
 
 
 \usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -139,6 +140,20 @@
  
 
 
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 \KOMAoption{captions}{tableheading}
 \makeatletter
 \@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
@@ -205,7 +220,6 @@
 
 \renewcommand*\contentsname{Table of contents}
 {
-\hypersetup{linkcolor=}
 \setcounter{tocdepth}{2}
 \tableofcontents
 }
@@ -383,9 +397,9 @@ The guidelines and standards for CEE Evidence Syntheses (including the
 planning and review stages) have been adapted from methodologies
 developed and established over more than two decades in the health
 sciences (Higgins and Green 2011), informed by developments in other
-sectors such as social sciences and education (Gough, Oliver, and Thomas
-2012) and tested through practice in developing the CEE Library of
-Evidence Syntheses and the CEE Journal `Environmental Evidence'. Through
+sectors such as social sciences and education (Gough et al. 2012) and
+tested through practice in developing the CEE Library of Evidence
+Syntheses and the CEE Journal `Environmental Evidence'. Through
 undertaking and peer reviewing CEE Evidence Syntheses, researching and
 adapting existing methodologies, and through analysis of procedures and
 outcomes, CEE contributors have developed these guidelines and standards
@@ -403,22 +417,22 @@ first glance, many of the approaches may seem routine and common sense,
 but the rigour and objectivity applied at key stages, and the underlying
 philosophy of transparency, replicability and independence, sets them
 apart from the majority of traditional reviews published in the field of
-applied ecology (Roberts, Stewart, and Pullin 2006; O'Leary et al.
-2016). Evidence syntheses are being commissioned by a wide range of
-organisations in the environmental sector and the need for common
-guidelines and standards, and collaborative development of the
-methodology, is critical to the formation of an openly accessible and
-credible evidence base that functions as a public good. We argue that,
-once more widely established, CEE methodology will significantly improve
-the identification and provision of evidence to inform practice and
-policy in environmental management. For this methodology to have an
-impact on effectiveness of our actions, more environmental scientists
-and other stakeholders need to get involved in the conduct of rigorous
-Evidence Syntheses. For those intending to conduct evidence reviews and
-syntheses, these guidelines and standards are provided in the spirit of
-collaboration and we encourage you to contribute to the CEE mission, use
-and improve these guidelines and standards, and help establish an
-evidence-based framework for our discipline.
+applied ecology (Roberts et al. 2006; O'Leary et al. 2016). Evidence
+syntheses are being commissioned by a wide range of organisations in the
+environmental sector and the need for common guidelines and standards,
+and collaborative development of the methodology, is critical to the
+formation of an openly accessible and credible evidence base that
+functions as a public good. We argue that, once more widely established,
+CEE methodology will significantly improve the identification and
+provision of evidence to inform practice and policy in environmental
+management. For this methodology to have an impact on effectiveness of
+our actions, more environmental scientists and other stakeholders need
+to get involved in the conduct of rigorous Evidence Syntheses. For those
+intending to conduct evidence reviews and syntheses, these guidelines
+and standards are provided in the spirit of collaboration and we
+encourage you to contribute to the CEE mission, use and improve these
+guidelines and standards, and help establish an evidence-based framework
+for our discipline.
 
 \textbf{Who are these guidelines and standards for?}
 
@@ -529,7 +543,7 @@ Systematic Reviews and Systematic Maps and Rapid Reviews in
 in the conduct of a CEE Evidence Synthesis and this starts with the
 registration of a Protocol and continues through to the provision of
 supplementary material such as data extraction spreadsheets and a list
-of excluded articles.~ For preparation of manuscripts, including
+of excluded articles. For preparation of manuscripts, including
 templates and checklists, go to the \emph{Environmental Evidence}
 journal website at
 \url{http://environmentalevidencejournal.biomedcentral.com/submission-guidelines}
@@ -563,13 +577,13 @@ stepwise process as follows;
   \emph{Environmental Evidence} the draft Protocol will be sent out for
   peer review. Comments will be returned to the authors and appropriate
   revisions may be requested to finalise the Protocol. By publishing
-  your Protocol in~\emph{Environmental Evidence} you are registering
+  your Protocol in \emph{Environmental Evidence} you are registering
   with CEE your intent to conduct, and submit to this journal for
   publication, a CEE Evidence Synthesis. You will be asked to confirm
   that you and your co-authors are aware of and agree with this
   commitment when you submit by agreeing to the following statement:
-  `The authors hereby submit our Protocol for publication
-  in~\emph{Environmental Evidence}. By doing so we register with CEE our
+  `The authors hereby submit our Protocol for publication in
+  \emph{Environmental Evidence}. By doing so we register with CEE our
   intent to conduct and submit to this journal a full and original
   Systematic Review/Map Report for publication and archiving in the CEE
   Library'.
@@ -583,7 +597,7 @@ stepwise process as follows;
   before acceptance.
 \item
   The revised and completed Evidence Synthesis (and its associated
-  supplementary material) will be published in~\emph{Environmental
+  supplementary material) will be published in \emph{Environmental
   Evidence} and recorded as finalised on the CEE website.
 \end{enumerate}
 
@@ -756,7 +770,7 @@ Here one could ask if there is any evidence of change and whether it is
 homogeneous across spatial and temporal scales and species. \\
 \end{longtable}
 
-\phantomsection\label{box-initial-concerns}
+\protect\phantomsection\label{box-initial-concerns}
 Examples of initial concerns or problems that might generate potential
 questions for evidence synthesis but are not yet sufficiently well
 defined.
@@ -893,11 +907,11 @@ finding the right question to inform decisions can be a compromise
 disciplines) between taking a holistic approach, involving a large
 number of variables and increasing the number of relevant studies, and a
 reductionist approach that limits the review's relevance, utility and
-value (Pullin, Knight, and Watkinson 2009). There can be a temptation to
-try to squeeze too much information out of one synthesis by including
-broad subject categories, multiple interventions or multiple outcome
-measures (this can be dealt with by first conducting a Systematic Map if
-time and resources allow). Equally, there may be a tendency to eliminate
+value (Pullin et al. 2009). There can be a temptation to try to squeeze
+too much information out of one synthesis by including broad subject
+categories, multiple interventions or multiple outcome measures (this
+can be dealt with by first conducting a Systematic Map if time and
+resources allow). Equally, there may be a tendency to eliminate
 variables from the question so that a Systematic Review is feasible but
 its utility or `real world' credibility (external validity -- see
 Chapter~\ref{sec-chapt7}) is limited. The formulation of the question is
@@ -1020,9 +1034,9 @@ clearly specified, this is known as a~\textbf{closed-framed question.}
 Breaking down open-framed to identify closed-framed questions can be a
 valuable exercise in a policy context. The process can identify basic
 units of evidence that can be accumulated through Systematic Review and
-subsequently combined to inform higher-level decisions. Pullin, Knight,
-and Watkinson (2009) have outlined a process adapted from the health
-sciences. Essentially two stages are involved as outlined in
+subsequently combined to inform higher-level decisions. Pullin et al.
+(2009) have outlined a process adapted from the health sciences.
+Essentially two stages are involved as outlined in
 Figure~\ref{fig-policy-questions}. The first requires that potential
 strategies for addressing open-framed questions are identified and the
 second that potential interventions are considered that would help
@@ -1078,7 +1092,7 @@ i.e.~called an ``intervention'' (I), then the ``PICO'' acronym may be
 used instead, although PECO and PICO essentially indicate an identical
 question structure (Table~\ref{tbl-peco}).
 
-Another example, illustrating a PICO-type question is '\textbf{are
+Another example, illustrating a PICO-type question is `\textbf{are
 marine protected areas effective at conserving commercial fish
 stocks?'}~In this case the key elements could be:
 
@@ -1094,7 +1108,7 @@ O = Relative change in fish populations
   >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
   >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
 \caption{\textbf{Elements of a reviewable PICO/PECO question: normally a
-permutation of 'does intervention/exposure I/E applied to populations of
+permutation of `does intervention/exposure I/E applied to populations of
 subjects P produce a different amount of a measurable outcome O when
 compared with comparator C?}}\label{tbl-peco}\tabularnewline
 \toprule\noalign{}
@@ -1211,7 +1225,7 @@ different ways that exist for measuring impact of human wellbeing.
 \emph{Concern/Problem~--} Lowland peatland ecosystems constitute vast
 amounts of carbon storage relative to their geographical extent.
 Extraction and drainage of peat for fuel and agriculture can release
-greenhouse gases (GHG; CO\textsubscript{­2}, CH\textsubscript{4}~and
+greenhouse gases (GHG; CO\textsubscript{\-2}, CH\textsubscript{4}~and
 N\textsubscript{2}O) and other carbon stores, contributing to global
 warming. Rewetting and wetland restoration aim to ameliorate these
 destructive practices, but their effectiveness is uncertain. Whilst
@@ -1268,10 +1282,10 @@ studies in order to produce an aggregate measure of effect or impact.
 Systematic Maps do not aim to answer a specific question, but
 instead~collate,~describe~and~map~findings in terms of distribution and
 abundance of evidence, often configured~in relation to different
-elements of a question (Gough, Oliver, and Thomas 2012; K. James,
-Randall, and Haddaway 2016). As shown in Table~\ref{tbl-key-aspects},
-both methods share the same initial steps and differ primarily in their
-analytical approaches and outputs.
+elements of a question (Gough et al. 2012; K. James et al. 2016). As
+shown in Table~\ref{tbl-key-aspects}, both methods share the same
+initial steps and differ primarily in their analytical approaches and
+outputs.
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
@@ -1831,12 +1845,12 @@ and/or bias its findings (Konno and Pullin 2020).\\
 The first step in planning a search is to design a strategy to maximise
 the probability of identifying relevant articles whilst minimizing the
 time spent doing so. Planning may also include discussions about
-eligibility criteria for subsequent screening (G. Frampton, Livoreil,
-and Petrokofsky 2017) as they are often linked to search terms. Planning
-should also include discussions about decision criteria defining when to
-stop the search as resource constraints (such as time, manpower, skills)
-may be a major reason to limit the search and should be anticipated and
-explained in the Protocol.
+eligibility criteria for subsequent screening (G. Frampton et al. 2017)
+as they are often linked to search terms. Planning should also include
+discussions about decision criteria defining when to stop the search as
+resource constraints (such as time, manpower, skills) may be a major
+reason to limit the search and should be anticipated and explained in
+the Protocol.
 
 \section{Developing and testing a search
 strategy}\label{developing-and-testing-a-search-strategy}
@@ -1919,9 +1933,9 @@ reported in the Protocol and the final review or map. Minimizing bias
 may require 1) looking for evidence outside traditional academic
 electronic bibliographic sources (e.g.~grey literature); 2) using
 multiple databases and search tools; and, 3) contacting organisations or
-individuals who may have relevant material (Helen R. Bayliss and Beyer
-2015). Some biases have been listed in @bayliss2015 and a few of them
-are reported here to be considered by project teams as appropriate:
+individuals who may have relevant material (Bayliss and Beyer 2015).
+Some biases have been listed in @bayliss2015 and a few of them are
+reported here to be considered by project teams as appropriate:
 \textbf{language bias} (Song et al. 2010) means that studies with
 significant or `interesting' results are more likely to be published in
 the English language and easier to access to than results published in
@@ -1930,30 +1944,30 @@ evaluated, and consequences of omitting non-English-language studies
 could be serious (e.g.~providing a different direction of mean effect;
 Konno et al. (2020)). The way to reduce the risk of language bias is to
 look beyond the English language literature. \textbf{Prevailing
-paradigm} bias (Helen R. Bayliss and Beyer 2015) suggests that studies
-relating to or supporting the prevailing paradigm or topic (for example
-climate change) are more likely to be published and hence discoverable.
-To reduce this bias Review Teams should not rely only on finding well
-known relevant studies. \textbf{Temporal bias} includes the risk that
-studies supporting a hypothesis are more likely to be published first
-(Helen R. Bayliss and Beyer 2015). The results may not be supported by
-later studies (Leimu and Koricheva 2004). Due to the culture of 'the
-latest is best', older articles may be overlooked and
-mis-interpretations perpetuated. The ways to reduce this bias include
-searching older publications, considering updating the search in the
-future, or test statistically whether this bias significantly affects
-the results of studies. \textbf{Publication bias} (Dickersin 2005;
-Hopewell et al. 2007; Song et al. 2010) refers to asymmetry in the
-likelihood of publishing results: statistically significant results
-(positive results) are more likely to be accepted for publication than
-non-significant ones (negative results). This has been a source of major
-concern for systematic reviews and meta-analysis as it might lead to
-overestimating an effect/impact of an Intervention or Exposure on a
-Population (e.g. Gurevitch and Hedges 1999; Rothstein, Sutton, and
-Borenstein 2005; Lortie et al. 2007). To minimise this bias, searches
-for studies reporting non-significant results (most probably found in
-grey literature and studies in languages other than English) should be
-conducted in all systematic reviews and maps (Leimu and Koricheva 2005).
+paradigm} bias (Bayliss and Beyer 2015) suggests that studies relating
+to or supporting the prevailing paradigm or topic (for example climate
+change) are more likely to be published and hence discoverable. To
+reduce this bias Review Teams should not rely only on finding well known
+relevant studies. \textbf{Temporal bias} includes the risk that studies
+supporting a hypothesis are more likely to be published first (Bayliss
+and Beyer 2015). The results may not be supported by later studies
+(Leimu and Koricheva 2004). Due to the culture of 'the latest is best',
+older articles may be overlooked and mis-interpretations perpetuated.
+The ways to reduce this bias include searching older publications,
+considering updating the search in the future, or test statistically
+whether this bias significantly affects the results of studies.
+\textbf{Publication bias} (Dickersin 2005; Hopewell et al. 2007; Song et
+al. 2010) refers to asymmetry in the likelihood of publishing results:
+statistically significant results (positive results) are more likely to
+be accepted for publication than non-significant ones (negative
+results). This has been a source of major concern for systematic reviews
+and meta-analysis as it might lead to overestimating an effect/impact of
+an Intervention or Exposure on a Population (e.g. Gurevitch and Hedges
+1999; Rothstein et al. 2005; Lortie et al. 2007). To minimise this bias,
+searches for studies reporting non-significant results (most probably
+found in grey literature and studies in languages other than English)
+should be conducted in all systematic reviews and maps (Leimu and
+Koricheva 2005).
 
 \subsection{Structuring the search with PICO/PECO
 elements}\label{structuring-the-search-with-picopeco-elements}
@@ -2003,13 +2017,13 @@ the need to keep careful track of the findings, project teams should,
 when possible, include librarians or information specialists. Subject
 specialist librarians are conversant with bibliographic sources, and are
 often very familiar with the nuances of different transdisciplinary and
-subject-specific resources (Zhang, Sampson, and McGowan 2006). They are
-aware of the broad range of tools available for undertaking literature
-searches and they are aware of recent improvements in the range and use
-of those tools. They are also expert in converting research questions
-into search strategies. Such experts can themselves benefit by
-contributing to a project team since their institutions may require
-demonstration of collaborative work (Holst and Funk 2005).
+subject-specific resources (Zhang et al. 2006). They are aware of the
+broad range of tools available for undertaking literature searches and
+they are aware of recent improvements in the range and use of those
+tools. They are also expert in converting research questions into search
+strategies. Such experts can themselves benefit by contributing to a
+project team since their institutions may require demonstration of
+collaborative work (Holst and Funk 2005).
 
 \subsection{Establishing a test-list}\label{establishing-a-test-list}
 
@@ -2232,22 +2246,22 @@ databases.
 accessibility}\label{coverage-and-accessibility}
 
 Several sources should be searched to ensure that as many relevant
-articles as possible are identified (Avenell, Handoll, and Grant 2001;
-Grindlay, Brennan, and Dean 2012). A decision needs to be made as to
-which sources would be the most appropriate for the question. This
-mostly depends on the disciplines addressed by the question
-(e.g.~biology, social sciences, other disciplines) and the
-identification of sources that may provide the greatest quantity of
-relevant articles for a limited number of searches and their
-contribution in reducing the various biases. The quantity of results
-given by an electronic bibliographic source is NOT a good indicator of
-the relevance of the articles identified and thus should not be a
-criterion to select or discard a source. Information about access to
-databases and articles (coverage) can be obtained directly from the
-project team by sharing knowledge and experience, asking librarians and
-information experts and, if needed, stakeholders. Peer-review of the
-evidence synthesis Protocol may also provide extra feedback and
-information regarding the relevance of searching in some other sources.
+articles as possible are identified (Avenell et al. 2001; Grindlay et
+al. 2012). A decision needs to be made as to which sources would be the
+most appropriate for the question. This mostly depends on the
+disciplines addressed by the question (e.g.~biology, social sciences,
+other disciplines) and the identification of sources that may provide
+the greatest quantity of relevant articles for a limited number of
+searches and their contribution in reducing the various biases. The
+quantity of results given by an electronic bibliographic source is NOT a
+good indicator of the relevance of the articles identified and thus
+should not be a criterion to select or discard a source. Information
+about access to databases and articles (coverage) can be obtained
+directly from the project team by sharing knowledge and experience,
+asking librarians and information experts and, if needed, stakeholders.
+Peer-review of the evidence synthesis Protocol may also provide extra
+feedback and information regarding the relevance of searching in some
+other sources.
 
 Some sources are open-access, such as Google Scholar, whereas others
 require subscription such as Scopus. Therefore, access to electronic
@@ -2301,7 +2315,7 @@ may vary according to:
   • geographical regions (e.g.~Latin America, HAPI-Hispanic American
   Periodicals Index, or Europe CORDIS). It may be necessary to search
   region-specific bibliographic sources if the evidence-synthesis
-  question has a regional focus (Helen R. Bayliss and Beyer 2015);\\
+  question has a regional focus (Bayliss and Beyer 2015);\\
   • document types: scientific papers, conference or proceedings,
   chapters, books, theses. Many university libraries hold digital copies
   of their theses, such as the EThOS British Library thesis database.
@@ -2346,16 +2360,15 @@ search results so that transparent reporting is facilitated (Ortega
 
 Full-text documents will be needed only when the findings of the search
 have been screened for eligibility and retained based on their title and
-abstract, and need to be screened at full-text (see G. K. Frampton,
-Livoreil, and Petrokofsky (2017)). Limited access to full-texts might be
-a source of bias in the synthesis, and finding documents may be
-time-consuming as it may involve inter-library loans or direct contact
-with authors. Documents can be obtained directly if (a) the articles are
-open-access, (b) the articles have been placed on an author's personal
-webpage, or (c) are included in the project team' institutional
-subscriptions. Checking institutional access when listing the sources of
-bibliography may help the project team anticipate needs to get extra
-support.
+abstract, and need to be screened at full-text (see G. K. Frampton et
+al. (2017)). Limited access to full-texts might be a source of bias in
+the synthesis, and finding documents may be time-consuming as it may
+involve inter-library loans or direct contact with authors. Documents
+can be obtained directly if (a) the articles are open-access, (b) the
+articles have been placed on an author's personal webpage, or (c) are
+included in the project team' institutional subscriptions. Checking
+institutional access when listing the sources of bibliography may help
+the project team anticipate needs to get extra support.
 
 \textbf{\emph{Grey literature sources}}
 
@@ -2368,14 +2381,14 @@ property rights, of sufficient quality to be collected and preserved by
 libraries and institutional repositories, but not controlled by
 commercial publishers; i.e.~where publishing is not the primary activity
 of the producing body'' (12th Int Conf On Grey Lit. Prague 2010, but see
-Mahood, Eerd, and Irvin (2014)). Grey literature includes reports,
-proceedings, theses and dissertations, newsletters, technical notes,
-white papers, etc. (see list on
+Mahood et al. (2014)). Grey literature includes reports, proceedings,
+theses and dissertations, newsletters, technical notes, white papers,
+etc. (see list on
 http://www.greynet.org/greysourceindex/documenttypes.html). This
 literature may not be as easily found by internet and bibliographic
 searches, and may need to be identified by other means (e.g.~asking
 experts) which may be time-consuming and requires careful planning
-(Saleh, Ratajeski, and Bertolet 2014).
+(Saleh et al. 2014).
 
 Searches for grey literature should normally be included in evidence
 synthesis for two main reasons: 1) to try to minimize possible
@@ -2388,11 +2401,11 @@ contain relevant information such as details on study methods or results
 not reported in journal articles often limited by word length.
 
 More and more documents are being indexed including those in the grey
-literature (Mahood, Eerd, and Irvin 2014). Nevertheless, conducting a
-search for grey literature requires time and the authors should assess
-the need to include it or not in the synthesis (Haddaway and Bayliss
-2015). Repeatability and susceptibility to bias should be assessed and
-reported as much as possible.
+literature (Mahood et al. 2014). Nevertheless, conducting a search for
+grey literature requires time and the authors should assess the need to
+include it or not in the synthesis (Haddaway and Bayliss 2015).
+Repeatability and susceptibility to bias should be assessed and reported
+as much as possible.
 
 There are some databases or platforms which reference grey literature.
 INIST (Institute for Scientific and Technical Information, France) holds
@@ -2464,12 +2477,12 @@ Examples:
 
 Direct contact with knowledge-holders and other stakeholders in networks
 and organisations may be very time-consuming but may allow collection of
-very relevant articles (Helen R. Bayliss and Beyer 2015; Schindler et
-al. 2016). This can be especially useful to help access older or
-unpublished data sources, when the research area is sensitive to
-controversy (e.g.~GMO, Frampton, pers. comm.) or when resources are
-limited (Doerr et al. 2015). This may also help enable access to
-articles written in languages other than English.
+very relevant articles (Bayliss and Beyer 2015; Schindler et al. 2016).
+This can be especially useful to help access older or unpublished data
+sources, when the research area is sensitive to controversy (e.g.~GMO,
+Frampton, pers. comm.) or when resources are limited (Doerr et al.
+2015). This may also help enable access to articles written in languages
+other than English.
 
 \emph{World-wide web}
 
@@ -2531,17 +2544,16 @@ A range of bibliographic reference management tools are available into
 which search results may be downloaded directly from bibliographic
 databases or imported manually, and these vary in their complexity and
 functionality. Some tools, such as Eppi Reviewer (Social Science
-Research Unit 2016) and Abstrackr (Rathbone, Hoffmann, and Glasziou
-2015) include text mining and machine learning functionality to assist
-with some aspects of eligibility screening. According to
-recently-published evidence syntheses and Protocols, the most
-frequently-used reference management tools in CEE evidence syntheses are
-Endnote and Eppi Reviewer (sometimes used in combination with Microsoft
-Excel), although others such as Mendeley and Abstrackr are also used.
-Given that reference management tools have diverse functionality and are
-continually being developed and upgraded, it is not possible to
-recommend any one tool as being `better' than the others. An efficient
-reference management tool should:
+Research Unit 2016) and Abstrackr (Rathbone et al. 2015) include text
+mining and machine learning functionality to assist with some aspects of
+eligibility screening. According to recently-published evidence
+syntheses and Protocols, the most frequently-used reference management
+tools in CEE evidence syntheses are Endnote and Eppi Reviewer (sometimes
+used in combination with Microsoft Excel), although others such as
+Mendeley and Abstrackr are also used. Given that reference management
+tools have diverse functionality and are continually being developed and
+upgraded, it is not possible to recommend any one tool as being `better'
+than the others. An efficient reference management tool should:
 
 \begin{itemize}
 \item
@@ -2597,21 +2609,21 @@ question. In the real world this is rarely possible. Deciding when to
 stop a search should be based on explicit criteria and it should be
 explained in the Protocol and/or synthesis report. Often, reaching the
 budget limit (in terms of project team time) is the key reason for
-stopping the search (Saleh, Ratajeski, and Bertolet 2014) but
-justification for stopping should rely primarily on the acceptability of
-the performance of the search for the project team (See 4.3.1).
-Searching only one database is not considered as adequate (Kugley et al.
-2016). Observing a high rate of article retrieval for the test-list
-should not preclude the conduct additional searches in other sources to
-check whether new relevant papers are identified. Practically, when
-searching in electronic bibliographic sources, search terms and search
-strings are modified progressively, based on what is retrieved at each
-iteration, using the ``test-list'' as one indicator of performance. When
-each additional unit of time spent in searching returns fewer relevant
-references, this may be a good indication that it is time to stop the
-search (Booth 2010). Statistical techniques, such as capture-recapture
-and the relative recall method, exist to guide decisions about when to
-stop searching, although to our knowledge they have not been used in CEE
+stopping the search (Saleh et al. 2014) but justification for stopping
+should rely primarily on the acceptability of the performance of the
+search for the project team (See 4.3.1). Searching only one database is
+not considered as adequate (Kugley et al. 2016). Observing a high rate
+of article retrieval for the test-list should not preclude the conduct
+additional searches in other sources to check whether new relevant
+papers are identified. Practically, when searching in electronic
+bibliographic sources, search terms and search strings are modified
+progressively, based on what is retrieved at each iteration, using the
+``test-list'' as one indicator of performance. When each additional unit
+of time spent in searching returns fewer relevant references, this may
+be a good indication that it is time to stop the search (Booth 2010).
+Statistical techniques, such as capture-recapture and the relative
+recall method, exist to guide decisions about when to stop searching,
+although to our knowledge they have not been used in CEE
 evidence-synthesis to date (reviewed in Glanville 2019).
 
 For web-searches (e.g.~using Google) it is difficult to provide specific
@@ -2810,13 +2822,13 @@ may occur when the evidence synthesis extends over a long time period
 (for instance more than 2 years) and the publication rate of relevant
 documents on the topic is high. In this case, the conclusions of the
 review may be out of date even before it is published. It is recommended
-that the search is rerun using the same search strategy (H. R. Bayliss
-et al. 2016) for the time period elapsed subsequent to the end of the
-initial search and before the report is finalised. An alternative is the
-set up an alert service when running the search on a database, given
-that this service is provided, so that relevant articles are sent as
-soon as published and can be taken into account at a regular basis or
-when reaching key stages of the evidence synthesis (e.g just before data
+that the search is rerun using the same search strategy (Bayliss et al.
+2016) for the time period elapsed subsequent to the end of the initial
+search and before the report is finalised. An alternative is the set up
+an alert service when running the search on a database, given that this
+service is provided, so that relevant articles are sent as soon as
+published and can be taken into account at a regular basis or when
+reaching key stages of the evidence synthesis (e.g just before data
 analysis and synthesis).
 
 The second case occurs when the evidence synthesis final report has
@@ -2854,12 +2866,12 @@ search:
   Will the same languages be used?
 \end{itemize}
 
-Then the revised (or original) strategy may be run (H. R. Bayliss et al.
+Then the revised (or original) strategy may be run (Bayliss et al.
 2016). As with the original searches, it is important to document any
 updates to the searches, their dates, and any reasons for changes to the
 original searches, most typically in an appendix. If the new search
 differs from the initial one, a new Protocol may need to be submitted
-before the amendment is conducted (H. R. Bayliss et al. 2016).
+before the amendment is conducted (Bayliss et al. 2016).
 
 \bookmarksetup{startatroot}
 
@@ -2903,8 +2915,8 @@ selective, subjective, or inconsistent. An objective and transparent
 approach also helps to ensure reproducibility of eligibility screening.
 Failing to consistently apply eligibility criteria, or using criteria
 which are not relevant to the evidence synthesis question, can lead to
-inconsistent conclusions from different evidence syntheses (e.g.
-Englund, Sarnelle, and Cooper 1999; McDonagh et al. 2013).
+inconsistent conclusions from different evidence syntheses (e.g. Englund
+et al. 1999; McDonagh et al. 2013).
 
 The eligibility criteria for a Systematic Review or Systematic Map
 should reflect the question being asked and therefore follow logically
@@ -2917,7 +2929,7 @@ be reported in an article describing a primary research study in order
 for that article to be eligible for inclusion in the evidence synthesis
 (examples of PICO and other types of question structure are given by
 EFSA (European Food Safety Authority) 2010; Aiassa et al. 2015; and K.
-L. James, Randall, and Haddaway 2016).\\
+L. James et al. 2016).\\
 Developing the search strategy can in turn help define or refine
 eligibility criteria that will be used for the screening of the
 literature once the full search is conducted (see Section 5). Titles and
@@ -2940,7 +2952,7 @@ implementation?' (Rodríguez et al. 2016). As the example illustrates,
 eligibility criteria may be expressed as inclusion criteria and, if
 helpful, also as exclusion criteria.
 
-\phantomsection\label{box-eligibility}
+\protect\phantomsection\label{box-eligibility}
 Example Systematic Review eligibility criteria in relation to question
 key elements for an intervention (PICO-type) environmental Systematic
 Review question (from Rodríguez et al. (2016))
@@ -2985,8 +2997,7 @@ Systematic Review question. For a Systematic Map the question may be
 even broader since the objective of a map is to provide a descriptive
 output. Irrespective of how broad the question is, the process for
 developing eligibility criteria which we have outlined here applies both
-to Systematic Reviews and Systematic Maps (K. L. James, Randall, and
-Haddaway 2016).
+to Systematic Reviews and Systematic Maps (K. L. James et al. 2016).
 
 \emph{Study design as an eligibility criterion}
 
@@ -3010,7 +3021,7 @@ bias and other threats to validity takes place at the critical appraisal
 step, and this step should always be conducted irrespective of whether
 any quality-related eligibility criteria have been specified.
 
-\phantomsection\label{box-overview}
+\protect\phantomsection\label{box-overview}
 Overview of research designs
 
 \pandocbounded{\includegraphics[keepaspectratio]{images/Box-3.3.png}}
@@ -3133,7 +3144,7 @@ Figure~\ref{fig-eligibility}.
 
 \centering{
 
-\pandocbounded{\includegraphics[keepaspectratio]{index_files/mediabag/Figure-6.1.png}}
+\pandocbounded{\includegraphics[keepaspectratio]{images/Figure-6.1.png}}
 
 }
 
@@ -3308,10 +3319,10 @@ critical than for Systematic Reviews, since the output and conclusions
 of Systematic Maps are often descriptive. Nevertheless, an underlying
 expectation of Systematic Maps is that the searching and eligibility
 screening steps should be conducted with the same rigor as for
-Systematic Reviews (K. L. James, Randall, and Haddaway 2016). It is
-therefore good practice in all types of evidence synthesis that at least
-two people conduct eligibility screening of each article. We recommend
-that deviations from this should only be made as exceptions, where clear
+Systematic Reviews (K. L. James et al. 2016). It is therefore good
+practice in all types of evidence synthesis that at least two people
+conduct eligibility screening of each article. We recommend that
+deviations from this should only be made as exceptions, where clear
 justification can be provided, and is agreed among all relevant
 stakeholders. This is important for maintaining the integrity of
 systematic evidence synthesis as a `gold standard' or `benchmark'
@@ -3370,14 +3381,13 @@ agreement}\label{assessing-screener-agreement}
 
 An assessment of agreement between screeners helps to ensure that the
 eligibility screening process is reproducible and reliable (G. K.
-Frampton, Livoreil, and Petrokofsky 2017). If necessary, the eligibility
-criteria and/or screening process may be modified and re-tested to
-improve the agreement between screeners as long as deviation from the
-Protocol is explained and justified. Agreement can be assessed by:
-recording the observed proportions of articles where pairs of screeners
-agree or disagree on their eligibility decisions; calculating a reviewer
-agreement statistic; and/or descriptively tabulating and discussing any
-disagreements.
+Frampton et al. 2017). If necessary, the eligibility criteria and/or
+screening process may be modified and re-tested to improve the agreement
+between screeners as long as deviation from the Protocol is explained
+and justified. Agreement can be assessed by: recording the observed
+proportions of articles where pairs of screeners agree or disagree on
+their eligibility decisions; calculating a reviewer agreement statistic;
+and/or descriptively tabulating and discussing any disagreements.
 
 A widely used statistic for assessing screener agreement is Cohen's
 kappa (Altman 1991), which takes into account the level of agreement
@@ -3474,10 +3484,10 @@ evidence synthesis report). Whilst the ROSES template indicates the
 minimum information on the results of eligibility screening that should
 be reported, some authors advocate specifying further information. For
 example, the flow diagram could include an indication of how many of the
-included studies contributed to any meta-analyses (e.g. Sagoo, Little,
-and Higgins 2009), or an indication of how many studies informed
-quantitative and qualitative analyses for the primary outcome of
-interest (e.g. Liberati et al. 2009; Higgins and Green 2011).
+included studies contributed to any meta-analyses (e.g. Sagoo et al.
+2009), or an indication of how many studies informed quantitative and
+qualitative analyses for the primary outcome of interest (e.g. Liberati
+et al. 2009; Higgins and Green 2011).
 
 Any definitions and instructions on interpretation of the eligibility
 criteria used by the review team should be reported at least in the
@@ -3892,7 +3902,7 @@ For CEE Standards for conduct and reporting of data coding and
 extraction
 \href{https://environmentalevidence.org/standards-table/}{click here}
 
-\section{\texorpdfstring{\textbf{Background}}{Background}}\label{background-1}
+\section{Background}\label{background-1}
 
 Systematic Reviews and Systematic Maps are based on data that are
 extracted systematically and transparently from each eligible study
@@ -3935,9 +3945,9 @@ flexibility may be maintained. Sensitivity analyses can be used to
 investigate the impact of coding and extracting data in different ways
 when there is doubt about the optimum method.
 
-\section{\texorpdfstring{\textbf{Planning for data coding (Systematic
-Reviews and Maps) and data extraction (Systematic
-Reviews)}}{Planning for data coding (Systematic Reviews and Maps) and data extraction (Systematic Reviews)}}\label{planning-for-data-coding-systematic-reviews-and-maps-and-data-extraction-systematic-reviews}
+\section{Planning for data coding (Systematic Reviews and Maps) and data
+extraction (Systematic
+Reviews)}\label{planning-for-data-coding-systematic-reviews-and-maps-and-data-extraction-systematic-reviews}
 
 A standard data coding or extraction form or table (e.g.~spreadsheet) is
 usually developed and pilot-tested on full-text copies of the relevant
@@ -3967,11 +3977,12 @@ coders/extractors}\label{assessing-agreement-between-data-codersextractors}
 
 An assessment of agreement between members of the review team tasked
 with data extraction during pilot-testing can help to ensure that the
-process is reproducible and reliable as it is for screening (Frampton et
-al 2017). Ideally, data extraction should be piloted on a sample of
-relevant studies at the planning stage (see Section 3). However, data
-extraction outlined in the protocol may need to be modified following
-assessment and re-tested to improve the agreement between team members.
+process is reproducible and reliable as it is for screening (G. Frampton
+et al. 2017). Ideally, data extraction should be piloted on a sample of
+relevant studies at the planning stage (see Chapter~\ref{sec-chapt3}).
+However, data extraction outlined in the protocol may need to be
+modified following assessment and re-tested to improve the agreement
+between team members.
 
 It is difficult to perform formal statistics on the repeatability of
 data extraction, but some attempt to verify repeatability should be
@@ -3990,8 +4001,7 @@ attention should be paid to the data used to generate effect sizes. For
 transparency, data extraction forms should be included in an appendix or
 supplementary material.
 
-\section{\texorpdfstring{\textbf{Data
-coding}}{Data coding}}\label{data-coding}
+\section{Data coding}\label{data-coding}
 
 Provided sufficient planning has been undertaken at the protocol stage,
 data coding should be a relatively straightforward task involving
@@ -4007,22 +4017,72 @@ For Systematic Reviews, some of the variables coded will be potential
 effect modifiers that may cause heterogeneity in effect and therefore
 need special consideration in terms of how they are recorded so as to
 facilitate their inclusion in further analysis such as subgroup analysis
-and meta-regression (see Section 8). Some variables may be categorical
-whilst others will be continuous. In some cases, quantitative variables
-may need to be recorded as means and variances in the same way as effect
-sizes.
+and meta-regression (see Chapter~\ref{sec-chapt8}). Some variables may
+be categorical whilst others will be continuous. In some cases,
+quantitative variables may need to be recorded as means and variances in
+the same way as effect sizes.
 
 For Systematic Maps, some of the variables may be used to sort studies
 into subgroups for data visualisation. Potential methods of data
 visualisation should be fully considered in advance of data coding so
-that the necessary information is recorded. Table 6.1 shows an example
-of a coding sheet from a Systematic Map on human health impacts
-resulting from exposure to alien species in Europe (Bayliss et al 2017).
+that the necessary information is recorded. Table~\ref{tbl-code} shows
+an example of a coding sheet from a Systematic Map on human health
+impacts resulting from exposure to alien species in Europe (Bayliss et
+al. 2017).
 
-\paragraph{\texorpdfstring{\textbf{Table 6.1 Example of a coding sheet
-for a Systematic Map on human health impacts resulting from exposure to
-alien species in Europe (Bayliss et al
-2017)}}{Table 6.1 Example of a coding sheet for a Systematic Map on human health impacts resulting from exposure to alien species in Europe (Bayliss et al 2017)}}\label{table-6.1-example-of-a-coding-sheet-for-a-systematic-map-on-human-health-impacts-resulting-from-exposure-to-alien-species-in-europe-bayliss-et-al-2017}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.4167}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5833}}@{}}
+\caption{Example of a coding sheet for a Systematic Map on human health
+impacts resulting from exposure to alien species in Europe (Bayliss et
+al. 2017)}\label{tbl-code}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Category
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Type of data
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Category
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Type of data
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{1. Bibliographic information} & a. Publication type \\
+& b. Year \\
+\textbf{2. Information relating to the inclusion criteria} & a.
+Population i: Human population affected \\
+& b. Population ii: Location of exposure \\
+& c. Population iii: Location of reported impact \\
+& d. Population iv: Activity of population at exposure \\
+& e. Exposure i: Taxonomic group of the alien species \\
+& f. Exposure ii: Species name (binomial) of the alien species \\
+& g. Exposure iii: Biome at location of exposure \\
+& h. Exposure iv: Habitat at location of exposure \\
+& i. Outcome i: Type of human health impact (disease or pathogen
+transmission/allergen or irritant) \\
+& j. Outcome ii: Specific condition (type of injury, allergy,
+dermatitis, disease) \\
+& k. Outcome iii: Change in human health impact
+(occurrence/frequency/severity) \\
+\textbf{3. Information relating to the study} & a. Study type
+(e.g.~patient case study, RCT) \\
+& b. Study design (sampling size, etc.) \\
+& c. Spatial scale of reported impact \\
+& d. Comparators \\
+& e. Timescale \\
+& f. Other factors affecting the outcome \\
+\textbf{4. Additional information relating to the species of concern} &
+a. Geographic origin (native range) \\
+& b. Pathway(s) of introduction (following the classification of Hulme
+et al.~{[}45{]}) \\
+\end{longtable}
 
 \section{Data extraction}\label{data-extraction}
 
@@ -4042,12 +4102,13 @@ study. The results of studies included in a review may take different
 numerical or statistical forms, which may involve transforming results
 into a common numerical or statistical measure if possible. In a review
 of effectiveness which incorporates meta-analysis these results would be
-pooled to provide a single estimate of effect size (see Section 8). It
-is important to extract data that reflect points of difference and any
-heterogeneous characteristics between studies that might affect data
-synthesis and interpretation of the findings. Whether statistical data
-synthesis can be performed will depend largely on the heterogeneity of
-the variables of interest across included studies.
+pooled to provide a single estimate of effect size (see
+Chapter~\ref{sec-chapt8}). It is important to extract data that reflect
+points of difference and any heterogeneous characteristics between
+studies that might affect data synthesis and interpretation of the
+findings. Whether statistical data synthesis can be performed will
+depend largely on the heterogeneity of the variables of interest across
+included studies.
 
 Good practice for data extraction could involve the following steps,
 which improve transparency, repeatability and objectivity:
@@ -4069,17 +4130,60 @@ which improve transparency, repeatability and objectivity:
 \item
   Describe any pre-analysis calculations or data transformations
   (e.g.~standard deviation calculation from standard error and sample
-  size (e.g.~Felton et al.~2010 and Smith et al.~2010), and calculation
-  of effect sizes.
+  size (e.g. Felton et al. (2010) and Smith et al. (2010) ), and
+  calculation of effect sizes.
 \end{itemize}
 
-Table 6.2 shows and example of a data extraction table from a Systematic
-Review on the influence of a reduction of planktivorous and benthivorous
-fish on water quality in temperate eutrophic lakes (Bernes et al 2015)
+Table~\ref{tbl-bernes} shows and example of a data extraction table from
+a Systematic Review on the influence of a reduction of planktivorous and
+benthivorous fish on water quality in temperate eutrophic lakes (Bernes
+et al. 2015).
 
-\paragraph{\texorpdfstring{\textbf{Table 6.2 Data extraction table from
-Bernes et al
-(2015)}}{Table 6.2 Data extraction table from Bernes et al (2015)}}\label{table-6.2-data-extraction-table-from-bernes-et-al-2015}
+\begin{table}
+
+\caption{\label{tbl-bernes}\textbf{Note: Data are based on the selected
+dataset, with stocking-only interventions excluded. Lake areas, mean
+depths, retention times, pre-manipulation TP concentrations and fish
+removals were log-transformed before calculation of means and confidence
+intervals, and then back-transformed.}}
+
+\centering{
+
+\centering
+\caption{\label{tab:unnamed-chunk-1}Data extraction table from Bernes et al. 2005}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{3}{c}{Responsive lakes (significant improvement)} & \multicolumn{3}{c}{Unresponsive lakes (no significant improvement)} \\
+\cmidrule(l{3pt}r{3pt}){2-4} \cmidrule(l{3pt}r{3pt}){5-7}
+ & Mean & 95\% C.I. & n & Mean & 95\% C.I. & n\\
+\midrule
+\cellcolor[HTML]{F2F2F2}{\textbf{Response: Secchi depth 1–3 years after manipulation (vs. before manipulation)}} & \cellcolor[HTML]{F2F2F2}{\textbf{}} & \cellcolor[HTML]{F2F2F2}{\textbf{}} & \cellcolor[HTML]{F2F2F2}{\textbf{}} & \cellcolor[HTML]{F2F2F2}{\textbf{}} & \cellcolor[HTML]{F2F2F2}{\textbf{}} & \cellcolor[HTML]{F2F2F2}{\textbf{}}\\
+Lake area (ha) & 18 & 10–32 & 19 & 40 & 14–119 & 8\\
+Mean depth (m) & 1.7 & 1.3–2.2 & 19 & 1.8 & 1.3–2.5 & 8\\
+Retention time (days) & 171 & 63–461 & 11 & 409 & 221–754 & 5\\
+Pre-manipulation TP (µg/l) & 144 & 93–223 & 19 & 127 & 62–260 & 6\\
+Mean atmospheric temperature (°C) & 8.0 & 7.0–9.0 & 19 & 7.8 & 6.4–9.2 & 8\\
+Duration of main manipulation (yr) & 2.1 & 1.6–2.5 & 19 & 2.4 & 1.5–3.3 & 8\\
+Fish removal (kg/ha) & 233 & 160–338 & 18 & 251 & 198–317 & 7\\
+Fish removal (kg/ha/yr) & 124 & 84–183 & 18 & 119 & 70–203 & 7\\
+Fish stock depletion (\%) & 56 & 37–76 & 13 & 40 & 17–62 & 5\\
+\cellcolor[HTML]{F2F2F2}{\textbf{Response: Chlorophyll a 1–3 years after manipulation (vs. before manipulation)}} & \cellcolor[HTML]{F2F2F2}{\textbf{}} & \cellcolor[HTML]{F2F2F2}{\textbf{}} & \cellcolor[HTML]{F2F2F2}{\textbf{}} & \cellcolor[HTML]{F2F2F2}{\textbf{}} & \cellcolor[HTML]{F2F2F2}{\textbf{}} & \cellcolor[HTML]{F2F2F2}{\textbf{}}\\
+Lake area (ha) & 12 & 5–36 & 12 & 35 & 14–86 & 15\\
+Mean depth (m) & 1.3 & 1.1–1.6 & 11 & 1.8 & 1.4–2.4 & 15\\
+Retention time (days) & 78 & 22–275 & 4 & 210 & 103–428 & 9\\
+Pre-manipulation TP (µg/l) & 196 & 120–322 & 12 & 126 & 83–190 & 13\\
+Mean atmospheric temperature (°C) & 8.1 & 7.1–9.1 & 12 & 8.2 & 7.5–8.9 & 15\\
+Duration of main manipulation (yr) & 2.0 & 1.4–2.6 & 12 & 2.0 & 1.5–2.5 & 15\\
+Fish removal (kg/ha) & 250 & 149–420 & 11 & 272 & 184–403 & 12\\
+Fish removal (kg/ha/yr) & 137 & 74–252 & 11 & 140 & 98–202 & 12\\
+Fish stock depletion (\%) & 78 & 56–99 & 7 & 58 & 42–75 & 12\\
+\bottomrule
+\end{tabu}
+
+}
+
+\end{table}%
 
 At this stage, it may be necessary to exclude studies that are seemingly
 relevant but do not present data in extractable format (e.g.~if they do
@@ -4097,13 +4201,13 @@ cannot be obtained from authors, data can be converted into an
 appropriate form without problems. For example, it is relatively
 straightforward to substitute standard deviation for standard errors,
 confidence intervals, t-values, or a one-way F-ratio based on two groups
-(Lipsey \& Wilson 2001, Deeks et al.~2005). Where missing data cannot be
-substituted, it can be imputed by various methods. Imputation is a
+(Lipsey and Wilson 2001; Deeks et al. 2005). Where missing data cannot
+be substituted, it can be imputed by various methods. Imputation is a
 generic term for filling in missing data with plausible values. These
-are commonly derived from average or standardised values (Deeks et
-al.~2005), but also from bootstrapped confidence limits (Gurevitch \&
-Hedges 2001) or predicted values from regression models (Schafer 1997).
-Alternatively, data points can be deleted from some analyses,
+are commonly derived from average or standardised values (Deeks et al.
+(2005)), but also from bootstrapped confidence limits (Gurevitch and
+Hedges 2001) or predicted values from regression models (Schafer
+(1997)). Alternatively, data points can be deleted from some analyses,
 particularly where covariates of interest are missing. Such pragmatic
 imputation or case deletion should be accompanied by sensitivity
 analyses to assess its impact.
@@ -4112,12 +4216,12 @@ The impacts of imputation or case deletion can be serious when they
 comprise a high proportion of studies in an analysis. Case deletion can
 result in the discarding of large quantities of information and can
 introduce bias where incomplete data differ systematically from complete
-(Schafer 1997). Likewise, imputing average values or predicted values
+(Schafer (1997)). Likewise, imputing average values or predicted values
 from regressions distorts covariance structure resulting in misleading
 p-values, standard errors and other measures of uncertainty (Schafer
 1997). Where more than 10\% of a data set is missing serious
 consideration should be given to these problems. More complex imputation
-techniques are available (see Schafer 1997) and should be employed in
+techniques are available (see Schafer (1997)) and should be employed in
 consultation with statisticians. If this is not possible, the results
 should be interpreted with great caution and only presented alongside
 the sensitivity analysis. Section 9 discusses data analysis in greater
@@ -4162,7 +4266,7 @@ scientific research. However, ``quality'' can mean different things
 depending on the perspective and has no universally accepted precise
 definition in research. It is important therefore to use explicitly
 clear terminology when evaluating the scientific rigor of studies in an
-evidence synthesis (Frampton et al.~2022).
+evidence synthesis (Frampton et al. 2022).
 
 ``Validity'' in the context of evidence synthesis refers to the extent
 of systematic error. Research findings with low systematic error are
@@ -4188,7 +4292,7 @@ that is distributed randomly around the true result. Often, random error
 can be reduced by increasing the sample size in a research study, or by
 quantitatively combining the results of similar studies in a
 meta-analysis (subject to the studies being adequately comparable),
-hence improving the precision of the result (Glass, 1976). Systematic
+hence improving the precision of the result (Glass 1976). Systematic
 error, on the other hand, cannot be reduced by increasing the sample
 size or by pooling study results in a meta-analysis. If systematic error
 is present in primary research studies their results will likely be
@@ -4198,39 +4302,37 @@ Systematic error is also referred to as bias. Evidence for the existence
 of systematic error (i.e.~bias) comes from large-scale health research
 that has assessed large numbers of studies to determine whether outcomes
 differ systematically between studies that have a particular design
-feature and those that do not (e.g.~Wortman 1994; Schulz et al.~1995;
-Chan et al.~2004; Wood et al.~2008; Liberati et al.~2009; Kirkham et
-al.~2010; Higgins \& Green, 2011; Holman et al.~2015). However, it is
-usually impossible to directly measure bias within individual primary
-research studies. Instead, an indirect approach is to infer the ``risk
-of bias'' by examining the study design and methods to determine whether
-adequate steps were taken to protect against systematic error. Studies
-that fail to meet specified criteria for mitigating known types of bias
-may be referred to as being at ``high risk of bias'' whilst studies with
-adequate methodology to protect against bias are considered to be at
-``low risk of bias'' (Higgins et al.~2022). It is generally acknowledged
-that bias is an important threat to the validity of research findings
-across scientific disciplines, and it has been argued that bias is one
-of several factors that collectively contribute to most research
-findings being incorrect (Ioannidis, 2005). Traditional non-Systematic
-Reviews of evidence which do not formally assess the rigour of primary
-research studies would not be able to detect bias.
+feature and those that do not (e.g. Wortman (1994); Schulz et al.
+(1995); Chan et al. (2004); {Wood et al.} (2008); Liberati et al.
+(2009); {Kirkham et al.} (2010); Higgins and Green (2011); Holman et al.
+(2015)). However, it is usually impossible to directly measure bias
+within individual primary research studies. Instead, an indirect
+approach is to infer the ``risk of bias'' by examining the study design
+and methods to determine whether adequate steps were taken to protect
+against systematic error. Studies that fail to meet specified criteria
+for mitigating known types of bias may be referred to as being at ``high
+risk of bias'' whilst studies with adequate methodology to protect
+against bias are considered to be at ``low risk of bias'' (Higgins et
+al. 2022). It is generally acknowledged that bias is an important threat
+to the validity of research findings across scientific disciplines, and
+it has been argued that bias is one of several factors that collectively
+contribute to most research findings being incorrect (Ioannidis, 2005).
+Traditional non-Systematic Reviews of evidence which do not formally
+assess the rigour of primary research studies would not be able to
+detect bias.
 
-\pandocbounded{\includegraphics[keepaspectratio]{.pdf}}
-
-\textbf{Figure 7.1. Schematic illustration of the potential influence of
-random error and systematic error (bias) on a study outcome}
+\pandocbounded{\includegraphics[keepaspectratio,alt={Schematic illustration of the potential influence of random error and systematic error (bias) on a study outcome}]{images/Figure-3.2 (1).png}}
+\{\#fig-random-error\}
 
 \subsubsection{External validity}\label{external-validity}
 
 External validity is the extent to which research results provide a
-correct basis for generalisations to other circumstances (Burford et
-al.~2013). That is, the extent to which results of a research study can
-be applied to answer a particular question correctly, without
-introducing systematic error. The external validity of research findings
-may also be referred to as ``context suitability'' when considering how
-the findings apply to a specific context or question of interest (Weise
-et al.~2020).
+correct basis for generalisations to other circumstances (Burford et al.
+2013). That is, the extent to which results of a research study can be
+applied to answer a particular question correctly, without introducing
+systematic error. The external validity of research findings may also be
+referred to as ``context suitability'' when considering how the findings
+apply to a specific context or question of interest (Weise et al. 2020).
 
 Assessment of external validity is relevant to evidence reviews since
 (i) the setting and question addressed by each individual study included
@@ -4254,7 +4356,7 @@ transferability, transposability, relevance and/or directness);
 heterogeneous recommendations regarding assessment criteria; a lack of
 guidance on how to apply assessment criteria; and no consensus on
 approaches for assessing external validity in Systematic Reviews (Weise
-et al.~2020).
+et al. 2020).
 
 Whilst internal validity (the extent to which the study results are free
 from systematic error) is a specific property of an individual research
@@ -4265,9 +4367,9 @@ evidence review question being addressed. Thus, external validity is
 context-dependent.
 
 External validity requires that the setting of interest (i.e.~that
-specified in the review question) is clearly defined (Weise et al.~2020)
+specified in the review question) is clearly defined (Weise et al. 2020)
 and that the causal relationship of the setting of each study included
-in the review is generalizable to the setting of interest (Pearl \&
+in the review is generalizable to the setting of interest (Pearl and
 Bareinboim 2014). External validity thus has two independent
 (i.e.~non-overlapping) aspects, referred to as ``applicability'' and
 ``transportability'', which can be framed as general questions when
@@ -4277,24 +4379,24 @@ assessing research studies for their external validity:
 study feasible in the setting where the results of the review will be
 used? Applicability describes the extent to which a studied comparison
 could be applied in the setting of interest, regardless of the outcome
-(Wang et al.~2006).
+(Wang et al. 2006).
 
 \textbf{Transportability}: Do all important characteristics of the
 research study match those of the setting where the results of the
 review will be used? Transportability describes the extent to which the
 causal pathway of the research study can be transported to the setting
-of interest without incurring (further) bias or confounding (Wang et
-al.~2006; Burford et al.~2013; Pearl \& Bareinboim 2014).
+of interest without incurring (further) bias or confounding (Wang et al.
+(2006); Burford et al. (2013); Pearl and Bareinboim (2014)).
 
 Applicability and transportability can be assessed by comparing in
 detail the PECO / PICO elements of the research study against those of
-the setting of interest (Weise et al.~2020) and examining whether
+the setting of interest (Weise et al. 2020) and examining whether
 differences exist in confounding variables between the research study
-and the setting of interest (Pearl \& Bareinboim 2014). Conceptual
+and the setting of interest (Pearl and Bareinboim 2014). Conceptual
 diagrams (``selection diagrams'') based on causality theory may be
 helpful for systematically evaluating the consistency of causal pathways
-between the research study setting and the setting of interest (Pearl \&
-Bareinboim 2014).
+between the research study setting and the setting of interest (Pearl
+and Bareinboim 2014).
 
 \emph{Note}: The critical appraisal step of Systematic Review assesses
 the external validity of the included studies for answering the review
@@ -4311,7 +4413,7 @@ be justified if the aim of the review is to inform a predictive model.
 appraisal}\label{basic-principles-of-critical-appraisal}
 
 For critical appraisal in an evidence review to be fit for purpose, four
-basic principles must be met (Frampton et al.~2002). That is, the
+basic principles must be met (Frampton et al. 2022). That is, the
 assessment must be:
 
 \begin{itemize}
@@ -4331,20 +4433,21 @@ assessment must be:
 \end{itemize}
 
 We refer to these four principles (Focused, Extensive, Applied,
-Transparent) as the FEAT principles (Frampton et al.~2022).
+Transparent) as the FEAT principles (Frampton et al. 2022).
 
-The FEAT principles are illustrated in Table 7.1 for critical appraisal
+The FEAT principles are illustrated in @tbl-feat for critical appraisal
 of internal validity as assessed by the risk of bias.
 
-\paragraph{\texorpdfstring{\textbf{Table 7.1 FEAT principles and their
-rationale illustrated for the case where the construct of interest is
-internal validity as assessed by the risk of
-bias}}{Table 7.1 FEAT principles and their rationale illustrated for the case where the construct of interest is internal validity as assessed by the risk of bias}}\label{table-7.1-feat-principles-and-their-rationale-illustrated-for-the-case-where-the-construct-of-interest-is-internal-validity-as-assessed-by-the-risk-of-bias}
+\paragraph{}\label{section}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.1765}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.8235}}@{}}
+\caption{FEAT principles and their rationale illustrated for the case
+where the construct of interest is internal validity as assessed by the
+risk of bias}\label{tbl-feat}\tabularnewline
 \toprule\noalign{}
+\endfirsthead
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
@@ -4399,7 +4502,7 @@ When developing the evidence synthesis protocol, the review team should
 carefully consider the approach for critical appraisal that will be
 used. Planning critical appraisal is an important part of the evidence
 synthesis and is likely to be an iterative process, including the
-following steps (Figure 7.2):
+following steps (Figure~\ref{fig-good}):
 
 \begin{itemize}
 \item
@@ -4442,11 +4545,20 @@ following steps (Figure 7.2):
   external validity are described in more detail in section 7.3 below.
 \end{itemize}
 
+\begin{figure}
+
+\centering{
+
 \pandocbounded{\includegraphics[keepaspectratio]{images/Figure7.2png.png}}
 
-\paragraph{\texorpdfstring{\textbf{Figure 7.2. Good practice framework
-for critical appraisal of studies included in an evidence
-review}}{Figure 7.2. Good practice framework for critical appraisal of studies included in an evidence review}}\label{figure-7.2.-good-practice-framework-for-critical-appraisal-of-studies-included-in-an-evidence-review}
+}
+
+\caption{\label{fig-good}Good practice framework for critical appraisal
+of studies included in an evidence review}
+
+\end{figure}%
+
+\paragraph{}\label{section-1}
 
 \section{Plan the critical appraisal of internal and external
 validity}\label{plan-the-critical-appraisal-of-internal-and-external-validity}
@@ -4524,6 +4636,7 @@ review teams utilise several approaches to ensure that all key sources
 of bias have been considered when planning and finalising the review
 protocol (Box 7.1).
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 0\tabcolsep) * \real{1.0022}}@{}}
 \toprule\noalign{}
@@ -4562,6 +4675,7 @@ bias are identified (for further information see Frampton et al.~2022)
 \end{itemize}
 \end{minipage} \\
 \end{longtable}
+}
 
 \subsection{Select risk of bias tools}\label{select-risk-of-bias-tools}
 
@@ -4656,11 +4770,7 @@ review teams consider the following types of bias, as explained in Table
   critical appraisal.
 \end{itemize}
 
-\paragraph{\texorpdfstring{\textbf{Table 7.2. Key types of bias in
-research studies addressing comparative environmental questions
-(Frampton et
-al.~2002)}}{Table 7.2. Key types of bias in research studies addressing comparative environmental questions (Frampton et al.~2002)}}\label{table-7.2.-key-types-of-bias-in-research-studies-addressing-comparative-environmental-questions-frampton-et-al.-2002}
-
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.0983}}
   >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.9017}}@{}}
@@ -4806,6 +4916,7 @@ classes of bias above. Includes risks of bias that are inherent to
 specific study designs such as test accuracy studies (Whiting et
 al.~2006; 2011). \\
 \end{longtable}
+}
 
 \emph{Study methods that increase or reduce the risk of bias}
 
@@ -4840,6 +4951,7 @@ an exposure or comparator. Blinding (where feasible) of different study
 personnel is relevant to reducing the risk of several types of bias (Box
 7.2).
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 0\tabcolsep) * \real{1.0058}}@{}}
 \toprule\noalign{}
@@ -4872,6 +4984,7 @@ Blinding/masking can reduce the risk of several types of bias:
 \end{itemize}\strut
 \end{minipage} \\
 \end{longtable}
+}
 
 Blinding is especially important if outcomes are subjective (and hence
 more easily influenced by the assessor or human participant;
@@ -5015,6 +5128,7 @@ documented, e.g.~in an appendix to the final review report.
 external validity of the studies included in evidence
 reviews}}{Table 7.3. Template for assessing external validity of the studies included in evidence reviews}}\label{table-7.3.-template-for-assessing-external-validity-of-the-studies-included-in-evidence-reviews}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1579}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2842}}
@@ -5047,6 +5161,7 @@ Temporal scale & & & \\
 Mediator variables \textsuperscript{b} & & & \\
 Other aspects of study design (add as needed\ldots) & & & \\
 \end{longtable}
+}
 
 \textsuperscript{a} If there are differences but these are appropriately
 adjusted for statistically answer ``yes'' and document the rationale for
@@ -5124,6 +5239,7 @@ bias assessment that should be reported in the methods section of a
 Systematic Review
 protocol}}{Table 7.5 Components of a risk of bias assessment that should be reported in the methods section of a Systematic Review protocol}}\label{table-7.5-components-of-a-risk-of-bias-assessment-that-should-be-reported-in-the-methods-section-of-a-systematic-review-protocol}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.4459}}
   >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5541}}@{}}
@@ -5187,6 +5303,7 @@ specification for how risk of bias and external validity assessments
 will inform data synthesis is required to prevent selective inclusion or
 exclusion of studies in the analysis. \\
 \end{longtable}
+}
 
 \section{Conduct critical appraisal}\label{conduct-critical-appraisal}
 
@@ -5199,6 +5316,7 @@ In such cases the updated methods must be applied to all studies
 included in the review. Key requirements for conducting critical
 appraisal are shown in Box 7.3.
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 0\tabcolsep) * \real{1.0038}}@{}}
 \toprule\noalign{}
@@ -5229,6 +5347,7 @@ appraisal}}{Box 7.3. Key requirements for conducting critical appraisal}}\label{
 \end{itemize}
 \end{minipage} \\
 \end{longtable}
+}
 
 \section{Apply critical appraisal}\label{apply-critical-appraisal}
 
@@ -5247,9 +5366,10 @@ effects are additive which may not be the case (Frampton et al.~2022).
 applying results of critical appraisal to inform data
 synthesis}}{Table 7.6 Recommendations for applying results of critical appraisal to inform data synthesis}}\label{table-7.6-recommendations-for-applying-results-of-critical-appraisal-to-inform-data-synthesis}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.2246}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.7754}}@{}}
 \toprule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -5285,6 +5405,7 @@ limitations (Frampton et al.~2022) and are not recommended for
 summarising risk of bias or external validity assessments
 assessments. \\
 \end{longtable}
+}
 
 \section{Report critical appraisal}\label{report-critical-appraisal}
 
@@ -5329,9 +5450,10 @@ reporting the methods and results of critical appraisal in the final
 Systematic Review
 report}}{Table 7.7. Recommendations for reporting the methods and results of critical appraisal in the final Systematic Review report}}\label{table-7.7.-recommendations-for-reporting-the-methods-and-results-of-critical-appraisal-in-the-final-systematic-review-report}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.4658}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5342}}@{}}
 \toprule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -5367,17 +5489,13 @@ assessments. & Any limitations of the critical appraisal process should
 be concisely stated to ensure that the results are interpreted
 appropriately. \\
 \end{longtable}
+}
 
 \bookmarksetup{startatroot}
 
-\chapter{Data Synthesis --- Environmental
-Evidence}\label{data-synthesis-environmental-evidence}
+\chapter{Data synthesis}\label{sec-chapt8}
 
 Last updated: January 23rd 2026
-
-\bookmarksetup{startatroot}
-
-\chapter{Data synthesis}\label{sec8}
 
 \section{Developing data synthesis
 methods}\label{developing-data-synthesis-methods}
@@ -5500,10 +5618,10 @@ studies.
 Meta-analysis and meta-regression are now the most commonly used methods
 of quantitative data synthesis in the environmental sciences and there
 is a well-developed supporting literature (e.g. Gurevitch and Hedges
-(2001); Gates (2002); Borenstein et al. (2009); Koricheva, Gurevitch,
-and Mengersen (2013)). The most recent guidance for quantitative data
-synthesis in environmental sciences (Nakagawa et al. (2023)) also
-provides supporting online guidance and training resources
+(2001); Gates (2002); Borenstein et al. (2009); Koricheva et al.
+(2013)). The most recent guidance for quantitative data synthesis in
+environmental sciences ({Nakagawa et al.} (2023)) also provides
+supporting online guidance and training resources
 (e.g.~\href{https://itchyshin.github.io/Meta-analysis_tutorial/}{Meta-analysis
 tutorial}). Consequently, we provide here an overview rather than
 detailed guidance.
@@ -5514,7 +5632,7 @@ Commonly-used terms are explained in Table 8.1.
   >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
   >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
 \caption{Table 8.1. Summary of terms commonly used in quantitative
-synthesis (Deeks, Higgins, and Altman (2022) and Nakagawa et al.
+synthesis (Deeks et al. (2022) and {Nakagawa et al.}
 (2023))}\tabularnewline
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
@@ -5597,8 +5715,8 @@ different methods for calculating effect sizes depending on the nature
 of the data (whether the data are comparisons between groups, single
 groups, or associations; the scale of the outcome measure (continuous,
 ordinal, dichotomous, time-to-event or count data); and whether the
-effect estimate is a difference or ratio) (Deeks, Higgins, and Altman
-(2022) ; Nakagawa et al. (2023)).
+effect estimate is a difference or ratio) (Deeks et al. (2022) ;
+{Nakagawa et al.} (2023)).
 
 In quantitative data synthesis, generally each included study effect
 size is weighted in proportion to sample size or inverse proportion to
@@ -5647,20 +5765,19 @@ Where data are limited, because there are few studies and/or the size of
 the studies is small, a random-effects model may fail to adequately
 estimate the amount of heterogeneity. Fixed-effect methods may perform
 better at estimating the overall effect size in such situations but at
-the expense of ignoring heterogeneity (Deeks, Higgins, and Altman (2022)
-).
+the expense of ignoring heterogeneity (Deeks et al. (2022) ).
 
-Fixed-and random-effects models are widely used (Deeks, Higgins, and
-Altman (2022) ). However, in a review of recently-published
-meta-analyses in environmental sciences, Nakagawa et al. (2023) found
-that almost all meta-analyses included multiple effect estimates from
-the same study, without considering the non-independence of these effect
-estimates. Nakagawa et al. (2023) outline multilevel models that can
-account for dependence among effect sizes, as an alternative to
-random-effects models. CEE recommends that review teams should read
-Deeks, Higgins, and Altman (2022) and Nakagawa et al. (2023) and
-carefully consider the strengths and limitations of the different
-approaches when justifying their choice of meta-analytic model.
+Fixed-and random-effects models are widely used (Deeks et al. (2022) ).
+However, in a review of recently-published meta-analyses in
+environmental sciences, {Nakagawa et al.} (2023) found that almost all
+meta-analyses included multiple effect estimates from the same study,
+without considering the non-independence of these effect estimates.
+{Nakagawa et al.} (2023) outline multilevel models that can account for
+dependence among effect sizes, as an alternative to random-effects
+models. CEE recommends that review teams should read Deeks et al. (2022)
+and {Nakagawa et al.} (2023) and carefully consider the strengths and
+limitations of the different approaches when justifying their choice of
+meta-analytic model.
 
 The output of a quantitative data synthesis should include:
 
@@ -5677,11 +5794,11 @@ The output of a quantitative data synthesis should include:
   Forest plots should be clearly labelled to identify each study and the
   sample sizes of each group in each study. For substantial
   meta-analyses where there are too many studies to display in a forest
-  plot an alternative approach could be to use an orchard plot (Nakagawa
-  et al. (2023)). It is important that the data displayed in forest or
-  orchard plots can be clearly traced back to the source studies; data
-  extraction tables included with the final review report should be
-  clearly structured to facilitate this.
+  plot an alternative approach could be to use an orchard plot
+  ({Nakagawa et al.} (2023)). It is important that the data displayed in
+  forest or orchard plots can be clearly traced back to the source
+  studies; data extraction tables included with the final review report
+  should be clearly structured to facilitate this.
 \item
   An investigation of heterogeneity of the effect estimates across
   studies (see next section below);
@@ -5745,7 +5862,7 @@ be limited (Type I errors possible) and multiple analyses of numerous
 subgroups could result in spurious significance (Type II errors
 possible). Results of within-subgroup statistical tests (e.g.~p-values
 for intervention/exposure versus comparator) should not be used to infer
-between-subgroup differences (Deeks, Higgins, and Altman (2022)).
+between-subgroup differences (Deeks et al. (2022)).
 
 Where heterogeneity is detected (e.g.~by the spread of effect estimates
 in a forest plot), the source(s) of heterogeneity may be explored by
@@ -5753,16 +5870,15 @@ considering the features of the studies which differ (e.g.~using tables
 that group studies with similar characteristics and outcomes together).
 Ideally, variation in effect sizes across studies can then be explored
 by meta-regression. However, for meta-regression to be feasible a
-minimum of 10 studies is usually required (Deeks, Higgins, and Altman
-(2022)). Alternative options could be (i) to exclude any studies
-identified as outliers on key study characteristics and then re-run the
-meta-analysis; or (ii) group studies together according to their
-similarity on specified study characteristics and run separate
-meta-analyses on those groups of studies. However, such post-hoc
-analyses risk introducing bias as they could allow selective data
-analysis. Therefore, the intended approach for exploring heterogeneity
-should be specified a priori in the review protocol and should be
-reported fully and transparently.
+minimum of 10 studies is usually required (Deeks et al. (2022)).
+Alternative options could be (i) to exclude any studies identified as
+outliers on key study characteristics and then re-run the meta-analysis;
+or (ii) group studies together according to their similarity on
+specified study characteristics and run separate meta-analyses on those
+groups of studies. However, such post-hoc analyses risk introducing bias
+as they could allow selective data analysis. Therefore, the intended
+approach for exploring heterogeneity should be specified a priori in the
+review protocol and should be reported fully and transparently.
 
 If insufficient data are available for a quantitative assessment of
 heterogeneity, a descriptive (narrative) consideration of heterogeneity
@@ -5771,17 +5887,17 @@ explain variability among the studies but for which quantitative
 analysis is lacking.
 
 Note that subgroup analyses and meta-regression are regarded as being
-observational rather than experimental evidence (Deeks, Higgins, and
-Altman (2022)) since their results may be influenced by unmeasured or
-non-analysed factors which differ between the studies.
+observational rather than experimental evidence (Deeks et al. (2022))
+since their results may be influenced by unmeasured or non-analysed
+factors which differ between the studies.
 
 Heterogeneity statistics such as Chi-squared and I2 are useful for
 identifying the relative extent to which a meta-analytic model includes
 heterogeneity in the true effect estimates compared to heterogeneity
 arising due to chance. Such statistics should be used to interpret
 results of meta-analysis, but not for deciding on which meta-analytic
-model to (e.g.~fixed or random-effects) to use (Deeks, Higgins, and
-Altman (2022); Nakagawa et al. (2023)).
+model to (e.g.~fixed or random-effects) to use (Deeks et al. (2022);
+{Nakagawa et al.} (2023)).
 
 Investigating sources of bias
 
@@ -5881,8 +5997,7 @@ statistics (e.g.~those for assessing heterogeneity such as Chi-square or
 I2). Note that I2 provides a relative estimate of heterogeneity not an
 absolute measure. To express the impact of heterogeneity on the effect
 estimate in absolute terms, `prediction intervals' may be calculated
-(for details see Deeks, Higgins, and Altman (2022) and Nakagawa et al.
-(2023)).
+(for details see Deeks et al. (2022) and {Nakagawa et al.} (2023)).
 
 Non-overlapping confidence intervals for individual studies in a forest
 plot can usefully indicate the presence of heterogeneity among the
@@ -5890,7 +6005,7 @@ studies. However, note that the confidence interval of the overall
 effect estimate in a random-effects meta-analysis does not describe the
 degree of heterogeneity among the studies; it instead describes
 uncertainty in the mean of systematically different effects in the
-different studies (Deeks, Higgins, and Altman (2022)).
+different studies (Deeks et al. (2022)).
 
 Face validity checks and quality assurance
 
@@ -5944,7 +6059,7 @@ objectivity in reviewing scientific data, considerable subjective
 judgment is involved. Subjective judgements include the choice of effect
 measure, the choice of analysis method, the question of which data are
 methodologically sound enough to be included, and of which sources of
-heterogeneity are important (Thompson 1994; Nakagawa et al. 2023).
+heterogeneity are important (Thompson 1994; {Nakagawa et al.} 2023).
 Reviewers should state these decisions explicitly to minimise bias and
 ensure transparency.
 
@@ -5982,8 +6097,8 @@ behaviours.
 To date qualitative methods have been applied only rarely in
 environmental evidence synthesis. An example of the use of qualitative
 synthesis in a CEE review can be found in Pullin et al. (2013). Further
-information on these methods can be found in Gough, Oliver, and Thomas
-(2012) and Noyes et al. (2011).
+information on these methods can be found in Gough et al. (2012) and
+Noyes et al. (2011).
 
 \section{Systematic Maps}\label{systematic-maps}
 
@@ -6011,13 +6126,12 @@ visualisation}\label{mapping-and-data-visualisation}
 
 The process of mapping and presentation of data can take many forms and
 this guidance does not wish to be overly prescriptive in what is a fast
-moving field (see K. James, Randall, and Haddaway (2016) for a detailed
-discussion of methodologies for the production of Systematic Maps).
-Presentation of maps can range from a simple spreadsheet format to
-innovative forms of data visualisation that make the evidence base
-easier to interrogate and extract information of interest to the user.
-Good examples of data visualisation are M. McKinnon et al. (2016) and
-Haddaway, Styles, and Pullin (2014).
+moving field (see K. James et al. (2016) for a detailed discussion of
+methodologies for the production of Systematic Maps). Presentation of
+maps can range from a simple spreadsheet format to innovative forms of
+data visualisation that make the evidence base easier to interrogate and
+extract information of interest to the user. Good examples of data
+visualisation are M. McKinnon et al. (2016) and Haddaway et al. (2014).
 
 Recording of key characteristics of each study included in a narrative
 synthesis is vital if the Systematic Map is to be useful in summarising
@@ -6476,17 +6590,16 @@ used.
 
 \chapter{References}\label{references}
 
-\phantomsection\label{refs}
-\begin{CSLReferences}{1}{0}
+\protect\phantomsection\label{refs}
+\begin{CSLReferences}{1}{1}
 \bibitem[\citeproctext]{ref-AIASSA2015_applicabilityandfeasibility}
-Aiassa, E., J. P. T. Higgins, G. K. Frampton, M. Greiner, A. Afonso, B.
-Amzal, J. Deeks, et al. 2015. {``Applicability and Feasibility of
-Systematic Review for Performing Evidence-Based Risk Assessment in Food
-and Feed Safety.''} \emph{Critical Reviews in Food Science and
-Nutrition} 55: 1026--34.
+Aiassa, E., J. P. T. Higgins, G. K. Frampton, et al. 2015.
+{``Applicability and Feasibility of Systematic Review for Performing
+Evidence-Based Risk Assessment in Food and Feed Safety.''}
+\emph{Critical Reviews in Food Science and Nutrition} 55: 1026--34.
 
 \bibitem[\citeproctext]{ref-ALTMAN1991_measuringagreement}
-Altman, D. G. 1991. {``Measuring Agreement.''}
+Altman, D. G. 1991. \emph{Measuring Agreement}.
 
 \bibitem[\citeproctext]{ref-AVENELL2001_lessonsforsearchstrategies}
 Avenell, A., H. Handoll, and A. Grant. 2001. {``Lessons for Search
@@ -6506,19 +6619,28 @@ Quantitative Systematic Review.''} \emph{BMC Anesthesiology} 3: 1--1.
 
 \bibitem[\citeproctext]{ref-BAYLISS2016_updatingandamendingsystemat}
 Bayliss, H. R., N. R. Haddaway, J. Eales, G. K. Frampton, and K. L.
-James. 2016. {``Updating and Amending Systematic Reviews and Systematic
-Maps in Environmental Management.''}
+James. 2016. \emph{Updating and Amending Systematic Reviews and
+Systematic Maps in Environmental Management}.
+
+\bibitem[\citeproctext]{ref-BAYLISS2017_environmentalevidence621}
+Bayliss, H. R., S. Schindler, M. Adam, F. Essl, and W. Rabitsch. 2017.
+\emph{Environmental Evidence, 6:21}.
 
 \bibitem[\citeproctext]{ref-bayliss2015}
 Bayliss, Helen R., and F. Beyer. 2015. {``Information Retrieval for
 Ecological Syntheses.''} \emph{Research Synthesis Methods} 6: 136--48.
 \url{https://doi.org/10.1002/jrsm.1120}.
 
+\bibitem[\citeproctext]{ref-BERNES2015_whatistheinfluenceofared}
+Bernes, C., S. R. Carpenter, A. Gårdmark, et al. 2015. \emph{What Is the
+Influence of a Reduction of Planktivorous and Benthivorous Fish on Water
+Quality in Temperate Eutrophic Lakes? A Systematic Review}.
+
 \bibitem[\citeproctext]{ref-BOOTH2004_formulatinganswerablequestio}
-Booth, A. 2004. {``Formulating Answerable Questions.''}
+Booth, A. 2004. \emph{Formulating Answerable Questions}.
 
 \bibitem[\citeproctext]{ref-BOOTH2010_howmuchsearchingisenough}
----------. 2010. {``How Much Searching Is Enough? Comprehensive Versus
+Booth, A. 2010. {``How Much Searching Is Enough? Comprehensive Versus
 Optimal Retrieval for Technology Assessments.''} \emph{International
 Journal of Technology Assessment in Health Care} 26 (4): 431--35.
 
@@ -6527,50 +6649,63 @@ Borenstein, M., L. V. Hedges, J. P. T. Higgins, and H. R. Rothstein.
 2009. \emph{Introduction to Meta-Analysis}. John Wiley; Sons.
 
 \bibitem[\citeproctext]{ref-BOTTRILL2014_whataretheimpactsofnature}
-Bottrill, M., S. Cheng, R. Garside, S. Wongbusarakum, D. Roe, M. B.
-Holland, J. Edmond, and W. R. Turner. 2014. {``What Are the Impacts of
-Nature Conservation Interventions on Human Well-Being: A Systematic Map
-Protocol.''}
+Bottrill, M., S. Cheng, R. Garside, et al. 2014. \emph{What Are the
+Impacts of Nature Conservation Interventions on Human Well-Being: A
+Systematic Map Protocol}.
 
 \bibitem[\citeproctext]{ref-BOWLER2009_theimportanceofnatureforh}
-Bowler, D., L. Buyung-Ali, T. Knight, and A. S. Pullin. 2009. {``The
+Bowler, D., L. Buyung-Ali, T. Knight, and A. S. Pullin. 2009. \emph{The
 Importance of Nature for Health: Is There a Specific Benefit of Contact
-with Green Space? Environmental Evidence: Www.''}
+with Green Space? Environmental Evidence: Www}.
 
 \bibitem[\citeproctext]{ref-BOWLER2010_howeffectiveisgreeningof}
----------. 2010. {``How Effective Is 'Greening' of Urban Areas in
-Reducing Human Exposure to Ground Level Ozone Concentrations, UV
-Exposure and the 'Urban Heat Island Effect'? Environmental Evidence:
-Www.''}
+Bowler, D., L. Buyung-Ali, T. Knight, and A. S. Pullin. 2010. \emph{How
+Effective Is 'Greening' of Urban Areas in Reducing Human Exposure to
+Ground Level Ozone Concentrations, UV Exposure and the 'Urban Heat
+Island Effect'? Environmental Evidence: Www}.
 
 \bibitem[\citeproctext]{ref-BRAMER2013_thecomparativerecallofgoog}
 Bramer, W. M., D. Giustini, B. M. R. Kramer, and P. F. Anderson. 2013.
-{``The Comparative Recall of Google Scholar Versus PubMed in Identical
-Searches for Biomedical Systematic Review: A Review of Searches Used in
-Systematic Reviews.''}
+\emph{The Comparative Recall of Google Scholar Versus PubMed in
+Identical Searches for Biomedical Systematic Review: A Review of
+Searches Used in Systematic Reviews}.
+
+\bibitem[\citeproctext]{ref-BURFORD2013_assessingtheapplicabilityof}
+Burford, B., S. Lewin, V. Welch, E. Rehfuess, and E. Waters. 2013.
+{``Assessing the Applicability of Findings in Systematic Reviews of
+Complex Interventions Can Enhance the Utility of Reviews for Decision
+Making.''} \emph{Journal of Clinical Epidemiology} 66 (11): 1251--61.
+
+\bibitem[\citeproctext]{ref-CHAN2004_empiricalevidenceforselecti}
+Chan, A., A. Hróbjartsson, M. Haahr, P. C. Gøtzsche, and D. Altman.
+2004. \emph{Empirical Evidence for Selective Reporting of Outcomes in
+Randomized Trials: Comparison of Protocols to Published Articles}.
 
 \bibitem[\citeproctext]{ref-CHOI2014_duplicatepublicationofartic}
-Choi, W. S., S. W. Song, S. M. Ock, C. M. Kim, J. Lee, W. J. Chang, and
-S. H. Kim. 2014. {``Duplicate Publication of Articles Used in
-Meta-Analysis in Korea.''}
+Choi, W. S., S. W. Song, S. M. Ock, et al. 2014. \emph{Duplicate
+Publication of Articles Used in Meta-Analysis in Korea}.
 
 \bibitem[\citeproctext]{ref-CORLETT2011_troublewiththegrayliteratu}
 Corlett, R. T. 2011. {``Trouble with the Gray Literature.''}
 \emph{Biotropica} 43: 3--5.
 
 \bibitem[\citeproctext]{ref-DAVIES2006_arecurrentmanagementrecomme}
-Davies, Z. G., C. Tyler, G. B. Stewart, and A. S. Pullin. 2006. {``Are
-Current Management Recommendations for Conserving Saproxylic
-Invertebrates Effective?''}
+Davies, Z. G., C. Tyler, G. B. Stewart, and A. S. Pullin. 2006.
+\emph{Are Current Management Recommendations for Conserving Saproxylic
+Invertebrates Effective?}
+
+\bibitem[\citeproctext]{ref-DEEKS2005_section8}
+Deeks, J. J., J. P. T. Higgins, and D. G. Altman. 2005. \emph{Section
+8}.
 
 \bibitem[\citeproctext]{ref-DEEKSJJ2022_}
-Deeks, J. J., J. P. T. Higgins, and D. G. Altman. 2022. {``Cochrane
-Handbook for Systematic Reviews of Interventions.''}
+Deeks, J. J., J. P. T. Higgins, and D. G. Altman. 2022. \emph{Cochrane
+Handbook for Systematic Reviews of Interventions}.
 
 \bibitem[\citeproctext]{ref-DEPARTMENTFORENVIRONMENTFOODANDRURALAFFAIRSDEFRA2015_emergingtoolsandtechniques}
 Department for Environment, Food, and Rural Affairs (DEFRA). 2015.
-{``Emerging Tools and Techniques to Deliver Timely and Cost Effective
-Evidence Reviews.''} DEFRA.
+\emph{Emerging Tools and Techniques to Deliver Timely and Cost Effective
+Evidence Reviews}. DEFRA.
 
 \bibitem[\citeproctext]{ref-DICKERSIN2005_publicationbiasrecognizing}
 Dickersin, K. 2005. \emph{Publication Bias: Recognizing the Problem,
@@ -6584,13 +6719,13 @@ When Data or Resources Are Limited.''} \emph{Austral Ecology} 40: 1--11.
 
 \bibitem[\citeproctext]{ref-EDWARDS2002_identificationofrandomizedc}
 Edwards, P., M. Clarke, C. Diguiseppi, S. Pratap, I. Roberts, and R.
-Wentz. 2002. {``Identification of Randomized Controlled Trials in
-Systematic Reviews: Accuracy and Reliability of Screening Records.''}
+Wentz. 2002. \emph{Identification of Randomized Controlled Trials in
+Systematic Reviews: Accuracy and Reliability of Screening Records}.
 
 \bibitem[\citeproctext]{ref-EFSAEuropeanFoodandSafetyAuthority2010_applicationofsystematicrevi}
-EFSA (European Food Safety Authority). 2010. {``Application of
+EFSA (European Food Safety Authority). 2010. \emph{Application of
 Systematic Review Methodology to Food and Safety Assessments to Support
-Decision Making.''}
+Decision Making}.
 
 \bibitem[\citeproctext]{ref-VONELM2004_differentpatternsofduplicat}
 Elm, E. von, G. Poglia, B. Walder, and M. R. Tramèr. 2004. {``Different
@@ -6598,9 +6733,9 @@ Patterns of Duplicate Publication: An Analysis of Articles Used in
 Systematic Reviews.''} \emph{JAMA} 291: 974--80.
 
 \bibitem[\citeproctext]{ref-VONELME2003_oct2631barcelonaspain}
-Elm, E. von, M. R. Tramèr, P. Jüni, and M. Egger. 2003. {``Does
+Elm, E. von, M. R. Tramèr, P. Jüni, and M. Egger. 2003. \emph{Does
 Duplicate Publication of Trials Introduce Bias in Systematic Reviews? A
-Systematic Review.''}
+Systematic Review}.
 
 \bibitem[\citeproctext]{ref-ENGLUND1999_theimportanceofdataselecti}
 Englund, G., O. Sarnelle, and S. D. Cooper. 1999. {``The Importance of
@@ -6613,9 +6748,15 @@ Douglas. 2004. {``Can Methods Applied in Medicine Be Used to Summarize
 and Disseminate Conservation Research?''} \emph{Environmental
 Conservation} 31: 190--98.
 
+\bibitem[\citeproctext]{ref-FELTON2010_ametaanalysisoffaunaandf}
+Felton, A., E. Knight, J. Wood, C. Zammit, and D. B. Lindenmayer. 2010.
+\emph{A Meta-Analysis of Fauna and Flora Species Richness and Abundance
+in Plantations and Pasture Lands}.
+
 \bibitem[\citeproctext]{ref-FRAMPTON2017_eligibilityscreeninginevide}
-Frampton, G. K., B. Livoreil, and G. Petrokofsky. 2017. {``Eligibility
-Screening in Evidence Synthesis of Environmental Management Topics.''}
+Frampton, G. K., B. Livoreil, and G. Petrokofsky. 2017.
+\emph{Eligibility Screening in Evidence Synthesis of Environmental
+Management Topics}.
 
 \bibitem[\citeproctext]{ref-frampton2017}
 Frampton, G., B. Livoreil, and G. Petrokofsky. 2017. {``Eligibility
@@ -6623,8 +6764,13 @@ Screening in Evidence Synthesis of Environmental Management Topics.''}
 \emph{Environmental Evidence} 6: 1--13.
 \url{https://doi.org/10.1186/s13750-017-0102-2}.
 
+\bibitem[\citeproctext]{ref-FRAMPTON2022_principlesandframeworkfora}
+Frampton, G., P. Whaley, M. Bennett, et al. 2022. \emph{Principles and
+Framework for Assessing the Risk of Bias for Studies Included in
+Comparative Quantitative Environmental Systematic Reviews}.
+
 \bibitem[\citeproctext]{ref-FREEMAN1984_stakeholdermanagementastra}
-Freeman, R. 1984. {``Stakeholder Management: A Strategic Approach.''}
+Freeman, R. 1984. \emph{Stakeholder Management: A Strategic Approach}.
 
 \bibitem[\citeproctext]{ref-GATESS2002_reviewofmethodologyofquant}
 Gates, S. 2002. {``Review of Methodology of Quantitative Reviews Using
@@ -6637,22 +6783,26 @@ to Be Used Alone for Systematic Reviews.''} \emph{Online Journal of
 Public Health Informatics} 5: 1--9.
 
 \bibitem[\citeproctext]{ref-GLANVILLE2019_incooperh}
-Glanville, J. 2019. \emph{Searching Bibliographic Databases}. Edited by
-H. Cooper, L. V. Hedges, and J. C. Valentine. 3rd ed. New York, NY:
-Russell Sage Foundation.
+Glanville, J. 2019. \emph{Searching Bibliographic Databases}. 3rd ed.
+Edited by H. Cooper, L. V. Hedges, and J. C. Valentine. Russell Sage
+Foundation.
+
+\bibitem[\citeproctext]{ref-GLASS1976_primarysecondaryandmetaa}
+Glass, G. 1976. {``Primary, Secondary, and Meta-Analysis of Research.''}
+\emph{Educational Researcher} 5: 3--8.
 
 \bibitem[\citeproctext]{ref-GTZSCHE1989_multiplepublicationofreport}
 Gøtzsche, P. C. 1989. {``Multiple Publication of Reports of Drug
 Trials.''} \emph{European Journal of Clinical Pharmacology} 36: 429--32.
 
 \bibitem[\citeproctext]{ref-GTZSCHE2012_contentareaexpertsasauthor}
-Gøtzsche, P. C., and J. P. A. Ioannidis. 2012. {``Content Area Experts
-as Authors: Helpful or Harmful for Systematic Reviews and
-Meta-Analyses?''}
+Gøtzsche, P. C., and J. P. A. Ioannidis. 2012. \emph{Content Area
+Experts as Authors: Helpful or Harmful for Systematic Reviews and
+Meta-Analyses?}
 
 \bibitem[\citeproctext]{ref-GOUGH2012_anintroductiontosystematic}
 Gough, D., S. Oliver, and J. Thomas. 2012. \emph{An Introduction to
-Systematic Reviews}. London: Sage Publications Ltd.
+Systematic Reviews}. Sage Publications Ltd.
 
 \bibitem[\citeproctext]{ref-GRINDLAY2012_searchingtheveterinaryliter}
 Grindlay, D. J. C., M. L. Brennan, and R. S. Dean. 2012. {``Searching
@@ -6665,10 +6815,10 @@ Gurevitch, J., and L. V. Hedges. 1999. {``Statistical Issues in
 Ecological Meta-Analyses.''} \emph{Ecology} 80: 1142--49.
 
 \bibitem[\citeproctext]{ref-GUREVITCHJHEDGESLV2001_metaanalysiscombiningthere}
----------. 2001. {``Meta-Analysis: Combining the Results of Independent
-Experiments.''} In \emph{Design and Analysis of Ecological Experiments},
-edited by S. M. Scheiner and J. Gurevitch, 347--69. New York: Oxford
-University Press.
+Gurevitch, J., and L. V. Hedges. 2001. {``Meta-Analysis: Combining the
+Results of Independent Experiments.''} In \emph{Design and Analysis of
+Ecological Experiments}, edited by S. M. Scheiner and J. Gurevitch.
+Oxford University Press.
 
 \bibitem[\citeproctext]{ref-HADDAWAY2015_theuseofwebscrapingsoftwa}
 Haddaway, N. R. 2015. {``The Use of Web-Scraping Software in Searching
@@ -6680,40 +6830,50 @@ of Grey Literature Important for Reviews in Conservation.''}
 \emph{Biological Conservation} 191: 827--29.
 
 \bibitem[\citeproctext]{ref-HADDAWAY2015_theroleofgooglescholarin}
-Haddaway, N. R., A. M. Collins, D. Coughlin, and S. Kirk. 2015. {``The
-Role of Google Scholar in Evidence Reviews and Its Applicability to Grey
-Literature Searching.''}
+Haddaway, N. R., A. M. Collins, D. Coughlin, and S. Kirk. 2015.
+\emph{The Role of Google Scholar in Evidence Reviews and Its
+Applicability to Grey Literature Searching}.
 
 \bibitem[\citeproctext]{ref-HADDAWAY2017_arapidmethodtoincreasetra}
----------. 2017. {``A Rapid Method to Increase Transparency and
-Efficiency in Web-Based Searches.''}
+Haddaway, N. R., A. M. Collins, D. Coughlin, and S. Kirk. 2017. \emph{A
+Rapid Method to Increase Transparency and Efficiency in Web-Based
+Searches}.
 
 \bibitem[\citeproctext]{ref-HADDAWAY2017_aframeworkforstakeholderen}
-Haddaway, N. R., C. Kohl, N. Rebelo da Silva, J. Schiemann, A. Spok, R.
-Stewart, J. B. Sweet, and R. Wilhelm. 2017. {``A Framework for
-Stakeholder Engagement During Systematic Reviews and Maps in
-Environmental Management.''}
+Haddaway, N. R., C. Kohl, N. Rebelo da Silva, et al. 2017. \emph{A
+Framework for Stakeholder Engagement During Systematic Reviews and Maps
+in Environmental Management}.
 
 \bibitem[\citeproctext]{ref-HADDAWAY2014_evidenceontheenvironmental}
-Haddaway, N. R., D. Styles, and A. S. Pullin. 2014. {``Evidence on the
-Environmental Impacts of Farm Land Abandonment in High Altitude/Mountain
-Regions: A Systematic Map.''}
+Haddaway, N. R., D. Styles, and A. S. Pullin. 2014. \emph{Evidence on
+the Environmental Impacts of Farm Land Abandonment in High
+Altitude/Mountain Regions: A Systematic Map}.
 
 \bibitem[\citeproctext]{ref-haddaway2015}
 Haddaway, N. R., P. Woodcock, B. Macura, and A. Collins. 2015. {``Making
 literature reviews more reliable through application of lessons from
-systematic reviews.''} \emph{Conservation Biology} 29 (6): 1596--1605.
+systematic reviews.''} \emph{Conservation Biology} 29 (6): 1596--605.
 \url{https://doi.org/10.1111/cobi.12541}.
 
 \bibitem[\citeproctext]{ref-HIGGINS2011_selectingstudiesandcollecti}
 Higgins, J. P. T., and J. J. Deeks. 2011. {``Selecting Studies and
 Collecting Data.''} In \emph{Cochrane Handbook for Systematic Reviews of
-Interventions}, edited by J. P. T. Higgins and S. Green, 151--86.
-Chichester: Wiley-Blackwell.
+Interventions}, edited by J. P. T. Higgins and S. Green.
+Wiley-Blackwell.
 
 \bibitem[\citeproctext]{ref-HIGGINS2011_cochranehandbookforsystemat}
 Higgins, J. P. T., and S. Green. 2011. \emph{Cochrane Handbook for
-Systematic Reviews of Interventions}. Chichester: Wiley.
+Systematic Reviews of Interventions}. Wiley.
+
+\bibitem[\citeproctext]{ref-HIGGINS2022_cochranehandbookforsystemat}
+Higgins, J. P. T., J. Savović, M. J. Page, R. G. Elbers, and J. A. C.
+Sterne. 2022. \emph{Cochrane Handbook for Systematic Reviews of
+Interventions, Version 6}.
+
+\bibitem[\citeproctext]{ref-HOLMAN2015_evidenceofexperimentalbias}
+Holman, L., M. Head, R. Lanfear, and M. Jennions. 2015. \emph{Evidence
+of Experimental Bias in the Life Sciences: Why We Need Blind Data
+Recording}.
 
 \bibitem[\citeproctext]{ref-HOLST2005_stateoftheartofexpertsea}
 Holst, R., and C. J. Funk. 2005. {``State of the Art of Expert
@@ -6721,13 +6881,13 @@ Searching: Results of a Medical Library Association Survey.''}
 \emph{Journal of the Medical Library Association} 93: 45--52.
 
 \bibitem[\citeproctext]{ref-HOPEWELL2007_greyliteratureinmetaanalys}
-Hopewell, S., S. McDonald, M. J. Clarke, and M. Egger. 2007. {``Grey
+Hopewell, S., S. McDonald, M. J. Clarke, and M. Egger. 2007. \emph{Grey
 Literature in Meta-Analyses of Randomized Trials of Health Care
-Interventions.''}
+Interventions}.
 
 \bibitem[\citeproctext]{ref-JAMES2016_amethodologyforsystematicm}
-James, K. L., N. P. Randall, and N. R. Haddaway. 2016. {``A Methodology
-for Systematic Mapping in Environmental Sciences.''}
+James, K. L., N. P. Randall, and N. R. Haddaway. 2016. \emph{A
+Methodology for Systematic Mapping in Environmental Sciences}.
 
 \bibitem[\citeproctext]{ref-james2016}
 James, K., N. Randall, and Neal R. Haddaway. 2016. {``A Methodology for
@@ -6737,12 +6897,17 @@ Evidence} 5: 1--13. \url{https://doi.org/10.1186/s13750-016-0059-6}.
 \bibitem[\citeproctext]{ref-KHAN2003}
 Khan, K. S., R. Kunz, J. Kleijnen, and G. Antes. 2003. \emph{Systematic
 Reviews to Support Evidence-Based Medicine: How to Apply Findings of
-Healthcare Research}. London: Royal Society of Medicine Press Ltd.
+Healthcare Research}. Royal Society of Medicine Press Ltd.
+
+\bibitem[\citeproctext]{ref-KIRKHAM2010_theimpactofoutcomereportin}
+{Kirkham, J., K. Dwan, D. Altman, et al.} 2010. \emph{The Impact of
+Outcome Reporting Bias in Randomised Controlled Trials on a Cohort of
+Systematic Reviews}.
 
 \bibitem[\citeproctext]{ref-KONNOK2020_ignoringnonenglishlanguage}
-Konno, K., M. Akasaka, C. Koshida, N. Katayama, N. Osada, R. Spake, and
-T. Amano. 2020. {``Ignoring Non-English Language Studies May Bias
-Ecological Meta-Analyses.''} \emph{Ecology and Evolution} 10: 6373--84.
+Konno, K., M. Akasaka, C. Koshida, et al. 2020. {``Ignoring Non-English
+Language Studies May Bias Ecological Meta-Analyses.''} \emph{Ecology and
+Evolution} 10: 6373--84.
 
 \bibitem[\citeproctext]{ref-KONNO2020_assessingtheriskofbiasin}
 Konno, K., and A. S. Pullin. 2020. {``Assessing the Risk of Bias in
@@ -6754,20 +6919,19 @@ Koricheva, J., J. Gurevitch, and K. Mengersen. 2013. \emph{Handbook of
 Meta-Analysis in Ecology and Evolution}.
 
 \bibitem[\citeproctext]{ref-KUGLEY2016_searchingforstudiesaguide}
-Kugley, S., A. Wade, J. Thomas, Q. Mahood, A. M. Klint-Jørgensen, K.
-Hammerstrøm, and N. Sathe. 2016. {``Searching for Studies: A Guide to
-Information Retrieval for Campbell Systematic Reviews.''}
+Kugley, S., A. Wade, J. Thomas, et al. 2016. \emph{Searching for
+Studies: A Guide to Information Retrieval for Campbell Systematic
+Reviews}.
 
 \bibitem[\citeproctext]{ref-LAND2013_howeffectivearecreatedorr}
-Land, M., W. Granéli, A. Grimwall, C. C. Hoffmann, W. J. Mitsch, K. S.
-Tonderski, and J. T. A. Verhoeven. 2013. {``How Effective Are Created or
-Restored Freshwater Wetlands for Nitrogen and Phosphorus Removal? A
-Systematic Review Protocol.''}
+Land, M., W. Granéli, A. Grimwall, et al. 2013. \emph{How Effective Are
+Created or Restored Freshwater Wetlands for Nitrogen and Phosphorus
+Removal? A Systematic Review Protocol}.
 
 \bibitem[\citeproctext]{ref-LANGER2017_howstakeholderengagementhas}
-Langer, L., Y. Erasmus, N. Tannous, and R. Stewart. 2017. {``How
+Langer, L., Y. Erasmus, N. Tannous, and R. Stewart. 2017. \emph{How
 Stakeholder Engagement Has Led Us to Reconsider Definitions of Rigour in
-Systematic Reviews.''}
+Systematic Reviews}.
 
 \bibitem[\citeproctext]{ref-LEIMU2004_cumulativemetaanalysisane}
 Leimu, R., and J. Koricheva. 2004. {``Cumulative Meta-Analysis: A New
@@ -6776,15 +6940,17 @@ Ecology.''} \emph{Proceedings of the Royal Society B: Biological
 Sciences} 271: 1961--66.
 
 \bibitem[\citeproctext]{ref-LEIMU2005_whatdeterminesthecitationf}
----------. 2005. {``What Determines the Citation Frequency of Ecological
-Papers?''}
+Leimu, R., and J. Koricheva. 2005. \emph{What Determines the Citation
+Frequency of Ecological Papers?}
 
 \bibitem[\citeproctext]{ref-LIBERATI2009_theprismastatementforrepor}
-Liberati, A., D. G. Altman, J. Tetzlaff, C. Mulrow, P. C. Gøtzsche, J.
-P. A. Ioannidis, M. Clarke, P. J. Devereaux, J. Kleijnen, and D. Moher.
-2009. {``The PRISMA Statement for Reporting Systematic Reviews and
-Meta-Analyses of Studies That Evaluate Health Care Interventions:
-Explanation and Elaboration.''}
+Liberati, A., D. G. Altman, J. Tetzlaff, et al. 2009. \emph{The PRISMA
+Statement for Reporting Systematic Reviews and Meta-Analyses of Studies
+That Evaluate Health Care Interventions: Explanation and Elaboration}.
+
+\bibitem[\citeproctext]{ref-LIPSEYMWWILSONDB2001_practicalmetaanalysis}
+Lipsey, M. W., and D. B. Wilson. 2001. \emph{Practical Meta-Analysis}.
+Sage Publications.
 
 \bibitem[\citeproctext]{ref-LORTIE2007_publicationbiasandmeritin}
 Lortie, C. J., L. W. Aarssen, A. E. Budden, J. K. Koricheva, R. Leimu,
@@ -6798,56 +6964,52 @@ Literature for Systematic Reviews: Challenges and Benefits.''}
 
 \bibitem[\citeproctext]{ref-MCDONAGH2013_avoidingbiasinselectingstu}
 McDonagh, M., K. Peterson, P. Raina, S. Chang, and P. Shekelle. 2013.
-{``Avoiding Bias in Selecting Studies.''} Agency for Healthcare
+\emph{Avoiding Bias in Selecting Studies}. Agency for Healthcare
 Research; Quality (US).
 
 \bibitem[\citeproctext]{ref-MCKINNON2016_whataretheeffectsofnature}
-McKinnon, M. C., S. H. Cheng, S. Dupré, J. Edmond, R. Garside, L. Glew,
-M. B. Holland, et al. 2016. {``What Are the Effects of Nature
-Conservation on Human Well-Being? A Systematic Map of Empirical Evidence
-from Developing Countries.''}
+McKinnon, M. C., S. H. Cheng, S. Dupré, et al. 2016. \emph{What Are the
+Effects of Nature Conservation on Human Well-Being? A Systematic Map of
+Empirical Evidence from Developing Countries}.
 
 \bibitem[\citeproctext]{ref-mckinnon2016}
-McKinnon, M., Samantha H. Cheng, S. Dupre, J. Edmond, R. Garside, Louise
-Glew, M. Holland, et al. 2016. {``What Are the Effects of Nature
-Conservation on Human Well-Being? A Systematic Map of Empirical Evidence
-from Developing Countries.''} \emph{Environmental Evidence} 5: 1--25.
-\url{https://doi.org/10.1186/s13750-016-0058-7}.
+McKinnon, M., Samantha H. Cheng, S. Dupre, et al. 2016. {``What Are the
+Effects of Nature Conservation on Human Well-Being? A Systematic Map of
+Empirical Evidence from Developing Countries.''} \emph{Environmental
+Evidence} 5: 1--25. \url{https://doi.org/10.1186/s13750-016-0058-7}.
 
 \bibitem[\citeproctext]{ref-MULLINS2014_reportingqualityofsearchme}
 Mullins, M. M., J. B. DeLuca, N. Crepaz, and C. M. Lyles. 2014.
-{``Reporting Quality of Search Methods in Systematic Reviews of HIV
+\emph{Reporting Quality of Search Methods in Systematic Reviews of HIV
 Behavioural Interventions (2000--2010): Are the Searches Clearly
-Explained, Systematic and Reproducible?''}
+Explained, Systematic and Reproducible?}
 
 \bibitem[\citeproctext]{ref-NAKAGAWA2023_quantitativeevidencesynthesi}
-Nakagawa, S., Y. Yang, E. L. Macartney, et al. 2023. {``Quantitative
+{Nakagawa, S., Y. Yang, E. L. Macartney, et al.} 2023. {``Quantitative
 Evidence Synthesis: A Practical Guide on Meta-Analysis, Meta-Regression,
 and Publication Bias Tests for Environmental Sciences.''}
 \emph{Environmental Evidence} 12: 8.
 https://doi.org/\url{https://doi.org/10.1186/s13750-023-00301-6}.
 
 \bibitem[\citeproctext]{ref-NHSCENTREFORREVIEWSANDDISSEMINATION2001_undertakingsystematicreview}
-NHS Centre for Reviews and Dissemination. 2001. {``Undertaking
-Systematic Review of Research on Effectiveness.''} {NHS Centre for
-Reviews and Dissemination}.
+NHS Centre for Reviews and Dissemination. 2001. \emph{Undertaking
+Systematic Review of Research on Effectiveness}. {NHS Centre for Reviews
+and Dissemination}.
 
 \bibitem[\citeproctext]{ref-NOYES2011_chapter20qualitativeresear}
 Noyes, J., J. Popay, A. Pearson, K. Hannes, and A. Booth. 2011.
-{``Chapter 20: Qualitative Research and Cochrane Reviews.''}
+\emph{Chapter 20: Qualitative Research and Cochrane Reviews}.
 
 \bibitem[\citeproctext]{ref-OLEARY2016_thereliabilityofevidencere}
-O'Leary, B. C., K. Kvist, H. R. Bayliss, G. Derroire, J. R. Healey, K.
-Hughes, F. Kleinschroth, M. Sciberras, P. Woodcock, and A. S. Pullin.
-2016. {``The Reliability of Evidence Review Methodology in Environmental
-Science and Conservation.''} \emph{Environmental Science and Policy} 64:
-75--82.
+O'Leary, B. C., K. Kvist, H. R. Bayliss, et al. 2016. {``The Reliability
+of Evidence Review Methodology in Environmental Science and
+Conservation.''} \emph{Environmental Science and Policy} 64: 75--82.
 
 \bibitem[\citeproctext]{ref-OJANEN2014_whataretheenvironmentalimp}
 Ojanen, M., D. Miller, W. Zhou, B. Mshale, E. Mwangi, and G.
-Petrokofsky. 2014. {``What Are the Environmental Impacts of Property
+Petrokofsky. 2014. \emph{What Are the Environmental Impacts of Property
 Rights Regimes in Forests, Fisheries and Rangelands? A Systematic Review
-Protocol.''}
+Protocol}.
 
 \bibitem[\citeproctext]{ref-OJANEN2017_whataretheenvironmentalimp}
 Ojanen, M., W. Zhou, D. C. Miller, S. H. Nieto, B. Mshale, and G.
@@ -6859,21 +7021,25 @@ Rights Regimes in Forests, Fisheries and Rangelands?''}
 Ortega, J. L. 2014. {``Academic Search Engines: A Quantitative
 Outlook.''} \emph{Online Information Review} 39: 435--36.
 
+\bibitem[\citeproctext]{ref-PEARL2014_externalvalidityfromdocal}
+Pearl, J., and E. Bareinboim. 2014. {``External Validity: From
+Do-Calculus to Transportability Across Populations.''} \emph{Statistical
+Science} 29: 579--95.
+
 \bibitem[\citeproctext]{ref-PETERSEN2011_identifyingstrategiesforstu}
 Petersen, K., and N. B. Ali. 2011. {``Identifying Strategies for Study
-Selection in Systematic Reviews and Maps.''} In.
+Selection in Systematic Reviews and Maps.''}
 
 \bibitem[\citeproctext]{ref-PETTICREW2006_systematicreviewsinthesoci}
 Petticrew, M., and H. Roberts. 2006. \emph{Systematic Reviews in the
-Social Sciences: A Practical Guide}. Oxford: Blackwell.
+Social Sciences: A Practical Guide}. Blackwell.
 
 \bibitem[\citeproctext]{ref-POPAY2006_movingbeyondeffectiveness}
-Popay, J. 2006. {``Moving Beyond Effectiveness.''}
+Popay, J. 2006. \emph{Moving Beyond Effectiveness}.
 
 \bibitem[\citeproctext]{ref-PULLIN2013_humanwellbeingimpactsofte}
-Pullin, A. S., M. Bangpan, S. E. Dalrymple, K. Dickson, N. R. Haddaway,
-J. R. Healey, H. Hauari, et al. 2013. {``Human Well-Being Impacts of
-Terrestrial Protected Areas.''}
+Pullin, A. S., M. Bangpan, S. E. Dalrymple, et al. 2013. \emph{Human
+Well-Being Impacts of Terrestrial Protected Areas}.
 
 \bibitem[\citeproctext]{ref-PULLIN2009_linkingreductionistsciencea}
 Pullin, A. S., T. M. Knight, and A. R. Watkinson. 2009. {``Linking
@@ -6887,18 +7053,18 @@ Rader, T., M. Mann, C. Stansfield, C. Cooper, and M. Sampson. 2014.
 Common Issues.''} \emph{Research Synthesis Methods} 5: 98--115.
 
 \bibitem[\citeproctext]{ref-RANDALL2012_theeffectivenessofintegrate}
-Randall, N. P., and K. L. James. 2012. {``The Effectiveness of
+Randall, N. P., and K. L. James. 2012. \emph{The Effectiveness of
 Integrated Farm Management, Organic Farming and Agri-Environment Schemes
-for Conserving Biodiversity in Temperate Europe -- a Systematic Map.''}
+for Conserving Biodiversity in Temperate Europe -- a Systematic Map}.
 
 \bibitem[\citeproctext]{ref-RATHBONE2015_fastertitleandabstractscre}
-Rathbone, J., T. Hoffmann, and P. Glasziou. 2015. {``Faster Title and
+Rathbone, J., T. Hoffmann, and P. Glasziou. 2015. \emph{Faster Title and
 Abstract Screening? Evaluating Abstrackr, a Semi-Automated Online
-Screening Program for Systematic Reviewers.''}
+Screening Program for Systematic Reviewers}.
 
 \bibitem[\citeproctext]{ref-CENTREFORREVIEWSANDDISSEMINATIONCRD2009_systematicreviews}
-Reviews, Centre for, and Dissemination (CRD). 2009. {``Systematic
-Reviews.''} Centre for Reviews; Dissemination (CRD).
+Reviews, Centre for, and Dissemination (CRD). 2009. \emph{Systematic
+Reviews}. Centre for Reviews; Dissemination (CRD).
 
 \bibitem[\citeproctext]{ref-ROBERTS2006_arereviewarticlesareliable}
 Roberts, P. D., G. B. Stewart, and A. S. Pullin. 2006. {``Are Review
@@ -6908,23 +7074,23 @@ Environmental Management? A Comparison with Medicine.''}
 
 \bibitem[\citeproctext]{ref-RODRGUEZ2016_chinasconversionofcropland}
 Rodríguez, L., N. J. Hogarth, W. Zhou, C. Xie, K. Zhang, and L. Putzel.
-2016. {``China's Conversion of Cropland to Forest Program: A Systematic
-Review of the Environmental and Socioeconomic Effects.''}
+2016. \emph{China's Conversion of Cropland to Forest Program: A
+Systematic Review of the Environmental and Socioeconomic Effects}.
 
 \bibitem[\citeproctext]{ref-ROONEY2014_systematicreviewandevidence}
 Rooney, A. A., A. L. Boyles, M. S. Wolfe, J. R. Bucher, and K. A.
-Thayer. 2014. {``Systematic Review and Evidence Integration for
-Literature-Based Environmental Health Science Assessments.''}
+Thayer. 2014. \emph{Systematic Review and Evidence Integration for
+Literature-Based Environmental Health Science Assessments}.
 
 \bibitem[\citeproctext]{ref-ROTHSTEIN2005_chapter1}
 Rothstein, H. R., A. J. Sutton, and M. Borenstein. 2005. {``Chapter
 1.''} In \emph{Publication Bias in Meta-Analysis: Prevention, Assessment
 and Adjustments}, edited by H. R. Rothstein, A. J. Sutton, and M.
-Borenstein. Chichester, UK: John Wiley \& Sons, Ltd.
+Borenstein. John Wiley \& Sons, Ltd.
 
 \bibitem[\citeproctext]{ref-SAGOO2009_systematicreviewsofgenetic}
-Sagoo, G. S., J. Little, and J. P. T. Higgins. 2009. {``Systematic
-Reviews of Genetic Association Studies.''}
+Sagoo, G. S., J. Little, and J. P. T. Higgins. 2009. \emph{Systematic
+Reviews of Genetic Association Studies}.
 
 \bibitem[\citeproctext]{ref-SALEH2014_greyliteraturesearchingfor}
 Saleh, A. A., M. A. Ratajeski, and M. Bertolet. 2014. {``Grey Literature
@@ -6940,36 +7106,43 @@ Interpreting the Findings.''} \emph{Zoonoses and Public Health} 61:
 39--51.
 
 \bibitem[\citeproctext]{ref-SAYERS2007_tipsandtricksinperforming}
-Sayers, A. 2007. {``Tips and Tricks in Performing a Systematic
-Review.''}
+Sayers, A. 2007. \emph{Tips and Tricks in Performing a Systematic
+Review}.
+
+\bibitem[\citeproctext]{ref-SCHAFER1997_analysisofincompletemultiva}
+Schafer, J. L. 1997. \emph{Analysis of Incomplete Multivariate Data}.
 
 \bibitem[\citeproctext]{ref-SCHINDLER2016_thenetworkbiodiversityknowle}
-Schindler, S., B. Livoreil, I. S. Pinto, R. M. Araujo, K. P. Zulka, A.
-S. Pullin, L. Santamaria, M. Kropik, P. Fernandez-Mendez, and T. Wrbka.
-2016. {``The Network BiodiversityKnowledge in Practice: Insights from
-Three Trial Assessments.''} \emph{Biodiversity Conservation} 25:
-1301--18.
+Schindler, S., B. Livoreil, I. S. Pinto, et al. 2016. {``The Network
+BiodiversityKnowledge in Practice: Insights from Three Trial
+Assessments.''} \emph{Biodiversity Conservation} 25: 1301--18.
+
+\bibitem[\citeproctext]{ref-SCHULZ1995_empiricalevidenceofbias}
+Schulz, K., I. Chalmers, R. Hayes, and D. Altman. 1995. \emph{Empirical
+Evidence of Bias}.
 
 \bibitem[\citeproctext]{ref-SMART2001_radiologyandtheinterneta}
 Smart, J. M., and D. Burling. 2001. {``Radiology and the Internet: A
 Systematic Review of Patient Information Resources.''} \emph{Clinical
 Radiology} 56: 867--70.
 
+\bibitem[\citeproctext]{ref-SMITH2010_ispredatorcontrolandeffect}
+Smith, R. K., A. S. Pullin, G. B. Stewart, and W. J. Sutherland. 2010.
+\emph{Is Predator Control an Effective Strategy for Enhancing Bird
+Populations? CEE Review 08-001 (SR38)}.
+
 \bibitem[\citeproctext]{ref-SOCIALSCIENCERESEARCHUNIT2016_eppireviewer4}
-Social Science Research Unit. 2016. {``EPPI-Reviewer 4.''}
+Social Science Research Unit. 2016. \emph{EPPI-Reviewer 4}.
 \url{https://eppi.ioe.ac.uk/cms/Default.aspx?alias=eppi.ioe.ac.uk/cms/er4}.
 
 \bibitem[\citeproctext]{ref-SDERSTRM2014_whataretheeffectsofagricu}
-Söderström, B., K. Hedlund, L. E. Jackson, T. Kätterer, E. Lugato, I. K.
-Thomsen, and H. B. Jørgensen. 2014. {``What Are the Effects of
-Agricultural Management on Soil Organic Carbon (SOC) Stocks?''}
-\emph{Environmental Evidence} 3: 2.
+Söderström, B., K. Hedlund, L. E. Jackson, et al. 2014. {``What Are the
+Effects of Agricultural Management on Soil Organic Carbon (SOC)
+Stocks?''} \emph{Environmental Evidence} 3: 2.
 
 \bibitem[\citeproctext]{ref-SONG2010_disseminationandpublication}
-Song, F., S. Parekh, L. Hooper, Y. K. Loke, J. Ryder, A. J. Sutton, C.
-Hing, C. S. Kwok, C. Pang, and I. Harvey. 2010. {``Dissemination and
-Publication of Research Findings: An Updated Review of Related
-Biases.''}
+Song, F., S. Parekh, L. Hooper, et al. 2010. \emph{Dissemination and
+Publication of Research Findings: An Updated Review of Related Biases}.
 
 \bibitem[\citeproctext]{ref-StanleyPETPEESE}
 Stanley, T. D., and Hristos Doucouliagos. 2014. {``Meta-Regression
@@ -6983,13 +7156,36 @@ Compromising Research Quality.''} \emph{Journal of Health Services
 Research and Policy} 17: 248--51.
 
 \bibitem[\citeproctext]{ref-THOMPSON1994_systematicreviewwhysources}
-Thompson, S. G. 1994. {``Systematic Review: Why Sources of Heterogeneity
-in Meta-Analysis Should Be Investigated.''}
+Thompson, S. G. 1994. \emph{Systematic Review: Why Sources of
+Heterogeneity in Meta-Analysis Should Be Investigated}.
 
 \bibitem[\citeproctext]{ref-TRAMR1997_impactofcovertduplicatepub}
 Tramèr, M. R., D. J. M. Reynolds, R. A. Moore, and H. J. McQuay. 1997.
 {``Impact of Covert Duplicate Publication on Meta-Analysis: A Case
 Study.''} \emph{British Medical Journal} 315: 635--40.
+
+\bibitem[\citeproctext]{ref-WANG2006_applicabilityandtransferabil}
+Wang, S., J. R. Moss, and J. E. Hiller. 2006. {``Applicability and
+Transferability of Interventions in Evidence-Based Public Health.''}
+\emph{Health Promotion International} 21 (1): 76--83.
+
+\bibitem[\citeproctext]{ref-WEISE2020_assessingcontextsuitability}
+Weise, A., R. Büchter, D. Pieper, and T. Mathes. 2020. {``Assessing
+Context Suitability (Generalizability, External Validity, Applicability
+or Transferability) of Findings in Evidence Syntheses in Healthcare--an
+Integrative Review of Methodological Guidance.''} \emph{Research
+Synthesis Methods} 11 (6): 760--79.
+
+\bibitem[\citeproctext]{ref-WOOD2008_empiricalevidenceofbiasin}
+{Wood, L., M. Egger, L. Gluud, et al.} 2008. {``Empirical Evidence of
+Bias in Treatment Effect Estimates in Controlled Trials with Different
+Interventions and Outcomes: Meta-Epidemiological Study.''} \emph{BMJ}
+336: 601--5.
+
+\bibitem[\citeproctext]{ref-WORTMAN1994_judgingresearchquality}
+Wortman, P. 1994. {``Judging Research Quality.''} In \emph{The Handbook
+of Research Synthesis}, edited by H. Cooper and L. Hedges. Russell Sage
+Foundation.
 
 \bibitem[\citeproctext]{ref-ZHANG2006_reportingtheroleofexperts}
 Zhang, L., M. Sampson, and J. McGowan. 2006. {``Reporting the Role of

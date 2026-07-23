@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>7&nbsp; Critical appraisal of study validity – CEE Guidelines</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -20,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -34,15 +56,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="./Chapter_6.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-70a47bd5681a7291082a5b9f83d58762.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9e3e5b9121e68b3f077afb32f2c64d95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -96,9 +117,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      </a>
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">CEE Guidelines</a> 
     </div>
@@ -167,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Chapter_8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Synthesis — Environmental Evidence</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data synthesis</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -252,46 +271,51 @@ ul.task-list li input[type="checkbox"] {
 <p>To ensure that the review’s results are reliable, an adequate critical appraisal of the included studies should be performed so that no sources of bias or other problems are overlooked. This section provides comprehensive guidance on how to plan, conduct, apply and report the critical appraisal stage of a Systematic Review, and introduces basic critical appraisal principles that ensure that the critical appraisal assessment is fit for purpose.</p>
 <section id="key-concepts-quality-versus-validity" class="level3" data-number="7.1.1">
 <h3 data-number="7.1.1" class="anchored" data-anchor-id="key-concepts-quality-versus-validity"><span class="header-section-number">7.1.1</span> Key concepts: “quality” versus “validity”</h3>
-<p>The word “quality” is often used to describe standards of rigor of scientific research. However, “quality” can mean different things depending on the perspective and has no universally accepted precise definition in research. It is important therefore to use explicitly clear terminology when evaluating the scientific rigor of studies in an evidence synthesis (Frampton et al.&nbsp;2022).</p>
+<p>The word “quality” is often used to describe standards of rigor of scientific research. However, “quality” can mean different things depending on the perspective and has no universally accepted precise definition in research. It is important therefore to use explicitly clear terminology when evaluating the scientific rigor of studies in an evidence synthesis <span class="citation" data-cites="FRAMPTON2022_principlesandframeworkfora">(<a href="references.html#ref-FRAMPTON2022_principlesandframeworkfora" role="doc-biblioref">Frampton et al. 2022</a>)</span>.</p>
 <p>“Validity” in the context of evidence synthesis refers to the extent of systematic error. Research findings with low systematic error are said to have high validity whilst findings with high systematic error are said to have low validity. The presence of systematic error is important because it means that the results of research are likely to deviate from their true value, either through underestimation or overestimation. As such, systematic error may lead to false conclusions and render research results unfit for decision making.</p>
 <p>Two key sources of systematic error need to be considered in evidence synthesis, referred to as “internal validity” and “external validity”.</p>
 </section>
 <section id="internal-validity-and-risk-of-bias" class="level3" data-number="7.1.2">
 <h3 data-number="7.1.2" class="anchored" data-anchor-id="internal-validity-and-risk-of-bias"><span class="header-section-number">7.1.2</span> <strong>Internal validity and risk of bias</strong></h3>
-<p>Internal validity refers to the extent of systematic error in the results of an individual research study, due to flaws in study design or conduct. Systematic error is different from random error. Random error is present in all research studies and reflects inaccuracy of estimation that is distributed randomly around the true result. Often, random error can be reduced by increasing the sample size in a research study, or by quantitatively combining the results of similar studies in a meta-analysis (subject to the studies being adequately comparable), hence improving the precision of the result (Glass, 1976). Systematic error, on the other hand, cannot be reduced by increasing the sample size or by pooling study results in a meta-analysis. If systematic error is present in primary research studies their results will likely be incorrect.</p>
-<p>Systematic error is also referred to as bias. Evidence for the existence of systematic error (i.e.&nbsp;bias) comes from large-scale health research that has assessed large numbers of studies to determine whether outcomes differ systematically between studies that have a particular design feature and those that do not (e.g.&nbsp;Wortman 1994; Schulz et al.&nbsp;1995; Chan et al.&nbsp;2004; Wood et al.&nbsp;2008; Liberati et al.&nbsp;2009; Kirkham et al.&nbsp;2010; Higgins &amp; Green, 2011; Holman et al.&nbsp;2015). However, it is usually impossible to directly measure bias within individual primary research studies. Instead, an indirect approach is to infer the “risk of bias” by examining the study design and methods to determine whether adequate steps were taken to protect against systematic error. Studies that fail to meet specified criteria for mitigating known types of bias may be referred to as being at “high risk of bias” whilst studies with adequate methodology to protect against bias are considered to be at “low risk of bias” (Higgins et al.&nbsp;2022). It is generally acknowledged that bias is an important threat to the validity of research findings across scientific disciplines, and it has been argued that bias is one of several factors that collectively contribute to most research findings being incorrect (Ioannidis, 2005). Traditional non-Systematic Reviews of evidence which do not formally assess the rigour of primary research studies would not be able to detect bias.</p>
-<p><img src=".png" class="img-fluid"></p>
-<p><strong>Figure 7.1. Schematic illustration of the potential influence of random error and systematic error (bias) on a study outcome</strong></p>
+<p>Internal validity refers to the extent of systematic error in the results of an individual research study, due to flaws in study design or conduct. Systematic error is different from random error. Random error is present in all research studies and reflects inaccuracy of estimation that is distributed randomly around the true result. Often, random error can be reduced by increasing the sample size in a research study, or by quantitatively combining the results of similar studies in a meta-analysis (subject to the studies being adequately comparable), hence improving the precision of the result <span class="citation" data-cites="GLASS1976_primarysecondaryandmetaa">(<a href="references.html#ref-GLASS1976_primarysecondaryandmetaa" role="doc-biblioref">Glass 1976</a>)</span>. Systematic error, on the other hand, cannot be reduced by increasing the sample size or by pooling study results in a meta-analysis. If systematic error is present in primary research studies their results will likely be incorrect.</p>
+<p>Systematic error is also referred to as bias. Evidence for the existence of systematic error (i.e.&nbsp;bias) comes from large-scale health research that has assessed large numbers of studies to determine whether outcomes differ systematically between studies that have a particular design feature and those that do not (e.g. <span class="citation" data-cites="WORTMAN1994_judgingresearchquality">Wortman (<a href="references.html#ref-WORTMAN1994_judgingresearchquality" role="doc-biblioref">1994</a>)</span>; <span class="citation" data-cites="SCHULZ1995_empiricalevidenceofbias">Schulz et al. (<a href="references.html#ref-SCHULZ1995_empiricalevidenceofbias" role="doc-biblioref">1995</a>)</span>; <span class="citation" data-cites="CHAN2004_empiricalevidenceforselecti">Chan et al. (<a href="references.html#ref-CHAN2004_empiricalevidenceforselecti" role="doc-biblioref">2004</a>)</span>; <span class="citation" data-cites="WOOD2008_empiricalevidenceofbiasin"><span class="nocase">Wood et al.</span> (<a href="references.html#ref-WOOD2008_empiricalevidenceofbiasin" role="doc-biblioref">2008</a>)</span>; <span class="citation" data-cites="LIBERATI2009_theprismastatementforrepor">Liberati et al. (<a href="references.html#ref-LIBERATI2009_theprismastatementforrepor" role="doc-biblioref">2009</a>)</span>; <span class="citation" data-cites="KIRKHAM2010_theimpactofoutcomereportin"><span class="nocase">Kirkham et al.</span> (<a href="references.html#ref-KIRKHAM2010_theimpactofoutcomereportin" role="doc-biblioref">2010</a>)</span>; <span class="citation" data-cites="HIGGINS2011_cochranehandbookforsystemat">Higgins and Green (<a href="references.html#ref-HIGGINS2011_cochranehandbookforsystemat" role="doc-biblioref">2011</a>)</span>; <span class="citation" data-cites="HOLMAN2015_evidenceofexperimentalbias">Holman et al. (<a href="references.html#ref-HOLMAN2015_evidenceofexperimentalbias" role="doc-biblioref">2015</a>)</span>). However, it is usually impossible to directly measure bias within individual primary research studies. Instead, an indirect approach is to infer the “risk of bias” by examining the study design and methods to determine whether adequate steps were taken to protect against systematic error. Studies that fail to meet specified criteria for mitigating known types of bias may be referred to as being at “high risk of bias” whilst studies with adequate methodology to protect against bias are considered to be at “low risk of bias” <span class="citation" data-cites="HIGGINS2022_cochranehandbookforsystemat">(<a href="references.html#ref-HIGGINS2022_cochranehandbookforsystemat" role="doc-biblioref">Higgins et al. 2022</a>)</span>. It is generally acknowledged that bias is an important threat to the validity of research findings across scientific disciplines, and it has been argued that bias is one of several factors that collectively contribute to most research findings being incorrect (Ioannidis, 2005). Traditional non-Systematic Reviews of evidence which do not formally assess the rigour of primary research studies would not be able to detect bias.</p>
+<p><img src="images/Figure-3.2 (1).png" class="img-fluid" alt="Schematic illustration of the potential influence of random error and systematic error (bias) on a study outcome"> {#fig-random-error}</p>
 <section id="external-validity" class="level4" data-number="7.1.2.1">
 <h4 data-number="7.1.2.1" class="anchored" data-anchor-id="external-validity"><span class="header-section-number">7.1.2.1</span> External validity</h4>
-<p>External validity is the extent to which research results provide a correct basis for generalisations to other circumstances (Burford et al.&nbsp;2013). That is, the extent to which results of a research study can be applied to answer a particular question correctly, without introducing systematic error. The external validity of research findings may also be referred to as “context suitability” when considering how the findings apply to a specific context or question of interest (Weise et al.&nbsp;2020).</p>
+<p>External validity is the extent to which research results provide a correct basis for generalisations to other circumstances <span class="citation" data-cites="BURFORD2013_assessingtheapplicabilityof">(<a href="references.html#ref-BURFORD2013_assessingtheapplicabilityof" role="doc-biblioref">Burford et al. 2013</a>)</span>. That is, the extent to which results of a research study can be applied to answer a particular question correctly, without introducing systematic error. The external validity of research findings may also be referred to as “context suitability” when considering how the findings apply to a specific context or question of interest <span class="citation" data-cites="WEISE2020_assessingcontextsuitability">(<a href="references.html#ref-WEISE2020_assessingcontextsuitability" role="doc-biblioref">Weise et al. 2020</a>)</span>.</p>
 <p>Assessment of external validity is relevant to evidence reviews since (i) the setting and question addressed by each individual study included in a review may not precisely match the setting of the review question (this depends on how broad the eligibility criteria are), and/or (ii) the setting of the Systematic Review question may not precisely match the real-world setting to which the review question relates (this depends on how and why the review question was formulated). Research studies are often conducted under strictly controlled conditions to minimise bias, i.e.&nbsp;to obtain high internal validity, but this sacrifices realism meaning that external validity may be low. Internal validity and external validity are both types of systematic error which, if present in an evidence synthesis, could lead to incorrect research conclusions. It is therefore important to assess both types of validity when conducting an evidence review.</p>
-<p>A recent review of guidance documents and recommendations for assessing external validity found little consistency in the terminology employed (with interchangeable use of the terms external validity, applicability, transferability, transposability, relevance and/or directness); heterogeneous recommendations regarding assessment criteria; a lack of guidance on how to apply assessment criteria; and no consensus on approaches for assessing external validity in Systematic Reviews (Weise et al.&nbsp;2020).</p>
+<p>A recent review of guidance documents and recommendations for assessing external validity found little consistency in the terminology employed (with interchangeable use of the terms external validity, applicability, transferability, transposability, relevance and/or directness); heterogeneous recommendations regarding assessment criteria; a lack of guidance on how to apply assessment criteria; and no consensus on approaches for assessing external validity in Systematic Reviews <span class="citation" data-cites="WEISE2020_assessingcontextsuitability">(<a href="references.html#ref-WEISE2020_assessingcontextsuitability" role="doc-biblioref">Weise et al. 2020</a>)</span>.</p>
 <p>Whilst internal validity (the extent to which the study results are free from systematic error) is a specific property of an individual research study, external validity (the extent to which the answer to the review question is free from systematic error when informed by a specific study) depends both on the characteristics of the research study and the evidence review question being addressed. Thus, external validity is context-dependent.</p>
-<p>External validity requires that the setting of interest (i.e.&nbsp;that specified in the review question) is clearly defined (Weise et al.&nbsp;2020) and that the causal relationship of the setting of each study included in the review is generalizable to the setting of interest (Pearl &amp; Bareinboim 2014). External validity thus has two independent (i.e.&nbsp;non-overlapping) aspects, referred to as “applicability” and “transportability”, which can be framed as general questions when assessing research studies for their external validity:</p>
-<p><strong>Applicability</strong>: Is the comparison investigated in the research study feasible in the setting where the results of the review will be used? Applicability describes the extent to which a studied comparison could be applied in the setting of interest, regardless of the outcome (Wang et al.&nbsp;2006).</p>
-<p><strong>Transportability</strong>: Do all important characteristics of the research study match those of the setting where the results of the review will be used? Transportability describes the extent to which the causal pathway of the research study can be transported to the setting of interest without incurring (further) bias or confounding (Wang et al.&nbsp;2006; Burford et al.&nbsp;2013; Pearl &amp; Bareinboim 2014).</p>
-<p>Applicability and transportability can be assessed by comparing in detail the PECO / PICO elements of the research study against those of the setting of interest (Weise et al.&nbsp;2020) and examining whether differences exist in confounding variables between the research study and the setting of interest (Pearl &amp; Bareinboim 2014). Conceptual diagrams (“selection diagrams”) based on causality theory may be helpful for systematically evaluating the consistency of causal pathways between the research study setting and the setting of interest (Pearl &amp; Bareinboim 2014).</p>
+<p>External validity requires that the setting of interest (i.e.&nbsp;that specified in the review question) is clearly defined <span class="citation" data-cites="WEISE2020_assessingcontextsuitability">(<a href="references.html#ref-WEISE2020_assessingcontextsuitability" role="doc-biblioref">Weise et al. 2020</a>)</span> and that the causal relationship of the setting of each study included in the review is generalizable to the setting of interest <span class="citation" data-cites="PEARL2014_externalvalidityfromdocal">(<a href="references.html#ref-PEARL2014_externalvalidityfromdocal" role="doc-biblioref">Pearl and Bareinboim 2014</a>)</span>. External validity thus has two independent (i.e.&nbsp;non-overlapping) aspects, referred to as “applicability” and “transportability”, which can be framed as general questions when assessing research studies for their external validity:</p>
+<p><strong>Applicability</strong>: Is the comparison investigated in the research study feasible in the setting where the results of the review will be used? Applicability describes the extent to which a studied comparison could be applied in the setting of interest, regardless of the outcome <span class="citation" data-cites="WANG2006_applicabilityandtransferabil">(<a href="references.html#ref-WANG2006_applicabilityandtransferabil" role="doc-biblioref">Wang et al. 2006</a>)</span>.</p>
+<p><strong>Transportability</strong>: Do all important characteristics of the research study match those of the setting where the results of the review will be used? Transportability describes the extent to which the causal pathway of the research study can be transported to the setting of interest without incurring (further) bias or confounding (<span class="citation" data-cites="WANG2006_applicabilityandtransferabil">Wang et al. (<a href="references.html#ref-WANG2006_applicabilityandtransferabil" role="doc-biblioref">2006</a>)</span>; <span class="citation" data-cites="BURFORD2013_assessingtheapplicabilityof">Burford et al. (<a href="references.html#ref-BURFORD2013_assessingtheapplicabilityof" role="doc-biblioref">2013</a>)</span>; <span class="citation" data-cites="PEARL2014_externalvalidityfromdocal">Pearl and Bareinboim (<a href="references.html#ref-PEARL2014_externalvalidityfromdocal" role="doc-biblioref">2014</a>)</span>).</p>
+<p>Applicability and transportability can be assessed by comparing in detail the PECO / PICO elements of the research study against those of the setting of interest <span class="citation" data-cites="WEISE2020_assessingcontextsuitability">(<a href="references.html#ref-WEISE2020_assessingcontextsuitability" role="doc-biblioref">Weise et al. 2020</a>)</span> and examining whether differences exist in confounding variables between the research study and the setting of interest <span class="citation" data-cites="PEARL2014_externalvalidityfromdocal">(<a href="references.html#ref-PEARL2014_externalvalidityfromdocal" role="doc-biblioref">Pearl and Bareinboim 2014</a>)</span>. Conceptual diagrams (“selection diagrams”) based on causality theory may be helpful for systematically evaluating the consistency of causal pathways between the research study setting and the setting of interest <span class="citation" data-cites="PEARL2014_externalvalidityfromdocal">(<a href="references.html#ref-PEARL2014_externalvalidityfromdocal" role="doc-biblioref">Pearl and Bareinboim 2014</a>)</span>.</p>
 <p><em>Note</em>: The critical appraisal step of Systematic Review assesses the external validity of the included studies for answering the review question. The external validity of the review question itself (i.e.&nbsp;whether the review question matches the real-world problem that the review intends to address) should be considered and justified during the formulation of the review question (section 2 above) and transparently justified in the review protocol. For example, a Systematic Review of pesticide effects in laboratory studies would clearly not reflect real-world pesticide effects but such a review may be justified if the aim of the review is to inform a predictive model.</p>
 </section>
 </section>
 <section id="basic-principles-of-critical-appraisal" class="level3" data-number="7.1.3">
 <h3 data-number="7.1.3" class="anchored" data-anchor-id="basic-principles-of-critical-appraisal"><span class="header-section-number">7.1.3</span> Basic principles of critical appraisal</h3>
-<p>For critical appraisal in an evidence review to be fit for purpose, four basic principles must be met (Frampton et al.&nbsp;2002). That is, the assessment must be:</p>
+<p>For critical appraisal in an evidence review to be fit for purpose, four basic principles must be met <span class="citation" data-cites="FRAMPTON2022_principlesandframeworkfora">(<a href="references.html#ref-FRAMPTON2022_principlesandframeworkfora" role="doc-biblioref">Frampton et al. 2022</a>)</span>. That is, the assessment must be:</p>
 <ul>
 <li><p><strong>Focused</strong> on an appropriate and specific validity construct (i.e.&nbsp;internal validity or external validity).</p></li>
 <li><p><strong>Extensive</strong>, capturing all aspects of the validity construct (i.e.&nbsp;if the construct is internal validity all the different types of bias that could arise in a given study design must be identified and assessed).</p></li>
 <li><p><strong>Applied</strong> – to inform the data synthesis step of the evidence synthesis in an appropriate way.</p></li>
 <li><p><strong>Transparent</strong>, to maximise objectivity and clarity.</p></li>
 </ul>
-<p>We refer to these four principles (Focused, Extensive, Applied, Transparent) as the FEAT principles (Frampton et al.&nbsp;2022).</p>
-<p>The FEAT principles are illustrated in Table 7.1 for critical appraisal of internal validity as assessed by the risk of bias.</p>
-<section id="table-7.1-feat-principles-and-their-rationale-illustrated-for-the-case-where-the-construct-of-interest-is-internal-validity-as-assessed-by-the-risk-of-bias" class="level5" data-number="7.1.3.0.1">
-<h5 data-number="7.1.3.0.1" class="anchored" data-anchor-id="table-7.1-feat-principles-and-their-rationale-illustrated-for-the-case-where-the-construct-of-interest-is-internal-validity-as-assessed-by-the-risk-of-bias"><span class="header-section-number">7.1.3.0.1</span> <strong>Table 7.1 FEAT principles and their rationale illustrated for the case where the construct of interest is internal validity as assessed by the risk of bias</strong></h5>
+<p>We refer to these four principles (Focused, Extensive, Applied, Transparent) as the FEAT principles <span class="citation" data-cites="FRAMPTON2022_principlesandframeworkfora">(<a href="references.html#ref-FRAMPTON2022_principlesandframeworkfora" role="doc-biblioref">Frampton et al. 2022</a>)</span>.</p>
+<p>The FEAT principles are illustrated in @tbl-feat for critical appraisal of internal validity as assessed by the risk of bias.</p>
+<section id="section" class="level5" data-number="7.1.3.0.1">
+<h5 data-number="7.1.3.0.1" class="anchored" data-anchor-id="section"><span class="header-section-number">7.1.3.0.1</span> </h5>
+<div id="tbl-feat" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-feat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;7.1: FEAT principles and their rationale illustrated for the case where the construct of interest is internal validity as assessed by the risk of bias
+</figcaption>
+<div aria-describedby="tbl-feat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 17%">
+<col style="width: 82%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -316,12 +340,15 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 </section>
 </section>
 </section>
 <section id="framework-for-planning-conducting-applying-and-reporting-critical-appraisal" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="framework-for-planning-conducting-applying-and-reporting-critical-appraisal"><span class="header-section-number">7.2</span> Framework for planning, conducting, applying and reporting critical appraisal</h2>
-<p>When developing the evidence synthesis protocol, the review team should carefully consider the approach for critical appraisal that will be used. Planning critical appraisal is an important part of the evidence synthesis and is likely to be an iterative process, including the following steps (Figure 7.2):</p>
+<p>When developing the evidence synthesis protocol, the review team should carefully consider the approach for critical appraisal that will be used. Planning critical appraisal is an important part of the evidence synthesis and is likely to be an iterative process, including the following steps (<a href="#fig-good" class="quarto-xref">Figure&nbsp;<span>7.1</span></a>):</p>
 <ul>
 <li><p>Prepare the review team.</p></li>
 <li><p>Conduct scoping searches to determine which types of study design will be eligible for inclusion in the review.</p></li>
@@ -331,9 +358,18 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Finalise the critical appraisal methods and state these in the review protocol.<br>
 The process for planning the assessments of internal validity and external validity are described in more detail in section 7.3 below.</p></li>
 </ul>
-<p><img src="images/Figure7.2png.png" class="img-fluid"></p>
-<section id="figure-7.2.-good-practice-framework-for-critical-appraisal-of-studies-included-in-an-evidence-review" class="level5" data-number="7.2.0.0.1">
-<h5 data-number="7.2.0.0.1" class="anchored" data-anchor-id="figure-7.2.-good-practice-framework-for-critical-appraisal-of-studies-included-in-an-evidence-review"><span class="header-section-number">7.2.0.0.1</span> <strong>Figure 7.2. Good practice framework for critical appraisal of studies included in an evidence review</strong></h5>
+<div id="fig-good" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-good-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Figure7.2png.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-good-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.1: Good practice framework for critical appraisal of studies included in an evidence review
+</figcaption>
+</figure>
+</div>
+<section id="section-1" class="level5" data-number="7.2.0.0.1">
+<h5 data-number="7.2.0.0.1" class="anchored" data-anchor-id="section-1"><span class="header-section-number">7.2.0.0.1</span> </h5>
 </section>
 </section>
 <section id="plan-the-critical-appraisal-of-internal-and-external-validity" class="level2" data-number="7.3">
@@ -391,8 +427,6 @@ The process for planning the assessments of internal validity and external valid
 <li><p>Bias due to an inappropriate statistical analysis approach (may also be called statistical conclusion validity).</p></li>
 <li><p>Other risks of bias. Depending on the study design(s) of interest, this “other” category could be important. For instance, if the review team are including studies of test accuracy these would be prone to a range of bias types that are not fully covered under the preceding eight types of bias and would need to be assessed in the critical appraisal.</p></li>
 </ul>
-<section id="table-7.2.-key-types-of-bias-in-research-studies-addressing-comparative-environmental-questions-frampton-et-al.-2002" class="level5" data-number="7.3.5.0.1">
-<h5 data-number="7.3.5.0.1" class="anchored" data-anchor-id="table-7.2.-key-types-of-bias-in-research-studies-addressing-comparative-environmental-questions-frampton-et-al.-2002"><span class="header-section-number">7.3.5.0.1</span> <strong>Table 7.2. Key types of bias in research studies addressing comparative environmental questions (Frampton et al.&nbsp;2002)</strong></h5>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 9%">
@@ -472,7 +506,6 @@ Blinding/masking can reduce the risk of several types of bias:</p>
 <p>Blinding is especially important if outcomes are subjective (and hence more easily influenced by the assessor or human participant; e.g.&nbsp;questionnaire responses) and if study investigators and/or study participants have a vested interest in the outcome (which is commonly the case, especially for highly contentious topics).</p>
 <p>In reality, blinding has rarely been performed in environmental studies (Kardish et al.&nbsp;2015; Holman et al.&nbsp;2015). This might reflect a lack of awareness among environmental researchers about the need and rationale for blinding. In some cases, blinding may be difficult or not feasible. However, careful thought may reveal that blinding is in fact feasible in many studies. For example, automated digital image analysis from drone footage, or analysis of anonymised water quality samples by an independent laboratory, would reduce the risk of subjectivity and bias in outcome assessments by removing the “human influence” that could introduce systematic error.</p>
 <p>It is important to stress that in cases where blinding is not feasible, to say the study is at higher risk of bias is not a criticism that the study investigators conducted an inadequate study. In medical research, for example, it would be impossible to blind patients and doctors to major surgery even if a study was conducted to the best possible standards of scientific rigor. Instead, it should be openly acknowledged that despite the best efforts to conduct research to the highest possible standards, some types of bias cannot always be prevented (Higgins et al.&nbsp;2022). Bias which cannot be prevented still needs to be assessed.</p>
-</section>
 </section>
 <section id="specify-the-output-format-of-the-risk-of-bias-assessment" class="level3" data-number="7.3.6">
 <h3 data-number="7.3.6" class="anchored" data-anchor-id="specify-the-output-format-of-the-risk-of-bias-assessment"><span class="header-section-number">7.3.6</span> Specify the output format of the risk of bias assessment</h3>
@@ -662,8 +695,8 @@ Signalling questions help to ensure transparency in how the risks of bias in the
 <h5 data-number="7.5.0.0.1" class="anchored" data-anchor-id="table-7.6-recommendations-for-applying-results-of-critical-appraisal-to-inform-data-synthesis"><span class="header-section-number">7.5.0.0.1</span> <strong>Table 7.6 Recommendations for applying results of critical appraisal to inform data synthesis</strong></h5>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 22%">
+<col style="width: 77%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -698,8 +731,8 @@ Signalling questions help to ensure transparency in how the risks of bias in the
 <h5 data-number="7.6.0.0.1" class="anchored" data-anchor-id="table-7.7.-recommendations-for-reporting-the-methods-and-results-of-critical-appraisal-in-the-final-systematic-review-report"><span class="header-section-number">7.6.0.0.1</span> <strong>Table 7.7. Recommendations for reporting the methods and results of critical appraisal in the final Systematic Review report</strong></h5>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 46%">
+<col style="width: 53%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -730,6 +763,53 @@ Signalling questions help to ensure transparency in how the risks of bias in the
 </table>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-BURFORD2013_assessingtheapplicabilityof" class="csl-entry" role="listitem">
+Burford, B., S. Lewin, V. Welch, E. Rehfuess, and E. Waters. 2013. <span>“Assessing the Applicability of Findings in Systematic Reviews of Complex Interventions Can Enhance the Utility of Reviews for Decision Making.”</span> <em>Journal of Clinical Epidemiology</em> 66 (11): 1251–61.
+</div>
+<div id="ref-CHAN2004_empiricalevidenceforselecti" class="csl-entry" role="listitem">
+Chan, A., A. Hróbjartsson, M. Haahr, P. C. Gøtzsche, and D. Altman. 2004. <em>Empirical Evidence for Selective Reporting of Outcomes in Randomized Trials: Comparison of Protocols to Published Articles</em>.
+</div>
+<div id="ref-FRAMPTON2022_principlesandframeworkfora" class="csl-entry" role="listitem">
+Frampton, G., P. Whaley, M. Bennett, et al. 2022. <em>Principles and Framework for Assessing the Risk of Bias for Studies Included in Comparative Quantitative Environmental Systematic Reviews</em>.
+</div>
+<div id="ref-GLASS1976_primarysecondaryandmetaa" class="csl-entry" role="listitem">
+Glass, G. 1976. <span>“Primary, Secondary, and Meta-Analysis of Research.”</span> <em>Educational Researcher</em> 5: 3–8.
+</div>
+<div id="ref-HIGGINS2011_cochranehandbookforsystemat" class="csl-entry" role="listitem">
+Higgins, J. P. T., and S. Green. 2011. <em>Cochrane Handbook for Systematic Reviews of Interventions</em>. Wiley.
+</div>
+<div id="ref-HIGGINS2022_cochranehandbookforsystemat" class="csl-entry" role="listitem">
+Higgins, J. P. T., J. Savović, M. J. Page, R. G. Elbers, and J. A. C. Sterne. 2022. <em>Cochrane Handbook for Systematic Reviews of Interventions, Version 6</em>.
+</div>
+<div id="ref-HOLMAN2015_evidenceofexperimentalbias" class="csl-entry" role="listitem">
+Holman, L., M. Head, R. Lanfear, and M. Jennions. 2015. <em>Evidence of Experimental Bias in the Life Sciences: Why We Need Blind Data Recording</em>.
+</div>
+<div id="ref-KIRKHAM2010_theimpactofoutcomereportin" class="csl-entry" role="listitem">
+<span class="nocase">Kirkham, J., K. Dwan, D. Altman, et al.</span> 2010. <em>The Impact of Outcome Reporting Bias in Randomised Controlled Trials on a Cohort of Systematic Reviews</em>.
+</div>
+<div id="ref-LIBERATI2009_theprismastatementforrepor" class="csl-entry" role="listitem">
+Liberati, A., D. G. Altman, J. Tetzlaff, et al. 2009. <em>The PRISMA Statement for Reporting Systematic Reviews and Meta-Analyses of Studies That Evaluate Health Care Interventions: Explanation and Elaboration</em>.
+</div>
+<div id="ref-PEARL2014_externalvalidityfromdocal" class="csl-entry" role="listitem">
+Pearl, J., and E. Bareinboim. 2014. <span>“External Validity: From Do-Calculus to Transportability Across Populations.”</span> <em>Statistical Science</em> 29: 579–95.
+</div>
+<div id="ref-SCHULZ1995_empiricalevidenceofbias" class="csl-entry" role="listitem">
+Schulz, K., I. Chalmers, R. Hayes, and D. Altman. 1995. <em>Empirical Evidence of Bias</em>.
+</div>
+<div id="ref-WANG2006_applicabilityandtransferabil" class="csl-entry" role="listitem">
+Wang, S., J. R. Moss, and J. E. Hiller. 2006. <span>“Applicability and Transferability of Interventions in Evidence-Based Public Health.”</span> <em>Health Promotion International</em> 21 (1): 76–83.
+</div>
+<div id="ref-WEISE2020_assessingcontextsuitability" class="csl-entry" role="listitem">
+Weise, A., R. Büchter, D. Pieper, and T. Mathes. 2020. <span>“Assessing Context Suitability (Generalizability, External Validity, Applicability or Transferability) of Findings in Evidence Syntheses in Healthcare–an Integrative Review of Methodological Guidance.”</span> <em>Research Synthesis Methods</em> 11 (6): 760–79.
+</div>
+<div id="ref-WOOD2008_empiricalevidenceofbiasin" class="csl-entry" role="listitem">
+<span class="nocase">Wood, L., M. Egger, L. Gluud, et al.</span> 2008. <span>“Empirical Evidence of Bias in Treatment Effect Estimates in Controlled Trials with Different Interventions and Outcomes: Meta-Epidemiological Study.”</span> <em>BMJ</em> 336: 601–5.
+</div>
+<div id="ref-WORTMAN1994_judgingresearchquality" class="csl-entry" role="listitem">
+Wortman, P. 1994. <span>“Judging Research Quality.”</span> In <em>The Handbook of Research Synthesis</em>, edited by H. Cooper and L. Hedges. Russell Sage Foundation.
+</div>
+</div>
 </section>
 </section>
 
@@ -1141,8 +1221,8 @@ Signalling questions help to ensure transparency in how the risks of bias in the
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Chapter_8.html" class="pagination-link" aria-label="Data Synthesis — Environmental Evidence">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data Synthesis — Environmental Evidence</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Chapter_8.html" class="pagination-link" aria-label="Data synthesis">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data synthesis</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
