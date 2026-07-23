@@ -10,7 +10,7 @@ crossref:
   custom:
     - kind: float
       key: box
-      reference-prefix: beox
+      reference-prefix: box
 params:
   last_updated: ""
 execute:

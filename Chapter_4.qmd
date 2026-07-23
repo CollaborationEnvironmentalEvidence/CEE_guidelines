@@ -107,16 +107,17 @@ Bibliographic sources may vary in the search tools provided by their platforms. 
 ***Electronic bibliographic sources***\
 The platforms which provide access to bibliographic information sources may vary according to:
 
-1.  Platform issues\
+1.  Platform issues
     • the syntax needed within search strings and the complexity of search strings that they will accept\
     • access: not all bibliographic sources are completely accessible. It depends on the subscriptions available to the project team members in their institutions. The Web of Science platform, for example, contains several databases, and it is important to check and document which ones are accessible to the project team via that platform.
 
-2.  Database issues\
+2.  Database issues
     • disciplines: subject-based bibliographic sources (CAB ebooks; applied life sciences, agriculture, environment, veterinary sciences, applied economics, food science and nutrition) versus multidisciplinary sources (Scopus, Web of Science);\
-    • geographical regions (e.g. Latin America, HAPI-Hispanic American Periodicals Index, or Europe CORDIS). It may be necessary to search region-specific bibliographic sources if the evidence-synthesis question has a regional focus [@bayliss2015];\
-    • document types: scientific papers, conference or proceedings, chapters, books, theses. Many university libraries hold digital copies of their theses, such as the EThOS British Library thesis database. Conference papers may be a source of unpublished results relevant for the synthesis, and may be found through the BIOSIS Citation index or the Conference Proceedings Citation Index \[\@GLANVILLE2019_incooperh\]\
-    • durations at the time of writing, in the Web of Science Core Collection some articles may be accessible from 1900 although by no means all, in Scopus they may date from 1960);\
+    • geographical regions (e.g. Latin America, HAPI-Hispanic American Periodicals Index, or Europe CORDIS). It may be necessary to search region-specific bibliographic sources if the evidence-synthesis question has a regional focus [@bayliss2015];
+    • document types: scientific papers, conference or proceedings, chapters, books, theses. Many university libraries hold digital copies of their theses, such as the EThOS British Library thesis database. Conference papers may be a source of unpublished results relevant for the synthesis, and may be found through the BIOSIS Citation index or the Conference Proceedings Citation Index [@GLANVILLE2019_incooperh]
+    • durations at the time of writing, in the Web of Science Core Collection some articles may be accessible from 1900 although by no means all, in Scopus they may date from 1960);
     
+
 *Publishers’ databases*
 
 The websites of individual commercial publishers may be valuable sources of evidence, since they can also offer access to books, chapters of books, and other material (e.g. datasets). Using their respective search tools and related help pages allows the retrieval of relevant articles based on search terms. For example, Elsevier’s ScienceDirect and Wiley Interscience are publishers’ platforms that give access to their journals, their tables of contents and (depending on licence) abstracts and the ability to download the article.

@@ -1,0 +1,139 @@
+---
+author:
+  - name: Biljana Macura
+    affiliation:
+      - ref: sei
+      - ref: cee-sweden
+
+  - name: Geoff K. Frampton
+    affiliation:
+      - ref: shtac
+
+  - name: Gillian Petrokofsky
+    affiliation:
+      - ref: oxford
+
+  - name: Andrew S. Pullin
+    affiliation:
+      - ref: cee-uk
+
+  - name: Barbara Livoreil
+    affiliation:
+      - ref: coopaname
+
+  - name: Shinichi Nakagawa
+    affiliation:
+      - ref: alberta
+
+  - name: Matthew Grainger
+    affiliation:
+      - ref: nina
+
+affiliations:
+  - id: sei
+    name: Stockholm Environment Institute
+    department: Headquarters
+    city: Stockholm
+    country: Sweden
+
+  - id: cee-sweden
+    name: Collaboration for Environmental Evidence Sweden
+
+  - id: shtac
+    name: Southampton Health Technology Assessments Centre
+    department: University of Southampton
+    country: United Kingdom
+
+  - id: oxford
+    name: Department of Biology, University of Oxford
+    country: United Kingdom
+
+  - id: cee-uk
+    name: Collaboration for Environmental Evidence
+    country: United Kingdom
+
+  - id: coopaname
+    name: Freelance consultant, Coopaname
+    city: Paris
+    country: France
+
+  - id: alberta
+    name: Department of Biological Sciences, University of Alberta
+    country: Canada
+
+  - id: nina
+    name: Knowledge Synthesis Department, Norwegian Institute for Nature Research
+    city: Trondheim
+    country: Norway
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+
+bibliography: refs.bib
+
+params:
+  last_updated: ""
+
+execute:
+  echo: false
+---
+
+# **Reporting guidance for the use of artificial intelligence in environmental evidence synthesis**
+
+
+CEE thanks the authors listed above for providing this guidance.
+
+## Background
+
+With the rise of artificial intelligence (AI), numerous systems and tools are now available to support evidence synthesis across disciplines [@BERGERTAL2024_tree; @GE2024_systematicreviews]. However, the integration of AI into evidence synthesis must be undertaken transparently, reproducibly, and ethically with appropriate human oversight and rigorous validation of AI outputs to maintain the rigour of evidence synthesis [@THOMAS2025_raise]. In this context, AI use in evidence synthesis refers to the application of any predictive or generative AI systems, tools, or processes at any stage of the review process, including planning, searching, deduplication, screening, critical appraisal, data extraction, synthesis, and reporting.
+
+The following guidance provides recommendations for the transparent reporting of AI use in environmental evidence synthesis. It aligns with the Position statement on artificial intelligence (AI) use in evidence synthesis [@FLEMYNG2025_environmentalevidence] and the principles of RAISE (Responsible AI in Evidence Synthesis; @THOMAS2025_raise) – an international initiative to standardise recommendations for responsible AI use in evidence synthesis. This is a living document that will be regularly updated to reflect ongoing technological development.
+
+For each **AI system, tool, or technology** (hereafter referred to as an *AI system*) that is planned or used in evidence syntheses (including reports and protocols of systematic reviews, systematic maps and rapid reviews) authors should report the following:
+
+1.  **Justification and description of the AI system**
+
+    - Provide the name, version, and developer of the AI system(s)
+
+    - Justify use of AI system(s) and reference published validation studies if available
+
+    - Describe where, how, and why AI is used in the overall evidence synthesis workflow, specifying the automated or semi-automated tasks involved (e.g., for search strategy planning, screening, data extraction, critical appraisal).
+
+    - Report any modifications or custom parameters applied to the AI system.
+
+    - For evidence synthesis reports, describe any deviations from the protocol in the use of AI and the reasons.
+
+2.  **Validation of the AI system**
+
+    - Describe any validation processes conducted to evaluate the performance of the system, the accuracy and reliability of AI-generated outputs.Document the extent of agreement between AI-generated results and human reviewers.Where no validation was conducted, explain the reasons for this.
+
+3.  **Limitations and ethical considerations**
+
+    - Disclose any known limitations of the AI system’s performance and the steps taken to mitigate these. Report how errors or misclassifications were identified and addressed.
+
+    - Discuss any ethical considerations, such as privacy concerns or potential impacts on the integrity of the evidence synthesis process.
+
+4.  **Additional files**
+
+    - Include validation studies conducted to evaluate AI performance.
+
+    - Provide all code and scripts, used to generate or analyse results.
+
+    - For AI tools that rely on prompts, supply the exact prompts used along with a brief rationale for the wording and structure of the final prompt.
+
+5.  **Funding and Conflicts of Interest**
+
+    - Disclose any funding or financial interests related to the AI systems used.
+
+    - Report affiliations or potential conflicts of interest with AI developers or providers.
+
+    - Ensure ethical, legal and regulatory standards are adhered to as part of applying AI to your synthesis. For example, be aware of issues relating to plagiarism, provenance, copyright, intellectual property, jurisdiction, licensing, and confidentiality, compliance and privacy responsibilities, including data protection laws.
+
+Authors may consider using this template in the Methods section; the text can be adapted for either a protocol or a report:
+
+*“We used \[AI tool/system/approach name, version\] developed by \[organization/developer\] for \[specific purpose(s) in the evidence synthesis process\]. The \[AI tool/system/approach\] was \[briefly describe any customization, training, or parameters applied\]. Outputs from the \[AI tool/system/approach\] were \[describe validation process\]. Limitations of the \[AI tool/system/approach\] include \[describe known limitations, potential biases, and ethical concerns\]. A detailed description of the methodology, including parameters and validation procedures as well as \[prompts, code snippets,…\] is available in \[supplementary materials and/or protocol\].”*
+
+
