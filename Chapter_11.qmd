@@ -81,7 +81,7 @@ execute:
   echo: false
 ---
 
-# **Reporting guidance for the use of artificial intelligence in environmental evidence synthesis**
+# Reporting guidance for the use of artificial intelligence in environmental evidence synthesis
 
 
 CEE thanks the authors listed above for providing this guidance.

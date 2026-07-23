@@ -50,7 +50,8 @@ Use the navigation bar to browse chapters, or start here:
 - [Chapter 7](Chapter_7.qmd)  
 - [Chapter 8](Chapter_8.qmd)  
 - [Chapter 9](Chapter_9.qmd)  
-- [Chapter 10](Chapter_10.qmd)  
+- [Chapter 10](Chapter_10.qmd)
+- [Chapter 11](Chapter_11.qmd)
 - [References](references.qmd)
 
 ## Versioning
