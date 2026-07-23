@@ -74,10 +74,12 @@ The guidelines are organised into chapters covering the full evidence synthesis 
 * Question formulation
 * Searching and study identification
 * Screening and eligibility
-* Critical appraisal
 * Data extraction
+* Critical appraisal
 * Synthesis (quantitative and narrative)
 * Reporting and transparency
+* Rapid Reviews
+* Reporting AI use
 
 Use the online version to navigate the full document.
 
